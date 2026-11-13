@@ -1,0 +1,1010 @@
+{
+  "id": "20261107-233357-9ebe",
+  "agent": "a",
+  "title": "Titan Company",
+  "params": {
+    "company": "Titan Company",
+    "service_line": "retail operations and inventory management",
+    "use_web": true,
+    "agent": "a",
+    "auto_approve": false,
+    "cache": false,
+    "backend": "gemini"
+  },
+  "status": "done",
+  "events": [
+    {
+      "i": 0,
+      "t": 0.0,
+      "actor": "Orchestrator",
+      "kind": "agent",
+      "msg": "Agent A started for \"Titan Company\"",
+      "data": {
+        "web": true,
+        "doc_chunks": 0,
+        "llm": "gemini:gemini-3.5-flash"
+      }
+    },
+    {
+      "i": 1,
+      "t": 4.53,
+      "actor": "Planner",
+      "kind": "plan",
+      "msg": "Decomposed into 5 research angles",
+      "data": {
+        "profile": [
+          "Titan Company business segments and retail footprint overview",
+          "Titan Company supply chain and distribution model"
+        ],
+        "news": [
+          "Titan Company latest news retail technology and inventory",
+          "Titan Company recent earnings call inventory management commentary"
+        ],
+        "sector": [
+          "Indian organized jewelry retail market trends 2024",
+          "inventory management benchmarks in Indian luxury retail"
+        ],
+        "competitors": [
+          "Titan vs Kalyan Jewellers vs Joyalukkas operations comparison",
+          "Ethos vs Titan watches inventory turnover analysis"
+        ],
+        "signals": [
+          "Titan Company digital transformation and RFID implementation",
+          "Titan Company omni-channel strategy and warehouse automation"
+        ]
+      }
+    },
+    {
+      "i": 2,
+      "t": 9.05,
+      "actor": "Collector",
+      "kind": "tool",
+      "msg": "Fetched 6 real source passages: Wikipedia yes, Wikidata yes, official website pages 0",
+      "data": [
+        "Wikipedia: Titan Company (part 1)",
+        "Wikipedia: Titan Company (part 2)",
+        "Wikipedia: Titan Company (part 3)",
+        "Wikipedia: Titan Company (part 4)",
+        "Wikipedia: Titan Company (part 5)",
+        "Wikidata: Titan Industries"
+      ]
+    },
+    {
+      "i": 3,
+      "t": 10.29,
+      "actor": "Researcher:competitors",
+      "kind": "tool",
+      "msg": "live news search \"Titan vs Kalyan Jewellers vs Joyalukkas operations comparison\" -> 4 headlines",
+      "data": [
+        "Gulf crisis drags down gold demand - bfsi.economictimes.indiatimes.com",
+        "Five Indian brands feature in the top 100 global powers of luxury goods list: Deloitte Report - Deloitte",
+        "Jewellery Retailing Sector Analysis Report - Equitymaster",
+        "Beyond Titan and Kalyan: The smallcaps supplying India’s jewellery giants - The Financial Express"
+      ]
+    },
+    {
+      "i": 4,
+      "t": 10.37,
+      "actor": "Researcher:news",
+      "kind": "tool",
+      "msg": "live news search \"Titan Company latest news retail technology and inventory\" -> 5 headlines",
+      "data": [
+        "Titan Company shares fall 4% after Q2 business update. What is Nomura saying? - The Economic Times",
+        "Titan share price drops 5% after Q2FY27 update - Should you buy this Tata Group stock now? Here's what experts say - Livemint",
+        "Titan stock crashes over 4% as Q2 jewellery growth misses some estimates; brokerages retain bullish calls - Moneycontrol.com",
+        "Titan up 4%, hits new high post Q1 biz update; brokerages see more upside - Business Standard",
+        "Why Titan Company stock is top jewellery pick ahead of festive season - Business Today"
+      ]
+    },
+    {
+      "i": 5,
+      "t": 10.4,
+      "actor": "Researcher:profile",
+      "kind": "tool",
+      "msg": "live news search \"Titan Company business segments and retail footprint overview\" -> 5 headlines",
+      "data": [
+        "Titan share price hits new high; global brokerages give 'buy' tag to Rekha Jhunjhunwala portfolio stock post Q1 update - Livemint",
+        "Titan Consumer Business Jumps 41% YoY Led by 39% Jewellery Growth and 77 New Stores - Sahi",
+        "Titan Q3 FY26 presentation: Jewelry business surges 40% amid strategic expansion - Investing.com",
+        "Morgan Stanley Raises Titan Target to ₹5,102 as Q4 Revenue Growth Hits 46% - scanx.trade",
+        "Titan Company Ltd Share Price Today NSE/BSE Charts - Alice Blue"
+      ]
+    },
+    {
+      "i": 6,
+      "t": 10.62,
+      "actor": "Researcher:signals",
+      "kind": "tool",
+      "msg": "live news search \"Titan Company digital transformation and RFID implementation\" -> 1 headlines",
+      "data": [
+        "Touch ‘n Go rolls out Enhanced RFID lane at AKLEH, targets 10 lanes by year-end - SoyaCincau"
+      ]
+    },
+    {
+      "i": 7,
+      "t": 10.71,
+      "actor": "Researcher:sector",
+      "kind": "tool",
+      "msg": "live news search \"Indian organized jewelry retail market trends 2024\" -> 5 headlines",
+      "data": [
+        "JewelZ Power List: How Sky Gold & Diamonds is Building India's Next-Generation Jewelry Manufacturing Powerhouse - Indian Retailer",
+        "Jade Jewelry Market Size, Share, Trend, Growth, Forecast, 2035 - Business Research Insights",
+        "Diamond Jewelry Market - Future Market Insights",
+        "PC Jeweller's Brand Strategy in Organized Jewelry Retail - MarkHub24",
+        "Jewellery Box Market Size, Share, Trends 2036 - Future Market Insights"
+      ]
+    },
+    {
+      "i": 8,
+      "t": 11.25,
+      "actor": "Researcher:competitors",
+      "kind": "tool",
+      "msg": "live news search \"Ethos vs Titan watches inventory turnover analysis\" -> 0 headlines",
+      "data": []
+    },
+    {
+      "i": 9,
+      "t": 11.26,
+      "actor": "Researcher:competitors",
+      "kind": "tool",
+      "msg": "selected 4 passages from Wikipedia / Wikidata / company website",
+      "data": [
+        "Wikipedia: Titan Company (part 1)",
+        "Wikipedia: Titan Company (part 2)",
+        "Wikipedia: Titan Company (part 3)",
+        "Wikidata: Titan Industries"
+      ]
+    },
+    {
+      "i": 10,
+      "t": 11.36,
+      "actor": "Researcher:sector",
+      "kind": "tool",
+      "msg": "live news search \"inventory management benchmarks in Indian luxury retail\" -> 5 headlines",
+      "data": [
+        "2026 Retail Industry Global Outlook - Deloitte",
+        "Top 11 AI in Fashion Use Cases & Examples - AIMultiple",
+        "Baazar Style Retail Revenue Surges 29% to ₹486 Crore with 7% SSSG in Q1FY27 - Sahi",
+        "AG Jeans Unifies Legacy Systems to Achieve Luxury Service at Scale - Shopify",
+        "India Shops Everywhere: A Performance Review of India’s Retail Economy in 2025 - Indian Retailer"
+      ]
+    },
+    {
+      "i": 11,
+      "t": 11.36,
+      "actor": "Researcher:sector",
+      "kind": "tool",
+      "msg": "selected 4 passages from Wikipedia / Wikidata / company website",
+      "data": [
+        "Wikipedia: Titan Company (part 1)",
+        "Wikipedia: Titan Company (part 2)",
+        "Wikipedia: Titan Company (part 4)",
+        "Wikidata: Titan Industries"
+      ]
+    },
+    {
+      "i": 12,
+      "t": 11.36,
+      "actor": "Researcher:news",
+      "kind": "tool",
+      "msg": "live news search \"Titan Company recent earnings call inventory management commentary\" -> 5 headlines",
+      "data": [
+        "5 revealing analyst questions from Redwire’s Q3 2026 earnings call - TradingView",
+        "Titan America (TTAM) Lags Q3 Earnings and Revenue Estimates - Yahoo Finance",
+        "5 revealing analyst questions from Radian Group’s Q3 2026 earnings call - TradingView",
+        "Titan Q2 Results: Date, Time, Dividend News, Earnings Call Schedule And More - NDTV Profit",
+        "Titan International, Inc. Q3 2026 Earnings Call Summary - Yahoo Finance"
+      ]
+    },
+    {
+      "i": 13,
+      "t": 11.36,
+      "actor": "Researcher:news",
+      "kind": "tool",
+      "msg": "selected 4 passages from Wikipedia / Wikidata / company website",
+      "data": [
+        "Wikipedia: Titan Company (part 3)",
+        "Wikipedia: Titan Company (part 4)",
+        "Wikipedia: Titan Company (part 1)",
+        "Wikidata: Titan Industries"
+      ]
+    },
+    {
+      "i": 14,
+      "t": 11.43,
+      "actor": "Researcher:profile",
+      "kind": "tool",
+      "msg": "live news search \"Titan Company supply chain and distribution model\" -> 5 headlines",
+      "data": [
+        "Titan unfazed about gold supply issues as exchange programmes aid sourcing - Business Standard",
+        "Interview: Kuruvilla \"Diny\" Markose, Titan Watches CEO, about the Group, its Ambitions and Strategy - Monochrome Watches",
+        "Waste Not - The Tata group. Leadership with Trust.",
+        "Raking It In: How Titan Company is Reinventing itself - Business Today",
+        "Rising discretionary spending, formalisation key growth drivers for Titan - Business Standard"
+      ]
+    },
+    {
+      "i": 15,
+      "t": 11.43,
+      "actor": "Researcher:profile",
+      "kind": "tool",
+      "msg": "selected 4 passages from Wikipedia / Wikidata / company website",
+      "data": [
+        "Wikipedia: Titan Company (part 3)",
+        "Wikipedia: Titan Company (part 4)",
+        "Wikipedia: Titan Company (part 1)",
+        "Wikidata: Titan Industries"
+      ]
+    },
+    {
+      "i": 16,
+      "t": 11.48,
+      "actor": "Researcher:signals",
+      "kind": "tool",
+      "msg": "live news search \"Titan Company omni-channel strategy and warehouse automation\" -> 5 headlines",
+      "data": [
+        "Taneira likely to turn profitable in next 2-3 yrs; expects 30 pc growth in festive season: CEO - India Retailing",
+        "Zepto Strengthens Quick Commerce With Automated Supply Chain - Indian Retailer",
+        "Spain, Netherlands Set for Smart-Warehouse Projects With Cainiao - Stock Titan",
+        "Ahold Delhaize announces that Ahold Delhaize USA plans to build state-of-the-art distribution center in North Carolina - Ahold Delhaize newsroom",
+        "A $30M cold-storage project is expected to start in North America - Stock Titan"
+      ]
+    },
+    {
+      "i": 17,
+      "t": 11.48,
+      "actor": "Researcher:signals",
+      "kind": "tool",
+      "msg": "selected 4 passages from Wikipedia / Wikidata / company website",
+      "data": [
+        "Wikipedia: Titan Company (part 4)",
+        "Wikipedia: Titan Company (part 1)",
+        "Wikipedia: Titan Company (part 3)",
+        "Wikidata: Titan Industries"
+      ]
+    },
+    {
+      "i": 18,
+      "t": 19.31,
+      "actor": "Researcher:competitors",
+      "kind": "llm",
+      "msg": "6 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 6,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 19,
+      "t": 25.48,
+      "actor": "Researcher:news",
+      "kind": "llm",
+      "msg": "6 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 6,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 20,
+      "t": 28.86,
+      "actor": "Researcher:profile",
+      "kind": "llm",
+      "msg": "6 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 6,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 21,
+      "t": 30.54,
+      "actor": "Researcher:sector",
+      "kind": "llm",
+      "msg": "6 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 6,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 22,
+      "t": 31.33,
+      "actor": "Researcher:signals",
+      "kind": "llm",
+      "msg": "6 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 6,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 23,
+      "t": 31.33,
+      "actor": "Orchestrator",
+      "kind": "agent",
+      "msg": "Research complete: 30 verified findings from 42 sources",
+      "data": null
+    },
+    {
+      "i": 24,
+      "t": 34.22,
+      "actor": "Synthesizer",
+      "kind": "llm",
+      "msg": "Draft 1: 5 facts, 3 hypotheses",
+      "data": null
+    },
+    {
+      "i": 25,
+      "t": 36.47,
+      "actor": "Critic",
+      "kind": "critic",
+      "msg": "Round 1: 7/8 claims supported",
+      "data": [
+        {
+          "kind": "pain_point",
+          "idx": 1,
+          "ok": false,
+          "issue": "The evidence confirms the addition of 77 stores but does not contain information regarding operational strain, inventory management, or supply chain synchronization requirements."
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "t": 36.47,
+      "actor": "Critic",
+      "kind": "critic",
+      "msg": "Sending rejected claims back to the synthesizer",
+      "data": null
+    },
+    {
+      "i": 27,
+      "t": 39.51,
+      "actor": "Synthesizer",
+      "kind": "llm",
+      "msg": "Draft 2: 5 facts, 3 hypotheses",
+      "data": null
+    },
+    {
+      "i": 28,
+      "t": 72.54,
+      "actor": "Critic",
+      "kind": "critic",
+      "msg": "Round 2: 8/8 claims supported",
+      "data": []
+    },
+    {
+      "i": 29,
+      "t": 74.61,
+      "actor": "Synthesizer",
+      "kind": "llm",
+      "msg": "Wrote executive summary from verified points only",
+      "data": null
+    },
+    {
+      "i": 30,
+      "t": 97.9,
+      "actor": "Drafter",
+      "kind": "llm",
+      "msg": "Drafted pitch outline, scope, discovery questions and outreach email",
+      "data": null
+    },
+    {
+      "i": 31,
+      "t": 97.9,
+      "actor": "Gate",
+      "kind": "gate",
+      "msg": "Waiting for human approval: Review the outreach email before it is finalized",
+      "data": {
+        "email": {
+          "subject": "Strategic Support for Titan Company’s Retail Operations",
+          "body": "Dear Titan Leadership Team, Titan Company’s position as India’s largest branded jewellery maker is impressive, particularly given your aggressive retail expansion and gold exchange initiatives. However, we recognize the challenges posed by market sensitivity to growth fluctuations, competitive pressures, and the need to sustain momentum for emerging sub-brands. Our firm specializes in optimizing retail operations and inventory management to help industry leaders navigate these complexities. We would welcome the opportunity to discuss how we can support Titan in mitigating stock volatility and driving consistent growth across your portfolio. Are you available for a brief introductory call next week to explore how our expertise aligns with your current strategic priorities? We look forward to the possibility of collaborating. Best regards, [Your Name]"
+        }
+      }
+    },
+    {
+      "i": 32,
+      "t": 126.37,
+      "actor": "Gate",
+      "kind": "gate",
+      "msg": "Approved by human",
+      "data": {
+        "approved": true,
+        "email": {
+          "subject": "Strategic Support for Titan Company’s Retail Operations",
+          "body": "Dear Titan Leadership Team, Titan Company’s position as India’s largest branded jewellery maker is impressive, particularly given your aggressive retail expansion and gold exchange initiatives. However, we recognize the challenges posed by market sensitivity to growth fluctuations, competitive pressures, and the need to sustain momentum for emerging sub-brands. Our firm specializes in optimizing retail operations and inventory management to help industry leaders navigate these complexities. We would welcome the opportunity to discuss how we can support Titan in mitigating stock volatility and driving consistent growth across your portfolio. Are you available for a brief introductory call next week to explore how our expertise aligns with your current strategic priorities? We look forward to the possibility of collaborating. Best regards, [Your Name]"
+        }
+      }
+    },
+    {
+      "i": 33,
+      "t": 126.4,
+      "actor": "Orchestrator",
+      "kind": "done",
+      "msg": "Run complete",
+      "data": null
+    }
+  ],
+  "result": {
+    "company": "Titan Company",
+    "service_line": "retail operations and inventory management",
+    "summary": "Titan Company maintains a dominant position as India's largest branded jewellery maker, supported by aggressive retail expansion and strategic gold exchange programs. Despite significant year-on-year growth, the company faces stock volatility due to market sensitivity regarding growth fluctuations and competitive pressures.",
+    "key_facts": [
+      {
+        "text": "Titan Company maintains a dominant position as India's largest branded jewellery maker, with the segment contributing over 80% of its total income.",
+        "finding_ids": [
+          "F19",
+          "F20"
+        ],
+        "sources": [
+          "S21"
+        ],
+        "evidence": [
+          {
+            "id": "F19",
+            "claim": "Titan is the largest branded jewellery maker in India, holding a 6% market share as of 2022.",
+            "quote": "Titan is the largest branded jewellery maker in India by value, with a 6% market share as of 2022.",
+            "source": "S21"
+          },
+          {
+            "id": "F20",
+            "claim": "The jewellery segment is the primary revenue driver for Titan, accounting for over 80% of its total income.",
+            "quote": "More than 80% of its total revenue comes from the jewellery segment.",
+            "source": "S21"
+          }
+        ]
+      },
+      {
+        "text": "The company has demonstrated significant growth, including 41% year-on-year growth in its consumer business and 39% in the jewellery segment.",
+        "finding_ids": [
+          "F1",
+          "F2"
+        ],
+        "sources": [
+          "S11"
+        ],
+        "evidence": [
+          {
+            "id": "F1",
+            "claim": "Titan's consumer business experienced a 41% year-on-year growth.",
+            "quote": "Titan Consumer Business Jumps 41% YoY",
+            "source": "S11"
+          },
+          {
+            "id": "F2",
+            "claim": "The company's jewellery business segment recorded a 39% growth rate.",
+            "quote": "Led by 39% Jewellery Growth",
+            "source": "S11"
+          }
+        ]
+      },
+      {
+        "text": "Titan has aggressively expanded its retail footprint, adding 77 new stores to its network.",
+        "finding_ids": [
+          "F3"
+        ],
+        "sources": [
+          "S11"
+        ],
+        "evidence": [
+          {
+            "id": "F3",
+            "claim": "Titan expanded its retail footprint by adding 77 new stores.",
+            "quote": "and 77 New Stores",
+            "source": "S11"
+          }
+        ]
+      },
+      {
+        "text": "The company utilizes gold exchange programs as a strategic mechanism to mitigate potential supply chain disruptions.",
+        "finding_ids": [
+          "F6"
+        ],
+        "sources": [
+          "S33"
+        ],
+        "evidence": [
+          {
+            "id": "F6",
+            "claim": "Titan utilizes gold exchange programs to mitigate potential supply chain issues.",
+            "quote": "Titan unfazed about gold supply issues as exchange programmes aid sourcing",
+            "source": "S33"
+          }
+        ]
+      },
+      {
+        "text": "Titan's stock performance has shown volatility, with recent declines attributed to Q2 jewellery growth failing to meet specific market estimates.",
+        "finding_ids": [
+          "F7",
+          "F8",
+          "F9"
+        ],
+        "sources": [
+          "S5",
+          "S6",
+          "S7"
+        ],
+        "evidence": [
+          {
+            "id": "F7",
+            "claim": "Titan Company shares fell by 4% on October 7, 2026, following the release of its Q2 business update.",
+            "quote": "Titan Company shares fall 4% after Q2 business update.",
+            "source": "S5"
+          },
+          {
+            "id": "F8",
+            "claim": "The share price of Titan dropped 5% after the company provided its Q2FY27 update.",
+            "quote": "Titan share price drops 5% after Q2FY27 update",
+            "source": "S6"
+          },
+          {
+            "id": "F9",
+            "claim": "Titan's stock decline was driven by Q2 jewellery growth failing to meet certain market estimates.",
+            "quote": "Titan stock crashes over 4% as Q2 jewellery growth misses some estimates",
+            "source": "S7"
+          }
+        ]
+      }
+    ],
+    "pain_points": [
+      {
+        "hypothesis": "Market sensitivity to growth fluctuations",
+        "why": "Recent share price drops were directly linked to jewellery growth missing market estimates, despite overall bullish brokerage sentiment.",
+        "service_fit": "We can provide investor relations advisory and growth forecasting models to better align market expectations with operational performance.",
+        "finding_ids": [
+          "F9",
+          "F10"
+        ],
+        "sources": [
+          "S7"
+        ],
+        "evidence": [
+          {
+            "id": "F9",
+            "claim": "Titan's stock decline was driven by Q2 jewellery growth failing to meet certain market estimates.",
+            "quote": "Titan stock crashes over 4% as Q2 jewellery growth misses some estimates",
+            "source": "S7"
+          },
+          {
+            "id": "F10",
+            "claim": "Despite missing some growth estimates in Q2, brokerages have maintained their bullish recommendations for Titan stock.",
+            "quote": "brokerages retain bullish calls",
+            "source": "S7"
+          }
+        ]
+      },
+      {
+        "hypothesis": "Competitive pressure from industry giants",
+        "why": "Titan faces direct competition from major industry players like Kalyan in the Indian jewellery market.",
+        "service_fit": "We can conduct competitive benchmarking and strategic positioning analysis to help Titan defend its market share.",
+        "finding_ids": [
+          "F22"
+        ],
+        "sources": [
+          "S4"
+        ],
+        "evidence": [
+          {
+            "id": "F22",
+            "claim": "Kalyan is identified as a major competitor and industry giant alongside Titan in the Indian jewellery market.",
+            "quote": "Beyond Titan and Kalyan: The smallcaps supplying India’s jewellery giants",
+            "source": "S4"
+          }
+        ]
+      },
+      {
+        "hypothesis": "Need for sustained growth in emerging sub-brands",
+        "why": "Taneira is currently in a growth phase, targeting 30% festive growth and aiming for profitability within 2-3 years.",
+        "service_fit": "We can provide operational efficiency consulting and retail scaling strategies to accelerate Taneira's path to profitability.",
+        "finding_ids": [
+          "F26"
+        ],
+        "sources": [
+          "S38"
+        ],
+        "evidence": [
+          {
+            "id": "F26",
+            "claim": "Taneira expects to achieve 30% growth during the festive season and projects profitability within the next 2-3 years.",
+            "quote": "Taneira likely to turn profitable in next 2-3 yrs; expects 30 pc growth in festive season",
+            "source": "S38"
+          }
+        ]
+      }
+    ],
+    "proposal": {
+      "pitch_outline": [
+        "Optimizing retail operations to sustain aggressive expansion momentum.",
+        "Mitigating stock volatility through enhanced inventory management strategies.",
+        "Strengthening competitive positioning against industry giants.",
+        "Driving growth for emerging sub-brands within the portfolio.",
+        "Aligning operational efficiency with market expectations for growth."
+      ],
+      "proposed_scope": [
+        {
+          "workstream": "Retail Operations Audit",
+          "deliverable": "Operational efficiency roadmap",
+          "weeks": 4
+        },
+        {
+          "workstream": "Inventory Optimization",
+          "deliverable": "Stock volatility mitigation framework",
+          "weeks": 4
+        },
+        {
+          "workstream": "Sub-brand Growth Strategy",
+          "deliverable": "Market penetration plan",
+          "weeks": 4
+        }
+      ],
+      "discovery_questions": [
+        "How are current inventory turnover rates impacting your stock volatility?",
+        "Which specific competitive pressures are most affecting your market share?",
+        "What are the primary bottlenecks in scaling your emerging sub-brands?",
+        "How do you currently balance aggressive retail expansion with operational stability?",
+        "What metrics are most critical to your stakeholders regarding growth fluctuations?",
+        "How can we better integrate your gold exchange programs into retail operations?"
+      ],
+      "email": {
+        "subject": "Strategic Support for Titan Company’s Retail Operations",
+        "body": "Dear Titan Leadership Team, Titan Company’s position as India’s largest branded jewellery maker is impressive, particularly given your aggressive retail expansion and gold exchange initiatives. However, we recognize the challenges posed by market sensitivity to growth fluctuations, competitive pressures, and the need to sustain momentum for emerging sub-brands. Our firm specializes in optimizing retail operations and inventory management to help industry leaders navigate these complexities. We would welcome the opportunity to discuss how we can support Titan in mitigating stock volatility and driving consistent growth across your portfolio. Are you available for a brief introductory call next week to explore how our expertise aligns with your current strategic priorities? We look forward to the possibility of collaborating. Best regards, [Your Name]"
+      },
+      "email_status": "approved"
+    },
+    "sources": [
+      {
+        "id": "S1",
+        "title": "Gulf crisis drags down gold demand - bfsi.economictimes.indiatimes.com",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNOHJJYk5jNmU2Z1BRWmtsVGpxdi1Bc1VMd2hxUzVyRlFzckdwN192bGxFakRRdjZiN0dna1ZaTk1TY1I0TTkwZU5OendxUmVOVWk5d0RaWTE4S2hNMzluVUl1TjMtZFVWZXN1LTlzRHNCUHVtVXlNUTdfOU1FVml2YjNpYWpGVlZKTFQtcVRyQlcyaldPMTVXYXliMA?oc=5",
+        "kind": "news",
+        "date": "2026-03-30",
+        "cited": false
+      },
+      {
+        "id": "S2",
+        "title": "Five Indian brands feature in the top 100 global powers of luxury goods list: Deloitte Report - Deloitte",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUG9QeVJZbmVhMmhrYVhYd3JTNkJ4ckkxVVB3aXRCQ2hqQzRyYmliUjNKUl9WNnJwbzVjSW9Ed19iS2djVGZTSmR2RnYwZzlGUTJHUm9QcGFjRGJuVjBVS2hxd2VCM3RrSFMtcmdHcFBQM2N5al8yS01KQzhCTjVnWDcxVDZadk1EcUg3LVM0Mk5xUE55UXBlTjJyVkhNb1paa2VaTnVCRGZHX095S0xoWElic3FVZmV3UmlfLVkwdmhXM3E3UHNNTw?oc=5",
+        "kind": "news",
+        "date": "2026-01-07",
+        "cited": false
+      },
+      {
+        "id": "S3",
+        "title": "Jewellery Retailing Sector Analysis Report - Equitymaster",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPaGc2dGN6ZEZlZ1YybkVoa0wyZ0RaSDhHN0lmQVRPdnB5NVpnMllyN0NCNlVZS2lwWXNiNkdpMjVFLXNNVl9iaVlaVE8xbkNES0JyN1ozaUFwUHhoZ0JMOV9mVXloVG5mYzRmVWo1dU1HS01rYkl2UkxrbmhJX2o2TXZneTVQdGV5ZFd1RzRNb3lIMThRWENRZnV0ZWRlV1NxelN3dkFhYTRWc0lvd3VzTC0xTE81MFQ4?oc=5",
+        "kind": "news",
+        "date": "2025-08-21",
+        "cited": false
+      },
+      {
+        "id": "S4",
+        "title": "Beyond Titan and Kalyan: The smallcaps supplying India’s jewellery giants - The Financial Express",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOMXY3a1BFQlhlN0NBcWNYQmdUdXFmSlB1eTNPUzNDTUpCUFJrWnNpbnc4SkdtcFJEUGZKaklSNkdDaVZZQmp4aGdVVEhRcjlicW5CUkVNY3BrVWxnTXpxWFlTbXVEaDdzSnhkYzBwMnUxZWpmY0g5dGpPSVBfNExLQmpQYk44SWtuRnphRkhoNm9xODNVSE9OSEhPeHV0aFM1YmVfNThsY1E1SHFSOXk5ZUJDVUZ0Q1FfZ0pDUWVpVmtTcnlucGJ5U3E5cllrOG850gHXAUFVX3lxTE5zVWhCcUV4Q28yd0diZWxfY0VGbFpTY21MOXU0eG9EYnBGamxNaGtTdVBtYm8xZEtKSjdWTkFqWEx0cHZldVFtZ013RVhCVGkxLTd5akNyRVBPUUt0Q2k5eHJVODRpS0RPaDh2SS1DSllRSHlkdWltWTNfclNYbnJ3QXlwb3gtZW1iQk82WlpCdW1OUUFPSTNaaVZMZm11bUFUMko3SlgxYkRSV1plemp3RXFJZ2ZpZHcwbWhzU1NkVVZoeWFIRjV5dHVYV3BhX1U3NUN2emcw?oc=5",
+        "kind": "news",
+        "date": "2026-10-22",
+        "cited": true
+      },
+      {
+        "id": "S5",
+        "title": "Titan Company shares fall 4% after Q2 business update. What is Nomura saying? - The Economic Times",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNLVNlQ3RXakFfUXZDZXlYTTBpamh3SVBzQmlwcS01SWtyZ1d5alFENFA1cVltTTF2ZEVEeHlKMHBDVjI2Mzc0OWp1TWprMHBpRHF2LVRkU2ExaGVkbldBRkdIQUJhcWtHNHY5VjJoblZzQ3pPTlhfTEtuVWhLUndCdm02aWpKN0twNldkN0llV3VueGpZeWJ6V2ZnZ1ZtZmYtRGNfN3lyODBYVkhjdVBFRkxNaXdLZmRPU24wU0ZmeTh5QmVmQm1oTTRnbjRuMGc0OXItRTdGTlJjOTk1UlEzN1RBX07SAeoBQVVfeXFMTkdMRC1ZOC1fSUVtQlZHcEV6MmdPaW5RbWJLYjNKZzhaanJHbmpwdk5uUTRjUkdkWGZPRm1oMmc2YnBuX1FoUjJ6eldPbU9wcnZ5cU5GSEpJRFVTSXVvR092aWJLTURjakhDcmE4TVA4SWVHLXF4QzdVOFIxV2tpeGxzRXhaS2FDTFFJaE1jUnZYblNWdDQwWXV5UVlPeUJvb21MSDRuMmR1Y3R3eUdKdnJOZkJNSVpKU2QwSGNDdHlpYVJ3bHc1MFpyWGR3MnluajZKMTA1MGNxdG9fM08ta19udVVHM2hFbTFR?oc=5",
+        "kind": "news",
+        "date": "2026-10-07",
+        "cited": true
+      },
+      {
+        "id": "S6",
+        "title": "Titan share price drops 5% after Q2FY27 update - Should you buy this Tata Group stock now? Here's what experts say - Livemint",
+        "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQU21yaWNYbWZHb3FlMDBleEl1ZFE3bDlQUWdkMlIwRVJMOXptS1ZfbGdpZmJKTmRGanNNdnVIZW5kV1NnLVBBNmpYNTE1NXMyS29SMnExWWNJbzVRYmt6X19Qc3R3c01iOWt2T0NydXc5eGhJZFJPa1E1V2hNZzRDLUhON1RiaC1ra21nUklScnNBd0JnWlFsNVFmTlBveGdnM1cxZ2hKZTBEbDM2djRYYmJmUVRscWVqS2xSUWFuT3BkVDI5V3FIck9XRmhVZ1pOSVMxdXp0XzVYWmRnRURUVTc5RDhoRVFjTFl0dmNROTY5N254S3pSRk51MXJ1Z1VrTmVyeHo4c2dESEXSAZACQVVfeXFMTl9kVXd4WDJFTlpBUzk4ZHJxdDUxTk5NQ0JaSmFrLXlRUFFrcXptaV9EVWlVV09jS0Rmd1hHbGVDM2hldUV3VXNLTDh5Y3o4NGw3eFdoRmgwMDdfdVFPZzZmWEVwS3BwWjAzeHFUZHFyeUJJOUkyM2V5ODhyRUxlNEhyRE1GY0JvWGpkdVd6TEN6ZHZEMW12cU0zamdzb3VaRUt5NFlFZTZjVU1mWjFtdVYtbG9MOGw4MGNaMmRBczdjX2dyY2tQSTc1LUdMMFZsbEdnLUt5X0tndE5fUlhKazhXNnFfdy1wOEJqSzVjUTFILUZ6bGlGUHJrVVE3cFJqN19abDRVQUpCd2pMbTdZWks?oc=5",
+        "kind": "news",
+        "date": "2026-10-07",
+        "cited": true
+      },
+      {
+        "id": "S7",
+        "title": "Titan stock crashes over 4% as Q2 jewellery growth misses some estimates; brokerages retain bullish calls - Moneycontrol.com",
+        "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOQzMxQnNOOVUwbUFTdC1WNFR3bTdGejlBMy12Vi1vcEtOeE03eVd6UlJyVTkzN3MxN1hzUFZ4ZHlWc21uaEo0elVJN05ITzIyNjhleEpkcHMwRzFBREtNc2tmS0drRlJVLVZXdGZsSUxISk43UGVVR2d2YURsSmdlNUpFcjhtSHk0TFRsY21kaHhiODRTeDE2LUMyVXJQWTR3R2RDQ1VsSjc5a3N3ZDZ0a0ttS1JZanJnVmNJMC1hZUlFazJOR2ZaNzFXdUh3X29FNlN5RHZaOHFwSDdhbEtXelM4SUc0ZDRTQ01zQmc3TG1nbGhGTkFFRE5RZDbSAYICQVVfeXFMUHZvcHI0RHZLekdtT0tZOHI5NV9OSzM4dkFYaHJJMUZaWElRNlZEYnFxd1NwM0VHT25JVVVXV2dDM2pmMzZRM0w4a09ONTNxQmdXVENpSlZsZ01id19wY2ZNZnVPUFBqMFpMdlczUU4wQWxteFdaeE83WXZyM0pmMkU3bnNvTEY5Y2pocGozU2JRdlMwbkRITTJZdzNibjNjc2l5NkkxTzZUZWpVU3hMYXIxUkswcGdnR3JYLW40X2FBYmNCNmxZdzdDWmljM3FyYXpsaTh6VFhCOC1kTjBUZFVIUHgzVlN0bmdnZ3c4dDVRSUFFSzFCX1ZneF8zZnNFYVN3?oc=5",
+        "kind": "news",
+        "date": "2026-10-07",
+        "cited": true
+      },
+      {
+        "id": "S8",
+        "title": "Titan up 4%, hits new high post Q1 biz update; brokerages see more upside - Business Standard",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOLWN4LXk2aC1mNHc4aFFHd29tZHRCVjFCR1QzRExsa0N3OUEyM1JobTZlNmM4RnhUaG9iclcwOEJoMmNRaS1rV0l0WWY1VEZVSFBOV25xaVpOdjlPa0o2eU4za2RpWW04Z2xoM1pIMjBWQTFpendWSzBBNDNOaHA5UmM1aTYtbWRJczAzY1R4Njc2ejAzall5UzgtVVR5aEp3SmRaNE94by1KSFNEZjl4UldFakp6MzdwZy0zTDY2Z3FLdEY4TWRyNGdJTGszak5rNVJJZm9JZElWeUNZTmfSAeMBQVVfeXFMTTBYOEdKelVlY1lzRlV3STY5SGVDVFVOX2V1bzBTcm1abUx2RjJhMlExZWw1MUFnNlJxRUtlbVEzQmg4ODNLQjVGdFJHRnllUEM4TzZQalZtLWNQVHhlVFRVSFlEM2dqMFREVElXdnkwa0twTjBwVC1yX1k3MU5rdnZnYmROT05sbWZPUlo3dC00UDNSYlJtMG5Hd0Y5U3pGMlFBbkRHVGNQUXJ4UmJQdUpXSENkUXlfTFJEbWQteWRxX2F6ckk2XzlfMnRLMWthWkRseWlCRHVKa0tmMVZhVWl1YTg?oc=5",
+        "kind": "news",
+        "date": "2026-07-07",
+        "cited": false
+      },
+      {
+        "id": "S9",
+        "title": "Why Titan Company stock is top jewellery pick ahead of festive season - Business Today",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQd3ZuZEV6bktzUXZ1LUNaUElNVlJRc0hQMmF3Uklxc1BlbkNKWlpQYkJFbDhpNXRCSF9jNHRyTmJJWHlVc1liMFVJUnNlR2FJdWlXQ2RGd09ZTFZXY0tLRzRtSFZ3QjFsd25KVlVaSy13VXJjWlU4V25lbmF3djJKdkRQY2xVMndGTU02SFk0bDdrTV9FN0pqWm5hQ3hzRHU5NWwwa0JqUjlXYmszNmlmaVdpTXpuQk85LW8yYWVud2tBYWNuZGZXcUFtMU9nOTFPMlV1RGY5NGJnQk9pRG5WTtIB5gFBVV95cUxOcjlhTGo2REVWWUEzX0dvZ0pFNDhhbGxsX2FHWGh4VmdfSU13WlV1bHBiU3pOcEZjWktGWUQ1bkdxSnhGM2JOTkRXbmYza3labFdaZEFRY0Mwc0pHc0RXd2R4dWhmNVlxVFpHSWJwUUVadFdwbXpqN2FmMk4wLW5IQV9ZSzJuVVlJbkJ4SDdqRkdzRHo5Ulpfa0dLNTVHTUR0UHR2NDdIMllWQXdvc0EzQUoxbXZONWZmZzVRQXY1eUZPX0FRaWsyOVNQcU0xYTRDMkJlYzRjSjZuTktnalhpNVFJdU9wUQ?oc=5",
+        "kind": "news",
+        "date": "2026-09-08",
+        "cited": false
+      },
+      {
+        "id": "S10",
+        "title": "Titan share price hits new high; global brokerages give 'buy' tag to Rekha Jhunjhunwala portfolio stock post Q1 update - Livemint",
+        "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPZDAxWlVIaVFOYjFYN0hiOWw3UWJmY2F5aHQ2d2FkYV9PNDdISlQxdmN0enE5Wl9QbUtNYWZOMW5maWZkbzJ3TEhoTkhMQW9DQnRHaU9yaWpYRE1HX3pNUnZrN20xa1FPQWhwR1NiRHRSRWxHdHAxWjJ1TUQxX1kzRVdaa1lUVjdWX01ZWjJNR2s3M3FOWkJkdTNlLXdDZU1KT2ZmQnRXTlc1c19ZLXgwTUJqemt6LVBMQ2JQVTdaaGNKbkhJTy1CTzluelBjZU9QRDZxU04xY1FMQWYyUVpkbFhOemRlNzlLbVlZYmVTQnlGeXdGbUVUNm14dDFvUGpNeU9zYlk3bXR6UjNtN3pPVnVB0gGXAkFVX3lxTFBpSl9UU05oZFpHQml2WS01akhhZWw0ZlI5Wld6MHgyaktnUldPdXVSOUsxUHgxZDY0WEt3X1V1ZF85LS1PLVdObGVFY0daRUxpWDh4aWhMVm1SNHpWMEJJVnJZZWpLdzFTeXlpVDZzZFdnRG44UTJtbVh3ZUJBMENjNnY2T3R4aUF0V3Iwdm9qZm94OTU3MEptTUpwZnctc3lpRTZWcXZ6XzMyemZJV1Ezb0tKcnU4NFNXOFhOdmpIV0xVVTBNRWxiWV9XQWM2QUdmbXVBTnRtUTBxRE1BWGFuNWtuOWJiOVdWVDRhX0xqWWdfN292cUhpMV9mQ1diM3A3ZGE2aHBvZ0pmZG13U0JIQWJ1c3JtUQ?oc=5",
+        "kind": "news",
+        "date": "2026-07-07",
+        "cited": false
+      },
+      {
+        "id": "S11",
+        "title": "Titan Consumer Business Jumps 41% YoY Led by 39% Jewellery Growth and 77 New Stores - Sahi",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQzNJdExLTEV1emgxXzNTdDlvcE12QkljT2ZqbHRTQl9Ka2ZQZzlrNmJ0Q20wSGpTWFBycEJWdVVRblF2REZVMlhpWTFHSTJKRUFVWENxc2Q0dWppMzVadDV3bkZfWlFJcXFmd2J4WWhsU3QycUl2OVlEMWpTTGtIY0tFanE3VUZ1RVVuLVFBZnlEZGd1RXR0RmVrYmxXWTVQRVRGWXVUQzRwNmdHZlY5QVN0aGp3X0NJVlVhSQ?oc=5",
+        "kind": "news",
+        "date": "2026-07-07",
+        "cited": true
+      },
+      {
+        "id": "S12",
+        "title": "Titan Q3 FY26 presentation: Jewelry business surges 40% amid strategic expansion - Investing.com",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOUnlubHBSajVGWmVpV1VlOWV3SDlGWkZHVWJpNVpoUzh5WDZDbUJVY09XdDBpN0lvSl9acWJ5U1NqYlNPcjZUbzE0b2FfSFdCVUkzckdtVFRVTW81UW1TaV9uRTBiWExHVXpLU2lyUDh6Q29hNGpQRlBjd0pHSGV6SkhtVmhjVk1XWi1NdE5sOFh5UWp0YjRRaGRtelllU0hyTVo2ZzB3TEdLd1dKeG9fNFBHLXd1X2t0SkN3X3NCcnhoRzFzT1djRU1vOWMtQXBi?oc=5",
+        "kind": "news",
+        "date": "2026-02-10",
+        "cited": false
+      },
+      {
+        "id": "S13",
+        "title": "Morgan Stanley Raises Titan Target to ₹5,102 as Q4 Revenue Growth Hits 46% - scanx.trade",
+        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQRUkzOVhGRnR0R2p4Z3VoVTQxVWE3QXE3YUo4bXVsMUdIbnRodkJTOEN5VG50MkItVllVLVFWcjRrR3ZMRHRUV210M0hXbEJpc0R4bmd1YWJOTkVreExhUXctOTBVT3p3OGNXMXVTRU1teDhuWDhnOFh2RzJNMkhJTFpMX3ZpMVM2Qi01emxiUUZmclRFOENnQzlGWW84NWxtSy1ESGtZVUdmV0pfVUhLWnhzMnBiUFlybXBKOWx3MjY2UDVkVXdBTWRWQ1Ita051NmRrLXllTThfSGYyZk1NMU5jZjluYkNGamZINFJGaDNDbTQ?oc=5",
+        "kind": "news",
+        "date": "2026-04-08",
+        "cited": false
+      },
+      {
+        "id": "S14",
+        "title": "Titan Company Ltd Share Price Today NSE/BSE Charts - Alice Blue",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE90elZQdmp4dG5WMTFaN24yOFM0NjdmeW1DcmxXTTlUOGlrVGdTMGZLdzhJTTBPUG9sTUtlS0pNOUNsUEY1ZHVkdmtDbVZxR1Y3dzhIek41cjlxWFBUZy1VVWlGTHloMGdpdFZlQ1hBY0I?oc=5",
+        "kind": "news",
+        "date": "2026-08-28",
+        "cited": false
+      },
+      {
+        "id": "S15",
+        "title": "Touch ‘n Go rolls out Enhanced RFID lane at AKLEH, targets 10 lanes by year-end - SoyaCincau",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZnJvZG15TG1TQ0xlZmpHVC1RNjNEQ1hPVjlUcGNkMGkyaFp5TEtWdVZnSXZlLVdrYWlqX25fSk9QN1pDNzFvNGJtLVhPaEc2LThfMTh2VTJrdXB4OFV4clJmbXMwdHZURTgwQWI3NjRsZDNGMTdNN3pIVXdwSzNRWklRWlZZcnpNalpJbUZLQXRlXzZVMUt5UHl3bmdQeUJPM09mY3JxTUNKTEtQcnl2MVB3?oc=5",
+        "kind": "news",
+        "date": "2026-07-21",
+        "cited": false
+      },
+      {
+        "id": "S16",
+        "title": "JewelZ Power List: How Sky Gold & Diamonds is Building India's Next-Generation Jewelry Manufacturing Powerhouse - Indian Retailer",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPMDZ2bU54YlpuaVVfMnFOVVVFWGRaT2I2TXVETThrT2czT01BYmZmOGxHR20xRWwwMTNHcWxxQ3pMdDh3OF9JRkVDTThhcDczVTRsVTl4UHl4VUFlUU9IMW4wUGxISnZ4bzAySm5lM0ZWM0NoOFQ5WmRkeTMzWWFtTThoYzhKQ2IzUURGUm40dXFMallCX0FFZTRNbjJtQ1dyVFZ1c2N6RVFjVXYxQkxPamF4TGg5LXdaLVlPOW5Lcw?oc=5",
+        "kind": "news",
+        "date": "2026-11-06",
+        "cited": false
+      },
+      {
+        "id": "S17",
+        "title": "Jade Jewelry Market Size, Share, Trend, Growth, Forecast, 2035 - Business Research Insights",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOcTl0eWYwcm1SVjNBcHptX29JS1B3SG5Tanp0UUQ1bFBiQjloblF4d2VIbkRmMGd3bXVfQjVtU2x6NUQ3aF9YNlNMcUZoSm14UVIwYmVLRjAwa0otSFF6UU8xYUotamVtRzdOV1BQX0VEcTUxZ0NoVlNxVmlFS1drQk5qNUtfZkpaVXc?oc=5",
+        "kind": "news",
+        "date": "2026-09-02",
+        "cited": false
+      },
+      {
+        "id": "S18",
+        "title": "Diamond Jewelry Market - Future Market Insights",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE51ejhFYjdGWXhtV193TnpOZ3p2ZmxYNjY2Q3NUYmdOX0M2dG5wSXNwUUxxbWtadTcycWVLRDlPX3R1T3FHeGhCMWZGUkdkOUJmOXBtcTY0RjJYUGlJeEthcUlrc2hqUXo5QVFfdHgxa3FfNm9BYWc?oc=5",
+        "kind": "news",
+        "date": "2026-01-24",
+        "cited": false
+      },
+      {
+        "id": "S19",
+        "title": "PC Jeweller's Brand Strategy in Organized Jewelry Retail - MarkHub24",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOM2x1ZkRVdFdWODVQdjZUNWpVN05UQlZydGVrUkQtMlRkcndwU1JKQ2VMUklxY1BkeGJhVDBWNHZZdUpXLUpPOTd4c3dXOEtmYXVIbFY2ZWstMDRjUVB1amFPSV9VbG1ZejQxdldHZkhWa3ZGM2pDUEQ2dllTbVloLUphY0RURHNvbVlmMjNPNmc?oc=5",
+        "kind": "news",
+        "date": "2026-07-16",
+        "cited": false
+      },
+      {
+        "id": "S20",
+        "title": "Jewellery Box Market Size, Share, Trends 2036 - Future Market Insights",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5YWFRfQkhMZTlkdG1FLXhhbTdic0ZRcXBFLVNuSzR3a25OT1VKNkFFWEljdlZRQUVuRGU5UEZhVjdnVWxnSmhqWHRtai1uSVctQ0pDWllacDgwUXVrXzVUbHRrakNnVXhSbi1JU3Zhc2FtTm8?oc=5",
+        "kind": "news",
+        "date": "2026-10-13",
+        "cited": false
+      },
+      {
+        "id": "S21",
+        "title": "Wikipedia: Titan Company (part 1)",
+        "url": "https://en.wikipedia.org/wiki/Titan_Company",
+        "kind": "wiki",
+        "date": "",
+        "cited": true
+      },
+      {
+        "id": "S22",
+        "title": "Wikidata: Titan Industries",
+        "url": "https://www.wikidata.org/wiki/Q3536932",
+        "kind": "wikidata",
+        "date": "",
+        "cited": false
+      },
+      {
+        "id": "S23",
+        "title": "2026 Retail Industry Global Outlook - Deloitte",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTVFFdGNJMU5tdFZhczNORHk1d1FQVjlSSEg3X2tNNDg1NUJEMXFhX0d6cHMwQXJORE5aSGhJT2YwUkhkTFFCVGZ4a01lWkJ1RUNtbzhfWHU5X0VMRDdHeUlwUXRTQVVyYzFHZlpHdF9sdFgyeDU1UmVtX1VPcW9rWldfY21waFE3M2hKWldRa3czTXJjRmZUOTlVd3pGSm9mSi0tY3ZOcFg4c3B4dDVv?oc=5",
+        "kind": "news",
+        "date": "2026-01-08",
+        "cited": false
+      },
+      {
+        "id": "S24",
+        "title": "Top 11 AI in Fashion Use Cases & Examples - AIMultiple",
+        "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1xNlNfRG1Hbnk0b0tHYWhLbXRzNTlUeFVTY2F3M01RYlpYOFNQb1JaSlFCcXZvdVIwWGhzdjQzWVl3SktpZlJ1MFlXTlQ?oc=5",
+        "kind": "news",
+        "date": "2026-08-17",
+        "cited": false
+      },
+      {
+        "id": "S25",
+        "title": "Baazar Style Retail Revenue Surges 29% to ₹486 Crore with 7% SSSG in Q1FY27 - Sahi",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeVpwcnh5YjJGN1AydjZCaWIwNXlJQTNvTW5HT2xGMjVPM1dIX0dmSWF6bEtReDZhUTV2dkVjWUxfY0VQZkM1R19CNW9aempyclFwUkticEdVS3c5b1VvMkNEQTdfNy1PYTFZQzhZR0R4X3gtelZjMjJ1aVpkbjBKNXBtdUlERFJqVktQSF9CZWRFU1hUUmg1REF1Y3MxcjhYb21LSW5aTWw4ZGQwMjd0Sg?oc=5",
+        "kind": "news",
+        "date": "2026-07-02",
+        "cited": false
+      },
+      {
+        "id": "S26",
+        "title": "AG Jeans Unifies Legacy Systems to Achieve Luxury Service at Scale - Shopify",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1oeE9Iakc5QWVtNEJBdjkxcGFYbE9US2N4QUdRVF9yd24yczVqM01uakcxcjFKT0JIUFV5X3lTUWoyd0NGQ2ZIQ1hPOU83aUpwREJpNXVUd3VXMnNLMEs5dQ?oc=5",
+        "kind": "news",
+        "date": "2026-10-06",
+        "cited": false
+      },
+      {
+        "id": "S27",
+        "title": "India Shops Everywhere: A Performance Review of India’s Retail Economy in 2025 - Indian Retailer",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQYVlIdTd2QV9lSVg3TUwyR3lmSUdfNFdCRGtBMDV4WDU2UzNCaFFJRnRIVTlKWHNUYlpZMV9qZGE0RnFOUEtiXy05MHhQelNvOGZVRE12bkc3V05SVmVhSzk2NDBycnlyVlVXZk1HcWtNWi1IcjgzMzZVbE9XS0haUmRjWnJLc21lUS1LOXhKSFVMR0ZJQXpfR2s4cllPWll3Q1F1VE9HX3BnOWh5TzBsTloxYlJnWl92eURRNEMzRXJWbmg0?oc=5",
+        "kind": "news",
+        "date": "2025-12-26",
+        "cited": false
+      },
+      {
+        "id": "S28",
+        "title": "5 revealing analyst questions from Redwire’s Q3 2026 earnings call - TradingView",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQd2g5TmtJTmtPWVhHb3dsWkprd2dCd2NmbnF3TzdKQTVmRDVVTlktNHUzMHdKZ3hwcU56NmU0bHVwX3VLWXNTbGJ4OTE2MmxNNUZzUGZiWTRtcnVRbG9MTFNyakQ4OHRGS0lUdXNmTkl3SW44TXdIeUJuazNsTEJmMHh3ckQ4OHdYVVh2V1h5ZGFTWFJobzFuSVBTTFFFQVNPT3h4ZEdIWHNldnA2QjladTFSS3h4UWZTRnIyd0p5QU8zaHpQYUE?oc=5",
+        "kind": "news",
+        "date": "2026-11-06",
+        "cited": false
+      },
+      {
+        "id": "S29",
+        "title": "Titan America (TTAM) Lags Q3 Earnings and Revenue Estimates - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQMmt5SWdQcGtUVDloWnNxbXQzeU0zVWl0X3pDV2hzalRVR3k2UUJpdXpRLUsxLUpydFU1VDJPb0pBRFVHODVxM0hxSVRoT3NOLUcySnlHZ2xTVVFIOXBHazUxUk9EU1BKcERXUjF4WXNNZ0tnMmRxTURjQWxISTV2V29lZmlfNGhaME54dWZZZHUtVVRaVmc?oc=5",
+        "kind": "news",
+        "date": "2026-11-04",
+        "cited": false
+      },
+      {
+        "id": "S30",
+        "title": "5 revealing analyst questions from Radian Group’s Q3 2026 earnings call - TradingView",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPMGx1aUlLcTN2X0dfdEpvNDhqZXNWRnNCTHFxeVprSGl3eEYyQzduVkhpcDZON3pWdi1Qam5PUDhWbzNtZS0wa1dIeC1oZ21OQllmU2ZFYVNsU2Q2ZHFENHg2VnFRZGl6cU1HaGtZdmE2U0d0S205VFZwUXZVM0lneXc4QVVSRTdhUVFOaG05MmFfLWNrREJTdEM2UllidUFUUnAwaFlKUlhheG04TlJxeDZqSFJUSG1wMkYxRmhaT2otM3djQ1dwRy1kZEs?oc=5",
+        "kind": "news",
+        "date": "2026-11-06",
+        "cited": false
+      },
+      {
+        "id": "S31",
+        "title": "Titan Q2 Results: Date, Time, Dividend News, Earnings Call Schedule And More - NDTV Profit",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOSG90ekZHSTZIWERsMWg3WHBFUHhjcF9ZMUd6YkFlb0tZREJwZnU1Tk5EYVM1NVBKTkx6MzQydXR2V2kyRVhWaF9ERklMbGlKcjZYUG15bXo4M1YteXlVdjM1bXl5eU1OOVJfNFktWnViaGpEQUN6S2EwTzBuNXhrNmd4aEJqQkJyZ0pSZ1ZVdnB5blJDc3dFbU42VUloMFFYSHJxWm0xMTBqbFJNUEVzSXkzUU1VNEnSAb8BQVVfeXFMTnFBaGt6eTVLbzlma0RoVlRFS0tzREtZeHpPNmpYZlM0c2xwMUNVazhwQ3pXRzBWN3dlZnpVMnAwTDVFcUtmN2hMQ1ZXNy1PaVYxM0ExanJkemZYUWloWGF1d01xQW1YN3BiZWVkSGF2aTZTenByLVc4V3FfU3lFRGNoaUZwMXdHTEhRUHRsRERNZnZxOF9QVHY4ZmNfTXIxTmxfTFNEbWlISjdBdTd4YzlzRDlzVFAtRGNNSE5feTg?oc=5",
+        "kind": "news",
+        "date": "2026-10-20",
+        "cited": false
+      },
+      {
+        "id": "S32",
+        "title": "Titan International, Inc. Q3 2026 Earnings Call Summary - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQa1F3MHIzbzlGZWxJV0xqOVo3RDA0bFdkY29mWktGZTAza2tfeEozSURFWEtMYkl5WGxqUy02eW9NSkh3V1Z0X0FOOFRmRGx6eUppR243ZHhPdHQxYXNNNUpjbVhweHBqVWdneUNPTEtXU2VmRHZiNi14ZkdfdFZONmdtalBzZ0FCQllsSEdjWUU3ZjJtYUNadW83TFM?oc=5",
+        "kind": "news",
+        "date": "2026-10-30",
+        "cited": false
+      },
+      {
+        "id": "S33",
+        "title": "Titan unfazed about gold supply issues as exchange programmes aid sourcing - Business Standard",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQd0h4MHhrUTRIYnNIbWhUdHhzT1dVRnlQU3E2NlhaN1JtUmg4cTE3T3JRZGNvVHFFS1NvWkdnMVpCempvc1NYUWQ5bXJwdHlEUzN2bmJ0ekMxNXNYbE9aeC1zTmJmcTN1V2xidXRVeG9ReWVkU21VOEhmWjRrVno4M1RkN2M3TEVQNkE3UVFZMUhzNWFmV1dLWGVhYVN3UkpMbl9sWnU5YzhBSUtkenozZkJtbXBrSTZvMm9UaXUtcXAwQmZEcjJJNnN4YlU5bjZCVGxpWDkycC1RWGvSAeABQVVfeXFMT2NpTWJ4YXlJU2xlUHNnWERPR0NRbm5UenE1cHZkWFIyN0xFZld2MjdpTUYyVWdIWDl4Q0x0VV9aM3NRSVoxUHpMWllGNkttUl9tRmxuT29VQ2oxT2NtZW1waVRDMFhnWXRsOVFRNkJPYWNfR2x1U2trR2JwV0NWeUs4SjRWb0s5WEdERWplWExJbFRzUWNyUDd5TlJxTmdjODB4Ml9MT0hIM2dRQmVfdEN5TmwtODZxU2RDUWFhYmlQZUxUS3hKN0NnTkdrNDBGOWU2MEpwYXdCaXlOT3p2RFE?oc=5",
+        "kind": "news",
+        "date": "2026-05-10",
+        "cited": true
+      },
+      {
+        "id": "S34",
+        "title": "Interview: Kuruvilla \"Diny\" Markose, Titan Watches CEO, about the Group, its Ambitions and Strategy - Monochrome Watches",
+        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPN3B3LXJpQ2RoOGd5VjNXUWhiRkhVRUFONWc0cmlXQnMzUThycENOaEhiS2pMQ1hMTlRuRUJSVm91TGhDYUNBWk1kVGFvaFI1Y2JFUVVnQ0FmYmlCbFlNWEtyZkZBSHFNMFJoRU9EMGV4bzh1MnZXNDVoWVQxRU54dEVNOUdKS2lSVEpiTUE3aHlZZFBwa2p4YjVjTkRodGs4bmVQS3YyUlVQanpjOGJWM0x3RE1VOFFDR1plcS1oR2VONVhrOWQyck5DakVoM1BaazZya0NwT1lhNURrNzk4Q1Foaw?oc=5",
+        "kind": "news",
+        "date": "2026-06-23",
+        "cited": false
+      },
+      {
+        "id": "S35",
+        "title": "Waste Not - The Tata group. Leadership with Trust.",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5ESG1YaDV4bEJyQUEwR2lDenl6N09nOXB6N2s4SHprRE9VcTN6OHZxYmhfRW9YYWdUdXJnelBOMzBNZ29EQmV5S1k5VHdNeThKTXhZSzBWMXRXc0NNdWJMQUJrZUk3T1lKWDRqZVJsRTRIaDNYMVVBT0x3?oc=5",
+        "kind": "news",
+        "date": "2026-04-07",
+        "cited": false
+      },
+      {
+        "id": "S36",
+        "title": "Raking It In: How Titan Company is Reinventing itself - Business Today",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNck1kUDVVZ05ydXBuc1RRUy1vRmw1VkxfSDh1UmpVQmF3T2hEZl9NRE9QRXBtZ2hFVnBiOEEwYk9pWmVIdTlMSVRpNGxNTF9QZ0tNLWxRMW91N01yck1PRWhJNmVWeDRnX19sbFV1U1diTjZEakhjYk1rTENXTWpGTXhucC1TNjJnYWFJNV9kVTJyUzZ1MHdtNGlQLVNWQTB4SzhKaDJxQ1BSM1B3Vms4YVI4bnVVNzl0eW5hdmsyUUpyV2R60gHKAUFVX3lxTFBCdC1YUzRhQlF4aGd3c2NHdkZFV1hjY2duMDR1bXBZYUlGdTZKbklHRWVzWHdKa0VnYzN1OUp3MXlra3ByUlNPczZLLUdOT1Q0LTgxbm1zQVVxQzZLZXFLYmVsdTR2OFdtTlV4R2ZnY0xHMHdVYTdranU1dkxwM3diQWRVM21HN2k3MGxkMkRHaUlaVVhGVmpFVXdMX0REOUhqX1hLVFI4UUloOUxjY19UUTBDYnpUR2NwTzJicmJEaTg2UkNDa0NFaFE?oc=5",
+        "kind": "news",
+        "date": "2026-05-24",
+        "cited": false
+      },
+      {
+        "id": "S37",
+        "title": "Rising discretionary spending, formalisation key growth drivers for Titan - Business Standard",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQTy1rMjI5V3k0SzlKVXVSdzVrTTllcWtlS25PQjFReTNKcC01Q3FBbUd0a3NHdUtJeFJDb0JNeGtuUE1pVHlwd2hyVjVqNjRfcXZqaFVlNlI2NFF2VlY3TnNwdWZNNzl3N3o1X2hBbU5RV2NRa091WDFMb3d1LWo0dE55TjV5d3BWckFlTi04dy1pZldsRlpub040eFJMTHB5MjF2V3d5YXlzU0dFRTJzN1djR0NOOEVmZnJ0Z0w2bllWQkdjY1JJbTVoRXJ2eWxrdldrRV9hd3rSAd4BQVVfeXFMTVJveWVFcnA1bFFNNTF5N2FhcDNiUkx0UDBuR2ZvTUJKTXhPZEJ6Yl80aWg5ZllXMUhOZVFyQ2xTUW1fQVZzRVRhTVN0a3VNVnZLbndHOERwdXhvWUtLRTFJSUhpMjdyZklIN1Raamg0c1JiQ2ZpbW9fWVZiaENEOUFFZFRvd183MEZtSU5ZRlBoRG9USk91ZzAwb2JaNG0yQmc2RlVRZFhONlMzUWFuNXI5Q1lKbHYxczJxSncyWkkySjJuUXd2TnNNdjJoMFEwRXF6dmFGcVVrMlFWYzl3?oc=5",
+        "kind": "news",
+        "date": "2026-07-03",
+        "cited": false
+      },
+      {
+        "id": "S38",
+        "title": "Taneira likely to turn profitable in next 2-3 yrs; expects 30 pc growth in festive season: CEO - India Retailing",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPemNONzFTb3N6Z3RCbTAwVjlpWDgzNzNGbVNRQU81QnZqVEM2Nnk5NFNMbl9BVTVCYVY1Y2E5ckdmazZvLTY0ZHc4M1B6V1d4MnV2dFFBRDJnSTlRRUt2N21qSzdFOEc1R2hSOE1QOTBTUF9ya1Boem50U19LcHgxUXVYd0xvbFpWdldlWXhXM0QyUTVjX1F0N1I4eUFKcElqVWpESDhsMWloRy1vV19sVWJJRnRENzFiVXVLSVV2WQ?oc=5",
+        "kind": "news",
+        "date": "2025-09-18",
+        "cited": true
+      },
+      {
+        "id": "S39",
+        "title": "Zepto Strengthens Quick Commerce With Automated Supply Chain - Indian Retailer",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPcW4zRjNjcEViWVNxekEzeHlYb0hZdjNGbWtSODhFczRVTjNYcW9qVE9DbEhONTN6NGZRUU9INGI2dEdCVUVBbUE3R241eEgwN2N5M2hDaWN6U1Npcl9uZVA5bXg5MlpCMEl6R1diTUZzN1poUzVOclNDZHlIdFZVZFQ0YjZ2eVdKaE5wVFZjUXJ0dkw1TWc?oc=5",
+        "kind": "news",
+        "date": "2025-12-05",
+        "cited": false
+      },
+      {
+        "id": "S40",
+        "title": "Spain, Netherlands Set for Smart-Warehouse Projects With Cainiao - Stock Titan",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQV2Z3OGVoN1IyUGkzWTJxYVc1eXRtUGxSN3Uxc05Kekd3QW01RlBiUXdNallNQlpPOFM0MFdBYnlkN01mU2h4d3V2anB2QktoNFg3R2oxTVMzTjVkb2xuY25rXzk3Ti1lVjM4SUxiWkpUOTRidmdLaVRXcGgwX2VLWXBnR1oyWjIwX2tCQkVqdjFFMDl3TmVJSkJ4Y2FsSEZ3ZTZNWTdXR1dUb2VSckR1aGptM1lVZi03VXJlb2tWbkg?oc=5",
+        "kind": "news",
+        "date": "2026-08-03",
+        "cited": false
+      },
+      {
+        "id": "S41",
+        "title": "Ahold Delhaize announces that Ahold Delhaize USA plans to build state-of-the-art distribution center in North Carolina - Ahold Delhaize newsroom",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNYkJIVzhvVkRMNVFGZUp4c3N1VVY3aTRPVnRwaV9TTmFrUGptdERuZ1NRNWkyVTY0RDg3R2hlaUx5dVU2a1h4ZFhHRFJSNFh4OUk4dFY0dDdEWFRfSUpiSUlLektacF9VVzR1U2ppcTA1UFZBcUNaUmRsbmYxeGg0VEJPMllmWERrQ1dBYkY3RTdnNVJ1YnpqSGVNMFI1RnRBc3Z6SkQzVGpzUWtRNzFfcElweThSYi1sYzVpTkJMWmtOdmVGVDlBOF9UMGxTSk81WXVha0d6dldiWk1KQ0xXUVR5eDRFYjVTY3c?oc=5",
+        "kind": "news",
+        "date": "2025-10-23",
+        "cited": false
+      },
+      {
+        "id": "S42",
+        "title": "A $30M cold-storage project is expected to start in North America - Stock Titan",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPVnhxTFUwLWVrUzRaOTFfZEtzc0RfYlZKOTY1RWxRTE9DeHFfZnVhNEluOVQ0S2UyNFFodTRFWDE3eGEwZm93RlNVamw1OFRRblhWRWpjRGxzSmdaSGc3U3hhQzF4c0Z5T2VrNFBoX01LRWROTlRfa3BmZ2hpRVB4Z0xZN1EyWC1VRjd6c0FsbWg4RVVCZGZac2EzNFNCYnRwWDF5Q3ZWZXU3MENyS1FtRA?oc=5",
+        "kind": "news",
+        "date": "2026-09-02",
+        "cited": false
+      }
+    ],
+    "metrics": {
+      "sources": 42,
+      "findings_verified": 30,
+      "claims_checked": 8,
+      "claims_supported": 8,
+      "grounding_rate": 1.0,
+      "llm_calls": 12,
+      "cache_hits": 0,
+      "llm_seconds": 149.7
+    },
+    "markdown": "# Client briefing: Titan Company\n\nTitan Company maintains a dominant position as India's largest branded jewellery maker, supported by aggressive retail expansion and strategic gold exchange programs. Despite significant year-on-year growth, the company faces stock volatility due to market sensitivity regarding growth fluctuations and competitive pressures.\n\n## Key facts\n- Titan Company maintains a dominant position as India's largest branded jewellery maker, with the segment contributing over 80% of its total income. [S21]\n- The company has demonstrated significant growth, including 41% year-on-year growth in its consumer business and 39% in the jewellery segment. [S11]\n- Titan has aggressively expanded its retail footprint, adding 77 new stores to its network. [S11]\n- The company utilizes gold exchange programs as a strategic mechanism to mitigate potential supply chain disruptions. [S33]\n- Titan's stock performance has shown volatility, with recent declines attributed to Q2 jewellery growth failing to meet specific market estimates. [S5, S6, S7]\n\n## Pain-point hypotheses\n- **Market sensitivity to growth fluctuations**: Recent share price drops were directly linked to jewellery growth missing market estimates, despite overall bullish brokerage sentiment. _Fit: We can provide investor relations advisory and growth forecasting models to better align market expectations with operational performance._ [S7]\n- **Competitive pressure from industry giants**: Titan faces direct competition from major industry players like Kalyan in the Indian jewellery market. _Fit: We can conduct competitive benchmarking and strategic positioning analysis to help Titan defend its market share._ [S4]\n- **Need for sustained growth in emerging sub-brands**: Taneira is currently in a growth phase, targeting 30% festive growth and aiming for profitability within 2-3 years. _Fit: We can provide operational efficiency consulting and retail scaling strategies to accelerate Taneira's path to profitability._ [S38]\n\n## Pitch outline\n- Optimizing retail operations to sustain aggressive expansion momentum.\n- Mitigating stock volatility through enhanced inventory management strategies.\n- Strengthening competitive positioning against industry giants.\n- Driving growth for emerging sub-brands within the portfolio.\n- Aligning operational efficiency with market expectations for growth.\n\n## Proposed scope\n- Retail Operations Audit: Operational efficiency roadmap (4 wks)\n- Inventory Optimization: Stock volatility mitigation framework (4 wks)\n- Sub-brand Growth Strategy: Market penetration plan (4 wks)\n\n## Discovery questions\n- How are current inventory turnover rates impacting your stock volatility?\n- Which specific competitive pressures are most affecting your market share?\n- What are the primary bottlenecks in scaling your emerging sub-brands?\n- How do you currently balance aggressive retail expansion with operational stability?\n- What metrics are most critical to your stakeholders regarding growth fluctuations?\n- How can we better integrate your gold exchange programs into retail operations?\n\n## Outreach email (approved)\n**Subject:** Strategic Support for Titan Company’s Retail Operations\n\nDear Titan Leadership Team, Titan Company’s position as India’s largest branded jewellery maker is impressive, particularly given your aggressive retail expansion and gold exchange initiatives. However, we recognize the challenges posed by market sensitivity to growth fluctuations, competitive pressures, and the need to sustain momentum for emerging sub-brands. Our firm specializes in optimizing retail operations and inventory management to help industry leaders navigate these complexities. We would welcome the opportunity to discuss how we can support Titan in mitigating stock volatility and driving consistent growth across your portfolio. Are you available for a brief introductory call next week to explore how our expertise aligns with your current strategic priorities? We look forward to the possibility of collaborating. Best regards, [Your Name]\n\n## Sources\n- [S4] Beyond Titan and Kalyan: The smallcaps supplying India’s jewellery giants - The Financial Express 2026-10-22 https://news.google.com/rss/articles/CBMi0AFBVV95cUxOMXY3a1BFQlhlN0NBcWNYQmdUdXFmSlB1eTNPUzNDTUpCUFJrWnNpbnc4SkdtcFJEUGZKaklSNkdDaVZZQmp4aGdVVEhRcjlicW5CUkVNY3BrVWxnTXpxWFlTbXVEaDdzSnhkYzBwMnUxZWpmY0g5dGpPSVBfNExLQmpQYk44SWtuRnphRkhoNm9xODNVSE9OSEhPeHV0aFM1YmVfNThsY1E1SHFSOXk5ZUJDVUZ0Q1FfZ0pDUWVpVmtTcnlucGJ5U3E5cllrOG850gHXAUFVX3lxTE5zVWhCcUV4Q28yd0diZWxfY0VGbFpTY21MOXU0eG9EYnBGamxNaGtTdVBtYm8xZEtKSjdWTkFqWEx0cHZldVFtZ013RVhCVGkxLTd5akNyRVBPUUt0Q2k5eHJVODRpS0RPaDh2SS1DSllRSHlkdWltWTNfclNYbnJ3QXlwb3gtZW1iQk82WlpCdW1OUUFPSTNaaVZMZm11bUFUMko3SlgxYkRSV1plemp3RXFJZ2ZpZHcwbWhzU1NkVVZoeWFIRjV5dHVYV3BhX1U3NUN2emcw?oc=5\n- [S5] Titan Company shares fall 4% after Q2 business update. What is Nomura saying? - The Economic Times 2026-10-07 https://news.google.com/rss/articles/CBMi5AFBVV95cUxNLVNlQ3RXakFfUXZDZXlYTTBpamh3SVBzQmlwcS01SWtyZ1d5alFENFA1cVltTTF2ZEVEeHlKMHBDVjI2Mzc0OWp1TWprMHBpRHF2LVRkU2ExaGVkbldBRkdIQUJhcWtHNHY5VjJoblZzQ3pPTlhfTEtuVWhLUndCdm02aWpKN0twNldkN0llV3VueGpZeWJ6V2ZnZ1ZtZmYtRGNfN3lyODBYVkhjdVBFRkxNaXdLZmRPU24wU0ZmeTh5QmVmQm1oTTRnbjRuMGc0OXItRTdGTlJjOTk1UlEzN1RBX07SAeoBQVVfeXFMTkdMRC1ZOC1fSUVtQlZHcEV6MmdPaW5RbWJLYjNKZzhaanJHbmpwdk5uUTRjUkdkWGZPRm1oMmc2YnBuX1FoUjJ6eldPbU9wcnZ5cU5GSEpJRFVTSXVvR092aWJLTURjakhDcmE4TVA4SWVHLXF4QzdVOFIxV2tpeGxzRXhaS2FDTFFJaE1jUnZYblNWdDQwWXV5UVlPeUJvb21MSDRuMmR1Y3R3eUdKdnJOZkJNSVpKU2QwSGNDdHlpYVJ3bHc1MFpyWGR3MnluajZKMTA1MGNxdG9fM08ta19udVVHM2hFbTFR?oc=5\n- [S6] Titan share price drops 5% after Q2FY27 update - Should you buy this Tata Group stock now? Here's what experts say - Livemint 2026-10-07 https://news.google.com/rss/articles/CBMiiwJBVV95cUxQU21yaWNYbWZHb3FlMDBleEl1ZFE3bDlQUWdkMlIwRVJMOXptS1ZfbGdpZmJKTmRGanNNdnVIZW5kV1NnLVBBNmpYNTE1NXMyS29SMnExWWNJbzVRYmt6X19Qc3R3c01iOWt2T0NydXc5eGhJZFJPa1E1V2hNZzRDLUhON1RiaC1ra21nUklScnNBd0JnWlFsNVFmTlBveGdnM1cxZ2hKZTBEbDM2djRYYmJmUVRscWVqS2xSUWFuT3BkVDI5V3FIck9XRmhVZ1pOSVMxdXp0XzVYWmRnRURUVTc5RDhoRVFjTFl0dmNROTY5N254S3pSRk51MXJ1Z1VrTmVyeHo4c2dESEXSAZACQVVfeXFMTl9kVXd4WDJFTlpBUzk4ZHJxdDUxTk5NQ0JaSmFrLXlRUFFrcXptaV9EVWlVV09jS0Rmd1hHbGVDM2hldUV3VXNLTDh5Y3o4NGw3eFdoRmgwMDdfdVFPZzZmWEVwS3BwWjAzeHFUZHFyeUJJOUkyM2V5ODhyRUxlNEhyRE1GY0JvWGpkdVd6TEN6ZHZEMW12cU0zamdzb3VaRUt5NFlFZTZjVU1mWjFtdVYtbG9MOGw4MGNaMmRBczdjX2dyY2tQSTc1LUdMMFZsbEdnLUt5X0tndE5fUlhKazhXNnFfdy1wOEJqSzVjUTFILUZ6bGlGUHJrVVE3cFJqN19abDRVQUpCd2pMbTdZWks?oc=5\n- [S7] Titan stock crashes over 4% as Q2 jewellery growth misses some estimates; brokerages retain bullish calls - Moneycontrol.com 2026-10-07 https://news.google.com/rss/articles/CBMi_AFBVV95cUxOQzMxQnNOOVUwbUFTdC1WNFR3bTdGejlBMy12Vi1vcEtOeE03eVd6UlJyVTkzN3MxN1hzUFZ4ZHlWc21uaEo0elVJN05ITzIyNjhleEpkcHMwRzFBREtNc2tmS0drRlJVLVZXdGZsSUxISk43UGVVR2d2YURsSmdlNUpFcjhtSHk0TFRsY21kaHhiODRTeDE2LUMyVXJQWTR3R2RDQ1VsSjc5a3N3ZDZ0a0ttS1JZanJnVmNJMC1hZUlFazJOR2ZaNzFXdUh3X29FNlN5RHZaOHFwSDdhbEtXelM4SUc0ZDRTQ01zQmc3TG1nbGhGTkFFRE5RZDbSAYICQVVfeXFMUHZvcHI0RHZLekdtT0tZOHI5NV9OSzM4dkFYaHJJMUZaWElRNlZEYnFxd1NwM0VHT25JVVVXV2dDM2pmMzZRM0w4a09ONTNxQmdXVENpSlZsZ01id19wY2ZNZnVPUFBqMFpMdlczUU4wQWxteFdaeE83WXZyM0pmMkU3bnNvTEY5Y2pocGozU2JRdlMwbkRITTJZdzNibjNjc2l5NkkxTzZUZWpVU3hMYXIxUkswcGdnR3JYLW40X2FBYmNCNmxZdzdDWmljM3FyYXpsaTh6VFhCOC1kTjBUZFVIUHgzVlN0bmdnZ3c4dDVRSUFFSzFCX1ZneF8zZnNFYVN3?oc=5\n- [S11] Titan Consumer Business Jumps 41% YoY Led by 39% Jewellery Growth and 77 New Stores - Sahi 2026-07-07 https://news.google.com/rss/articles/CBMivAFBVV95cUxQQzNJdExLTEV1emgxXzNTdDlvcE12QkljT2ZqbHRTQl9Ka2ZQZzlrNmJ0Q20wSGpTWFBycEJWdVVRblF2REZVMlhpWTFHSTJKRUFVWENxc2Q0dWppMzVadDV3bkZfWlFJcXFmd2J4WWhsU3QycUl2OVlEMWpTTGtIY0tFanE3VUZ1RVVuLVFBZnlEZGd1RXR0RmVrYmxXWTVQRVRGWXVUQzRwNmdHZlY5QVN0aGp3X0NJVlVhSQ?oc=5\n- [S21] Wikipedia: Titan Company (part 1)  https://en.wikipedia.org/wiki/Titan_Company\n- [S33] Titan unfazed about gold supply issues as exchange programmes aid sourcing - Business Standard 2026-05-10 https://news.google.com/rss/articles/CBMi2wFBVV95cUxQd0h4MHhrUTRIYnNIbWhUdHhzT1dVRnlQU3E2NlhaN1JtUmg4cTE3T3JRZGNvVHFFS1NvWkdnMVpCempvc1NYUWQ5bXJwdHlEUzN2bmJ0ekMxNXNYbE9aeC1zTmJmcTN1V2xidXRVeG9ReWVkU21VOEhmWjRrVno4M1RkN2M3TEVQNkE3UVFZMUhzNWFmV1dLWGVhYVN3UkpMbl9sWnU5YzhBSUtkenozZkJtbXBrSTZvMm9UaXUtcXAwQmZEcjJJNnN4YlU5bjZCVGxpWDkycC1RWGvSAeABQVVfeXFMT2NpTWJ4YXlJU2xlUHNnWERPR0NRbm5UenE1cHZkWFIyN0xFZld2MjdpTUYyVWdIWDl4Q0x0VV9aM3NRSVoxUHpMWllGNkttUl9tRmxuT29VQ2oxT2NtZW1waVRDMFhnWXRsOVFRNkJPYWNfR2x1U2trR2JwV0NWeUs4SjRWb0s5WEdERWplWExJbFRzUWNyUDd5TlJxTmdjODB4Ml9MT0hIM2dRQmVfdEN5TmwtODZxU2RDUWFhYmlQZUxUS3hKN0NnTkdrNDBGOWU2MEpwYXdCaXlOT3p2RFE?oc=5\n- [S38] Taneira likely to turn profitable in next 2-3 yrs; expects 30 pc growth in festive season: CEO - India Retailing 2025-09-18 https://news.google.com/rss/articles/CBMivwFBVV95cUxPemNONzFTb3N6Z3RCbTAwVjlpWDgzNzNGbVNRQU81QnZqVEM2Nnk5NFNMbl9BVTVCYVY1Y2E5ckdmazZvLTY0ZHc4M1B6V1d4MnV2dFFBRDJnSTlRRUt2N21qSzdFOEc1R2hSOE1QOTBTUF9ya1Boem50U19LcHgxUXVYd0xvbFpWdldlWXhXM0QyUTVjX1F0N1I4eUFKcElqVWpESDhsMWloRy1vV19sVWJJRnRENzFiVXVLSVV2WQ?oc=5",
+    "run_id": "20261107-233357-9ebe",
+    "outputs": [
+      "client_briefing.md",
+      "outreach_email.eml"
+    ]
+  },
+  "error": null
+}

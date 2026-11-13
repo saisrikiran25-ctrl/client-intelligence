@@ -1,0 +1,114 @@
+{
+  "id": "20261105-165551-7a73",
+  "agent": "a",
+  "title": "Bharat Agro Foods",
+  "params": {
+    "company": "Bharat Agro Foods"
+  },
+  "status": "error",
+  "events": [
+    {
+      "i": 0,
+      "t": 0.0,
+      "actor": "Orchestrator",
+      "kind": "agent",
+      "msg": "Agent A started for \"Bharat Agro Foods\"",
+      "data": {
+        "web": false,
+        "doc_chunks": 3,
+        "llm": "ollama:qwen2.5:3b-instruct"
+      }
+    },
+    {
+      "i": 1,
+      "t": 2.89,
+      "actor": "Planner",
+      "kind": "retry",
+      "msg": "planner JSON failed (ollama call failed: HTTP Error 500: Internal Server Error); using default query plan",
+      "data": null
+    },
+    {
+      "i": 2,
+      "t": 2.89,
+      "actor": "Planner",
+      "kind": "plan",
+      "msg": "Decomposed into 5 research angles",
+      "data": {
+        "profile": [
+          "Bharat Agro Foods company overview",
+          "Bharat Agro Foods annual report revenue"
+        ],
+        "news": [
+          "Bharat Agro Foods"
+        ],
+        "sector": [
+          "Bharat Agro Foods industry India outlook regulation"
+        ],
+        "competitors": [
+          "Bharat Agro Foods competitors India"
+        ],
+        "signals": [
+          "Bharat Agro Foods hiring technology expansion"
+        ]
+      }
+    },
+    {
+      "i": 3,
+      "t": 5.59,
+      "actor": "Researcher:news",
+      "kind": "error",
+      "msg": "LLMError: ollama call failed: HTTP Error 500: Internal Server Error",
+      "data": null
+    },
+    {
+      "i": 4,
+      "t": 6.05,
+      "actor": "Researcher:signals",
+      "kind": "error",
+      "msg": "LLMError: ollama call failed: HTTP Error 500: Internal Server Error",
+      "data": null
+    },
+    {
+      "i": 5,
+      "t": 6.55,
+      "actor": "Researcher:competitors",
+      "kind": "error",
+      "msg": "LLMError: ollama call failed: HTTP Error 500: Internal Server Error",
+      "data": null
+    },
+    {
+      "i": 6,
+      "t": 7.04,
+      "actor": "Researcher:sector",
+      "kind": "error",
+      "msg": "LLMError: ollama call failed: HTTP Error 500: Internal Server Error",
+      "data": null
+    },
+    {
+      "i": 7,
+      "t": 7.54,
+      "actor": "Researcher:profile",
+      "kind": "error",
+      "msg": "LLMError: ollama call failed: HTTP Error 500: Internal Server Error",
+      "data": null
+    },
+    {
+      "i": 8,
+      "t": 7.54,
+      "actor": "Orchestrator",
+      "kind": "agent",
+      "msg": "Research complete: 0 verified findings from 3 sources",
+      "data": null
+    },
+    {
+      "i": 9,
+      "t": 7.54,
+      "actor": "Orchestrator",
+      "kind": "error",
+      "msg": "RuntimeError: No verifiable findings. Provide a document or enable web research.",
+      "data": "Traceback (most recent call last):\n  File \"C:\\Users\\Sai Kiran\\Downloads\\consulting-agents\\cli.py\", line 39, in work\n    run.finish(run_a(run, llm, a.company, a.service, docs, not a.no_web, auto_approve=True))\n               ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Sai Kiran\\Downloads\\consulting-agents\\agent_a\\pipeline.py\", line 243, in run_agent\n    raise RuntimeError(\"No verifiable findings. Provide a document or enable web research.\")\nRuntimeError: No verifiable findings. Provide a document or enable web research.\n"
+    }
+  ],
+  "result": null,
+  "error": "RuntimeError: No verifiable findings. Provide a document or enable web research."
+}

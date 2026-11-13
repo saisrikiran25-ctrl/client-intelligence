@@ -1,0 +1,664 @@
+{
+  "id": "20261108-201522-03a4",
+  "agent": "a",
+  "title": "Bharat Agro Foods",
+  "params": {
+    "agent": "a",
+    "company": "Bharat Agro Foods",
+    "service_line": "supply chain and distribution",
+    "use_web": false,
+    "auto_approve": false,
+    "backend": "gemini",
+    "cache": false
+  },
+  "status": "done",
+  "events": [
+    {
+      "i": 0,
+      "t": 0.0,
+      "actor": "Orchestrator",
+      "kind": "agent",
+      "msg": "Agent A started for \"Bharat Agro Foods\"",
+      "data": {
+        "web": false,
+        "doc_chunks": 3,
+        "llm": "gemini:gemini-3.5-flash"
+      }
+    },
+    {
+      "i": 1,
+      "t": 4.73,
+      "actor": "Planner",
+      "kind": "plan",
+      "msg": "Decomposed into 6 research angles",
+      "data": {
+        "profile": [
+          "Bharat Agro Foods company profile products plants Pune Nashik",
+          "Bharat Agro Foods business overview revenue model"
+        ],
+        "news": [
+          "Bharat Agro Foods latest news FY 2025 2026",
+          "Bharat Agro Foods press releases expansion"
+        ],
+        "sector": [
+          "India packaged foods sector growth trends 2025 2026",
+          "Indian spices and ready to cook mixes market report"
+        ],
+        "competitors": [
+          "Bharat Agro Foods major competitors packaged food India",
+          "top staples and spices brands India market share"
+        ],
+        "signals": [
+          "Bharat Agro Foods supply chain investments logistics hiring",
+          "Bharat Agro Foods expansion warehousing strategic partnerships"
+        ],
+        "service": [
+          "Bharat Agro Foods supply chain and distribution",
+          "Bharat Agro Foods supply chain and distribution challenges",
+          "Bharat Agro Foods supply chain distribution network challenges"
+        ]
+      }
+    },
+    {
+      "i": 2,
+      "t": 11.72,
+      "actor": "Researcher:news",
+      "kind": "llm",
+      "msg": "6 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 6,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 3,
+      "t": 24.2,
+      "actor": "Researcher:profile",
+      "kind": "llm",
+      "msg": "6 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 6,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 4,
+      "t": 26.36,
+      "actor": "Researcher:sector",
+      "kind": "llm",
+      "msg": "3 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 3,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 5,
+      "t": 34.18,
+      "actor": "Researcher:signals",
+      "kind": "llm",
+      "msg": "6 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 6,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 6,
+      "t": 44.18,
+      "actor": "Researcher:service",
+      "kind": "llm",
+      "msg": "6 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 6,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 7,
+      "t": 77.94,
+      "actor": "Researcher:competitors",
+      "kind": "llm",
+      "msg": "6 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 6,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 8,
+      "t": 77.94,
+      "actor": "Orchestrator",
+      "kind": "agent",
+      "msg": "Research complete: 33 verified findings from 3 sources",
+      "data": null
+    },
+    {
+      "i": 9,
+      "t": 91.49,
+      "actor": "Synthesizer",
+      "kind": "llm",
+      "msg": "Draft 1: 6 facts, 4 hypotheses",
+      "data": null
+    },
+    {
+      "i": 10,
+      "t": 112.6,
+      "actor": "Critic",
+      "kind": "critic",
+      "msg": "Round 1: 7/10 claims supported",
+      "data": [
+        {
+          "kind": "pain_point",
+          "idx": 0,
+          "ok": false,
+          "issue": "Evidence does not mention gaps in secondary logistics handling or inventory visibility."
+        },
+        {
+          "kind": "pain_point",
+          "idx": 1,
+          "ok": false,
+          "issue": "Evidence does not state that demand forecasting was inaccurate or that manual forecasting directly contributed to net working capital expansion."
+        },
+        {
+          "kind": "pain_point",
+          "idx": 2,
+          "ok": false,
+          "issue": "Evidence does not state that the legacy ERP or lack of a DMS limits visibility or exacerbates concentration risks and receivable build-ups."
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "t": 112.6,
+      "actor": "Critic",
+      "kind": "critic",
+      "msg": "Sending rejected claims back to the synthesizer",
+      "data": null
+    },
+    {
+      "i": 12,
+      "t": 131.28,
+      "actor": "Synthesizer",
+      "kind": "llm",
+      "msg": "Draft 2: 6 facts, 4 hypotheses",
+      "data": null
+    },
+    {
+      "i": 13,
+      "t": 139.9,
+      "actor": "Critic",
+      "kind": "critic",
+      "msg": "Round 2: 10/10 claims supported",
+      "data": []
+    },
+    {
+      "i": 14,
+      "t": 145.65,
+      "actor": "Synthesizer",
+      "kind": "llm",
+      "msg": "Wrote executive summary from verified points only",
+      "data": null
+    },
+    {
+      "i": 15,
+      "t": 155.81,
+      "actor": "Drafter",
+      "kind": "llm",
+      "msg": "Drafted pitch outline, scope, discovery questions and outreach email",
+      "data": null
+    },
+    {
+      "i": 16,
+      "t": 155.81,
+      "actor": "Gate",
+      "kind": "gate",
+      "msg": "Waiting for human approval: Review the outreach email before it is finalized",
+      "data": {
+        "email": {
+          "subject": "Optimizing Supply Chain and Distribution at Bharat Agro Foods",
+          "body": "Dear Team, \n\nWe have been observing Bharat Agro Foods' operational footprint and noted your extensive network of 1,900 distributors. We would be keen to understand whether the current secondary distribution wastage of 3.4% presents an opportunity for alignment with the 2% industry benchmark. Additionally, we are interested in exploring if the recent increase in net working capital days from 58 to 74 could be addressed through optimized inventory and receivables management. \n\nOur firm specializes in supply chain and distribution. We would like to discuss whether transitioning from manual forecasting and your 2014 ERP could enhance operational visibility. Furthermore, we are curious if there is potential to balance production loads between your Nashik and Indore plants. \n\nAre you available for a brief discussion next week? \n\nRegards, \n[Your Name]"
+        }
+      }
+    },
+    {
+      "i": 17,
+      "t": 161.57,
+      "actor": "Gate",
+      "kind": "gate",
+      "msg": "Approved by human",
+      "data": {
+        "approved": true,
+        "email": {
+          "subject": "Optimizing Supply Chain and Distribution at Bharat Agro Foods",
+          "body": "Dear Team, \n\nWe have been observing Bharat Agro Foods' operational footprint and noted your extensive network of 1,900 distributors. We would be keen to understand whether the current secondary distribution wastage of 3.4% presents an opportunity for alignment with the 2% industry benchmark. Additionally, we are interested in exploring if the recent increase in net working capital days from 58 to 74 could be addressed through optimized inventory and receivables management. \n\nOur firm specializes in supply chain and distribution. We would like to discuss whether transitioning from manual forecasting and your 2014 ERP could enhance operational visibility. Furthermore, we are curious if there is potential to balance production loads between your Nashik and Indore plants. \n\nAre you available for a brief discussion next week? \n\nRegards, \n[Your Name]"
+        }
+      }
+    },
+    {
+      "i": 18,
+      "t": 161.57,
+      "actor": "Orchestrator",
+      "kind": "done",
+      "msg": "Run complete",
+      "data": null
+    }
+  ],
+  "result": {
+    "company": "Bharat Agro Foods",
+    "service_line": "supply chain and distribution",
+    "summary": "Bharat Agro Foods faces operational and financial inefficiencies, with net working capital days increasing from 58 to 74 days, secondary distribution wastage reaching 3.4 percent of sales compared to the 2 percent industry benchmark, and uneven plant capacity utilization between Nashik at 92 percent and Indore at 61 percent. These issues are further compounded by reliance on a legacy 2014 ERP system, manual spreadsheet-based demand forecasting by regional sales managers, and the absence of a unified distributor management system across its ~1,900 distributors.",
+    "key_facts": [
+      {
+        "text": "Secondary distribution wastage and shrinkage stands at 3.4 percent of sales, exceeding the industry benchmark of 2 percent.",
+        "finding_ids": [
+          "F15",
+          "F18",
+          "F28"
+        ],
+        "sources": [
+          "S2"
+        ],
+        "evidence": [
+          {
+            "id": "F15",
+            "claim": "Secondary distribution wastage for the company stands at 3.4 percent of sales, trailing the industry benchmark of 2 percent.",
+            "quote": "Management states that wastage and shrinkage in secondary distribution is around 3.4 percent of sales, against an industry benchmark of 2 percent.",
+            "source": "S2",
+            "strength": "strong"
+          },
+          {
+            "id": "F18",
+            "claim": "The company's secondary distribution wastage of 3.4 percent exceeds the industry benchmark of 2 percent.",
+            "quote": "Management states that wastage and shrinkage in secondary distribution is around 3.4 percent of sales, against an industry benchmark of 2 percent.",
+            "source": "S2",
+            "strength": "strong"
+          },
+          {
+            "id": "F28",
+            "claim": "Bharat Agro Foods experiences secondary distribution wastage and shrinkage of 3.4 percent of sales, higher than the industry benchmark of 2 percent.",
+            "quote": "Management states that wastage and shrinkage in secondary distribution is around 3.4 percent of sales, against an industry benchmark of 2 percent.",
+            "source": "S2",
+            "strength": "strong"
+          }
+        ],
+        "evidence_level": "strong"
+      },
+      {
+        "text": "Net working capital days increased from 58 to 74 days due to rising inventory and distributor receivables.",
+        "finding_ids": [
+          "F10"
+        ],
+        "sources": [
+          "S1"
+        ],
+        "evidence": [
+          {
+            "id": "F10",
+            "claim": "Net working capital days for the company increased from 58 to 74 due to rising inventory and distributor receivables.",
+            "quote": "Net working capital days rose from 58 to 74 as inventory and distributor receivables increased.",
+            "source": "S1",
+            "strength": "strong"
+          }
+        ],
+        "evidence_level": "strong"
+      },
+      {
+        "text": "Bharat Agro Foods operates on a legacy ERP system dating back to 2014 and lacks a unified distributor management system.",
+        "finding_ids": [
+          "F6",
+          "F23",
+          "F30"
+        ],
+        "sources": [
+          "S2"
+        ],
+        "evidence": [
+          {
+            "id": "F6",
+            "claim": "Bharat Agro Foods operates on a legacy ERP system dating back to 2014 and lacks a unified distributor management system.",
+            "quote": "The company runs a legacy ERP implemented in 2014 and does not yet have a unified distributor management system.",
+            "source": "S2",
+            "strength": "strong"
+          },
+          {
+            "id": "F23",
+            "claim": "The company relies on a 2014 ERP system and lacks a unified distributor management system.",
+            "quote": "The company runs a legacy ERP implemented in 2014 and does not yet have a unified distributor management system.",
+            "source": "S2",
+            "strength": "strong"
+          },
+          {
+            "id": "F30",
+            "claim": "Bharat Agro Foods operates on a legacy ERP system from 2014 and lacks a unified distributor management system.",
+            "quote": "The company runs a legacy ERP implemented in 2014 and does not yet have a unified distributor management system.",
+            "source": "S2",
+            "strength": "strong"
+          }
+        ],
+        "evidence_level": "strong"
+      },
+      {
+        "text": "Demand forecasting is performed manually via spreadsheets by regional sales managers.",
+        "finding_ids": [
+          "F24",
+          "F29"
+        ],
+        "sources": [
+          "S2"
+        ],
+        "evidence": [
+          {
+            "id": "F24",
+            "claim": "Demand forecasting is performed manually via spreadsheets by regional sales managers.",
+            "quote": "Demand forecasting is done manually in spreadsheets by regional sales managers.",
+            "source": "S2",
+            "strength": "strong"
+          },
+          {
+            "id": "F29",
+            "claim": "The company relies on manual demand forecasting using spreadsheets managed by regional sales managers.",
+            "quote": "Demand forecasting is done manually in spreadsheets by regional sales managers.",
+            "source": "S2",
+            "strength": "strong"
+          }
+        ],
+        "evidence_level": "strong"
+      },
+      {
+        "text": "Plant capacity utilization is uneven across regions, with the Nashik plant operating at 92 percent while the Indore plant runs at 61 percent.",
+        "finding_ids": [
+          "F4",
+          "F9"
+        ],
+        "sources": [
+          "S1",
+          "S2"
+        ],
+        "evidence": [
+          {
+            "id": "F4",
+            "claim": "The company's Nashik processing plant operates at 92 percent capacity utilization compared to 61 percent at the Indore plant.",
+            "quote": "The Nashik plant runs at 92 percent capacity utilisation while the Indore plant runs at 61 percent.",
+            "source": "S2",
+            "strength": "strong"
+          },
+          {
+            "id": "F9",
+            "claim": "Bharat Agro Foods maintains processing plants in Nashik, Indore, and Guntur.",
+            "quote": "Bharat Agro Foods Ltd is a Pune-headquartered packaged foods company with processing plants in Nashik, Indore and Guntur.",
+            "source": "S1",
+            "strength": "strong"
+          }
+        ],
+        "evidence_level": "strong"
+      },
+      {
+        "text": "Products are distributed through ~1,900 distributors, with top 40 distributors generating 38 percent of sales.",
+        "finding_ids": [
+          "F19",
+          "F20",
+          "F32"
+        ],
+        "sources": [
+          "S1",
+          "S3"
+        ],
+        "evidence": [
+          {
+            "id": "F19",
+            "claim": "Bharat Agro Foods distributes its Annapurna and KhetSe branded products through a network of approximately 1,900 distributors.",
+            "quote": "The company sells staples, spices and ready-to-cook mixes under the brands \"Annapurna\" and \"KhetSe\" through roughly 1,900 distributors",
+            "source": "S1",
+            "strength": "strong"
+          },
+          {
+            "id": "F20",
+            "claim": "The company faces distributor concentration risk, with its top 40 distributors responsible for 38 percent of total sales.",
+            "quote": "the top 40 distributors account for 38 percent of sales",
+            "source": "S3",
+            "strength": "strong"
+          },
+          {
+            "id": "F32",
+            "claim": "Distributor concentration is a key risk for the business, with the top 40 distributors generating 38 percent of sales.",
+            "quote": "Management identifies commodity price volatility, distributor concentration (the top 40 distributors account for 38 percent of sales), and regulatory compliance under FSSAI labelling norms as key risks.",
+            "source": "S3",
+            "strength": "strong"
+          }
+        ],
+        "evidence_level": "strong"
+      }
+    ],
+    "pain_points": [
+      {
+        "hypothesis": "High secondary distribution wastage trailing industry standards",
+        "why": "Secondary distribution wastage and shrinkage currently reaches 3.4 percent of sales compared to the benchmark of 2 percent.",
+        "service_fit": "Supply chain loss prevention, handling processes redesign, and distribution controls to align wastage with industry standards.",
+        "finding_ids": [
+          "F15",
+          "F18",
+          "F28"
+        ],
+        "sources": [
+          "S2"
+        ],
+        "evidence": [
+          {
+            "id": "F15",
+            "claim": "Secondary distribution wastage for the company stands at 3.4 percent of sales, trailing the industry benchmark of 2 percent.",
+            "quote": "Management states that wastage and shrinkage in secondary distribution is around 3.4 percent of sales, against an industry benchmark of 2 percent.",
+            "source": "S2",
+            "strength": "strong"
+          },
+          {
+            "id": "F18",
+            "claim": "The company's secondary distribution wastage of 3.4 percent exceeds the industry benchmark of 2 percent.",
+            "quote": "Management states that wastage and shrinkage in secondary distribution is around 3.4 percent of sales, against an industry benchmark of 2 percent.",
+            "source": "S2",
+            "strength": "strong"
+          },
+          {
+            "id": "F28",
+            "claim": "Bharat Agro Foods experiences secondary distribution wastage and shrinkage of 3.4 percent of sales, higher than the industry benchmark of 2 percent.",
+            "quote": "Management states that wastage and shrinkage in secondary distribution is around 3.4 percent of sales, against an industry benchmark of 2 percent.",
+            "source": "S2",
+            "strength": "strong"
+          }
+        ],
+        "evidence_level": "strong"
+      },
+      {
+        "hypothesis": "Working capital bloat driven by rising inventory levels and distributor receivables",
+        "why": "Net working capital days increased from 58 to 74 days as inventory and receivables accumulated.",
+        "service_fit": "Supply chain working capital optimization, inventory planning, and distributor credit management governance.",
+        "finding_ids": [
+          "F10"
+        ],
+        "sources": [
+          "S1"
+        ],
+        "evidence": [
+          {
+            "id": "F10",
+            "claim": "Net working capital days for the company increased from 58 to 74 due to rising inventory and distributor receivables.",
+            "quote": "Net working capital days rose from 58 to 74 as inventory and distributor receivables increased.",
+            "source": "S1",
+            "strength": "strong"
+          }
+        ],
+        "evidence_level": "strong"
+      },
+      {
+        "hypothesis": "Process risk and inefficiency from manual demand forecasting and legacy ERP infrastructure",
+        "why": "The company relies on manual spreadsheet-based demand forecasting by regional managers, a 2014 legacy ERP, and lacks a unified distributor management system.",
+        "service_fit": "Supply chain digitization, automated demand forecasting implementation, and distributor management system (DMS) deployment.",
+        "finding_ids": [
+          "F6",
+          "F23",
+          "F24",
+          "F29",
+          "F30"
+        ],
+        "sources": [
+          "S2"
+        ],
+        "evidence": [
+          {
+            "id": "F6",
+            "claim": "Bharat Agro Foods operates on a legacy ERP system dating back to 2014 and lacks a unified distributor management system.",
+            "quote": "The company runs a legacy ERP implemented in 2014 and does not yet have a unified distributor management system.",
+            "source": "S2",
+            "strength": "strong"
+          },
+          {
+            "id": "F23",
+            "claim": "The company relies on a 2014 ERP system and lacks a unified distributor management system.",
+            "quote": "The company runs a legacy ERP implemented in 2014 and does not yet have a unified distributor management system.",
+            "source": "S2",
+            "strength": "strong"
+          },
+          {
+            "id": "F24",
+            "claim": "Demand forecasting is performed manually via spreadsheets by regional sales managers.",
+            "quote": "Demand forecasting is done manually in spreadsheets by regional sales managers.",
+            "source": "S2",
+            "strength": "strong"
+          },
+          {
+            "id": "F29",
+            "claim": "The company relies on manual demand forecasting using spreadsheets managed by regional sales managers.",
+            "quote": "Demand forecasting is done manually in spreadsheets by regional sales managers.",
+            "source": "S2",
+            "strength": "strong"
+          },
+          {
+            "id": "F30",
+            "claim": "Bharat Agro Foods operates on a legacy ERP system from 2014 and lacks a unified distributor management system.",
+            "quote": "The company runs a legacy ERP implemented in 2014 and does not yet have a unified distributor management system.",
+            "source": "S2",
+            "strength": "strong"
+          }
+        ],
+        "evidence_level": "strong"
+      },
+      {
+        "hypothesis": "Sub-optimal production load balancing across regional processing facilities",
+        "why": "Capacity utilization is uneven between manufacturing sites, operating at 92 percent at Nashik versus 61 percent at Indore.",
+        "service_fit": "Supply chain network redesign and production reallocation planning to optimize capacity utilization across processing plants.",
+        "finding_ids": [
+          "F4",
+          "F9"
+        ],
+        "sources": [
+          "S1",
+          "S2"
+        ],
+        "evidence": [
+          {
+            "id": "F4",
+            "claim": "The company's Nashik processing plant operates at 92 percent capacity utilization compared to 61 percent at the Indore plant.",
+            "quote": "The Nashik plant runs at 92 percent capacity utilisation while the Indore plant runs at 61 percent.",
+            "source": "S2",
+            "strength": "strong"
+          },
+          {
+            "id": "F9",
+            "claim": "Bharat Agro Foods maintains processing plants in Nashik, Indore, and Guntur.",
+            "quote": "Bharat Agro Foods Ltd is a Pune-headquartered packaged foods company with processing plants in Nashik, Indore and Guntur.",
+            "source": "S1",
+            "strength": "strong"
+          }
+        ],
+        "evidence_level": "strong"
+      }
+    ],
+    "proposal": {
+      "pitch_outline": [
+        "Alignment of secondary distribution wastage with the 2% industry benchmark.",
+        "Optimization of net working capital through inventory and receivables management.",
+        "Transitioning from manual spreadsheet-based forecasting to automated demand planning.",
+        "Strategic production load balancing between Nashik and Indore processing facilities.",
+        "Modernization of supply chain technology through ERP and DMS integration."
+      ],
+      "proposed_scope": [
+        {
+          "workstream": "Distribution Efficiency Audit",
+          "deliverable": "Wastage reduction roadmap and logistics protocol",
+          "weeks": 6
+        },
+        {
+          "workstream": "Working Capital Optimization",
+          "deliverable": "Inventory and receivables management framework",
+          "weeks": 8
+        },
+        {
+          "workstream": "Supply Chain Digital Strategy",
+          "deliverable": "ERP modernization and unified DMS implementation plan",
+          "weeks": 10
+        },
+        {
+          "workstream": "Production Load Balancing",
+          "deliverable": "Regional facility utilization optimization model",
+          "weeks": 4
+        }
+      ],
+      "discovery_questions": [
+        "We would be keen to understand whether the 3.4% secondary distribution wastage is primarily driven by logistics handling or cold chain gaps?",
+        "How does the current reliance on a 2014 ERP system impact your real-time visibility across the 1,900-strong distributor network?",
+        "We would be interested to know if the manual forecasting process by regional managers contributes to the observed rise in inventory levels?",
+        "What specific constraints currently prevent the Indore facility from achieving utilization levels comparable to the Nashik plant?",
+        "Could you share whether the increase in net working capital days from 58 to 74 has impacted your distribution expansion plans?",
+        "We would be keen to understand whether the absence of a unified DMS has led to reconciliation challenges in distributor receivables?"
+      ],
+      "email": {
+        "subject": "Optimizing Supply Chain and Distribution at Bharat Agro Foods",
+        "body": "Dear Team, \n\nWe have been observing Bharat Agro Foods' operational footprint and noted your extensive network of 1,900 distributors. We would be keen to understand whether the current secondary distribution wastage of 3.4% presents an opportunity for alignment with the 2% industry benchmark. Additionally, we are interested in exploring if the recent increase in net working capital days from 58 to 74 could be addressed through optimized inventory and receivables management. \n\nOur firm specializes in supply chain and distribution. We would like to discuss whether transitioning from manual forecasting and your 2014 ERP could enhance operational visibility. Furthermore, we are curious if there is potential to balance production loads between your Nashik and Indore plants. \n\nAre you available for a brief discussion next week? \n\nRegards, \n[Your Name]"
+      },
+      "email_status": "approved"
+    },
+    "sources": [
+      {
+        "id": "S1",
+        "title": "Provided document, part 1",
+        "url": "",
+        "kind": "document",
+        "date": "",
+        "cited": true
+      },
+      {
+        "id": "S2",
+        "title": "Provided document, part 2",
+        "url": "",
+        "kind": "document",
+        "date": "",
+        "cited": true
+      },
+      {
+        "id": "S3",
+        "title": "Provided document, part 3",
+        "url": "",
+        "kind": "document",
+        "date": "",
+        "cited": true
+      }
+    ],
+    "metrics": {
+      "sources": 3,
+      "findings_verified": 33,
+      "claims_checked": 10,
+      "claims_supported": 10,
+      "grounding_rate": 1.0,
+      "llm_calls": 13,
+      "cache_hits": 0,
+      "llm_seconds": 272.8
+    },
+    "markdown": "# Client briefing: Bharat Agro Foods\n\nBharat Agro Foods faces operational and financial inefficiencies, with net working capital days increasing from 58 to 74 days, secondary distribution wastage reaching 3.4 percent of sales compared to the 2 percent industry benchmark, and uneven plant capacity utilization between Nashik at 92 percent and Indore at 61 percent. These issues are further compounded by reliance on a legacy 2014 ERP system, manual spreadsheet-based demand forecasting by regional sales managers, and the absence of a unified distributor management system across its ~1,900 distributors.\n\n## Key facts\n- Secondary distribution wastage and shrinkage stands at 3.4 percent of sales, exceeding the industry benchmark of 2 percent. [S2] _(strong)_\n- Net working capital days increased from 58 to 74 days due to rising inventory and distributor receivables. [S1] _(strong)_\n- Bharat Agro Foods operates on a legacy ERP system dating back to 2014 and lacks a unified distributor management system. [S2] _(strong)_\n- Demand forecasting is performed manually via spreadsheets by regional sales managers. [S2] _(strong)_\n- Plant capacity utilization is uneven across regions, with the Nashik plant operating at 92 percent while the Indore plant runs at 61 percent. [S1, S2] _(strong)_\n- Products are distributed through ~1,900 distributors, with top 40 distributors generating 38 percent of sales. [S1, S3] _(strong)_\n\n## Pain-point hypotheses\n- **High secondary distribution wastage trailing industry standards**: Secondary distribution wastage and shrinkage currently reaches 3.4 percent of sales compared to the benchmark of 2 percent. _Fit: Supply chain loss prevention, handling processes redesign, and distribution controls to align wastage with industry standards._ [S2] _(strong)_\n- **Working capital bloat driven by rising inventory levels and distributor receivables**: Net working capital days increased from 58 to 74 days as inventory and receivables accumulated. _Fit: Supply chain working capital optimization, inventory planning, and distributor credit management governance._ [S1] _(strong)_\n- **Process risk and inefficiency from manual demand forecasting and legacy ERP infrastructure**: The company relies on manual spreadsheet-based demand forecasting by regional managers, a 2014 legacy ERP, and lacks a unified distributor management system. _Fit: Supply chain digitization, automated demand forecasting implementation, and distributor management system (DMS) deployment._ [S2] _(strong)_\n- **Sub-optimal production load balancing across regional processing facilities**: Capacity utilization is uneven between manufacturing sites, operating at 92 percent at Nashik versus 61 percent at Indore. _Fit: Supply chain network redesign and production reallocation planning to optimize capacity utilization across processing plants._ [S1, S2] _(strong)_\n\n## Pitch outline\n- Alignment of secondary distribution wastage with the 2% industry benchmark.\n- Optimization of net working capital through inventory and receivables management.\n- Transitioning from manual spreadsheet-based forecasting to automated demand planning.\n- Strategic production load balancing between Nashik and Indore processing facilities.\n- Modernization of supply chain technology through ERP and DMS integration.\n\n## Proposed scope\n- Distribution Efficiency Audit: Wastage reduction roadmap and logistics protocol (6 wks)\n- Working Capital Optimization: Inventory and receivables management framework (8 wks)\n- Supply Chain Digital Strategy: ERP modernization and unified DMS implementation plan (10 wks)\n- Production Load Balancing: Regional facility utilization optimization model (4 wks)\n\n## Discovery questions\n- We would be keen to understand whether the 3.4% secondary distribution wastage is primarily driven by logistics handling or cold chain gaps?\n- How does the current reliance on a 2014 ERP system impact your real-time visibility across the 1,900-strong distributor network?\n- We would be interested to know if the manual forecasting process by regional managers contributes to the observed rise in inventory levels?\n- What specific constraints currently prevent the Indore facility from achieving utilization levels comparable to the Nashik plant?\n- Could you share whether the increase in net working capital days from 58 to 74 has impacted your distribution expansion plans?\n- We would be keen to understand whether the absence of a unified DMS has led to reconciliation challenges in distributor receivables?\n\n## Outreach email (approved)\n**Subject:** Optimizing Supply Chain and Distribution at Bharat Agro Foods\n\nDear Team, \n\nWe have been observing Bharat Agro Foods' operational footprint and noted your extensive network of 1,900 distributors. We would be keen to understand whether the current secondary distribution wastage of 3.4% presents an opportunity for alignment with the 2% industry benchmark. Additionally, we are interested in exploring if the recent increase in net working capital days from 58 to 74 could be addressed through optimized inventory and receivables management. \n\nOur firm specializes in supply chain and distribution. We would like to discuss whether transitioning from manual forecasting and your 2014 ERP could enhance operational visibility. Furthermore, we are curious if there is potential to balance production loads between your Nashik and Indore plants. \n\nAre you available for a brief discussion next week? \n\nRegards, \n[Your Name]\n\n## Sources\n- [S1] Provided document, part 1  \n- [S2] Provided document, part 2  \n- [S3] Provided document, part 3  ",
+    "run_id": "20261108-201522-03a4",
+    "outputs": [
+      "client_briefing.md",
+      "outreach_email.eml"
+    ]
+  },
+  "error": null
+}

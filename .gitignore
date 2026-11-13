@@ -1,0 +1,10 @@
+runs/cache/
+runs/*.db
+runs/*.log
+runs/*.done
+__pycache__/
+*.pyc
+.env
+runs/mail_settings.json
+runs/outputs/
+runs/mail_attempts.log

@@ -1,0 +1,19 @@
+Bharat Agro Foods Ltd - Annual Report Extract FY2025-26 (fictional sample for demo)
+
+Company overview
+Bharat Agro Foods Ltd is a Pune-headquartered packaged foods company with processing plants in Nashik, Indore and Guntur. The company sells staples, spices and ready-to-cook mixes under the brands "Annapurna" and "KhetSe" through roughly 1,900 distributors across Maharashtra, Madhya Pradesh, Gujarat and Andhra Pradesh. It was founded in 1994 and is promoter-led; the promoter family holds 61 percent of the equity.
+
+Financial performance
+Revenue from operations grew 11 percent to Rs 1,840 crore in FY2025-26 from Rs 1,658 crore in the previous year. EBITDA margin contracted from 13.4 percent to 11.2 percent because of higher edible oil and packaging costs. Net working capital days rose from 58 to 74 as inventory and distributor receivables increased. Net debt stands at Rs 410 crore, with a net debt to EBITDA ratio of 2.0x. The company has not disclosed export revenue separately.
+
+Operations and supply chain
+The Nashik plant runs at 92 percent capacity utilisation while the Indore plant runs at 61 percent. Procurement of wheat, pulses and spices is done through 38 mandis and about 14,000 contract farmers. Management states that wastage and shrinkage in secondary distribution is around 3.4 percent of sales, against an industry benchmark of 2 percent. Demand forecasting is done manually in spreadsheets by regional sales managers.
+
+Strategy and management commentary
+The Managing Director, Meera Deshpande, wrote in the shareholder letter: "Our priority for the next two years is to protect margins, tighten working capital and build a modern distribution backbone before we enter new states." The board has approved a Rs 220 crore capital expenditure plan, of which Rs 95 crore is for a new spice processing line at Guntur. The company plans to enter Karnataka and Telangana in FY2026-27.
+
+People and technology
+Headcount is 3,100. The company runs a legacy ERP implemented in 2014 and does not yet have a unified distributor management system. A Chief Digital Officer position was advertised in September 2026. Attrition among sales staff is 27 percent.
+
+Risks and sustainability
+Management identifies commodity price volatility, distributor concentration (the top 40 distributors account for 38 percent of sales), and regulatory compliance under FSSAI labelling norms as key risks. The company has committed to reduce plastic packaging by 25 percent by FY2028 under extended producer responsibility rules, but has not published a baseline.

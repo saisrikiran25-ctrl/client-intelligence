@@ -1,0 +1,1011 @@
+{
+  "id": "20261107-143530-7840",
+  "agent": "a",
+  "title": "Asian Paints",
+  "params": {
+    "company": "Asian Paints"
+  },
+  "status": "done",
+  "events": [
+    {
+      "i": 0,
+      "t": 0.0,
+      "actor": "Orchestrator",
+      "kind": "agent",
+      "msg": "Agent A started for \"Asian Paints\"",
+      "data": {
+        "web": true,
+        "doc_chunks": 0,
+        "llm": "gemini:gemini-3.5-flash"
+      }
+    },
+    {
+      "i": 1,
+      "t": 28.57,
+      "actor": "Planner",
+      "kind": "plan",
+      "msg": "Decomposed into 5 research angles",
+      "data": {
+        "profile": [
+          "Asian Paints supply chain model distribution network overview",
+          "Asian Paints manufacturing plants logistics infrastructure"
+        ],
+        "news": [
+          "Asian Paints supply chain updates warehousing news",
+          "Asian Paints distribution expansion recent initiatives"
+        ],
+        "sector": [
+          "Indian paint industry supply chain logistics trends",
+          "Decorative paints distribution channel dynamics India"
+        ],
+        "competitors": [
+          "Asian Paints vs Berger Paints distribution network comparison",
+          "Indian paint manufacturers supply chain competitive analysis"
+        ],
+        "signals": [
+          "Asian Paints supply chain automation digital transformation investments",
+          "Asian Paints warehouse technology supply chain optimization signals"
+        ]
+      }
+    },
+    {
+      "i": 2,
+      "t": 28.68,
+      "actor": "Collector",
+      "kind": "tool",
+      "msg": "Fetched 6 real source passages: Wikipedia yes, Wikidata yes, official website pages 1",
+      "data": [
+        "Wikipedia: Asian Paints (part 1)",
+        "Wikipedia: Asian Paints (part 2)",
+        "Wikipedia: Asian Paints (part 3)",
+        "Wikipedia: Asian Paints (part 4)",
+        "Wikidata: Asian Paints",
+        "Official website: http://www.asianpaints.com/"
+      ]
+    },
+    {
+      "i": 3,
+      "t": 29.78,
+      "actor": "Researcher:signals",
+      "kind": "tool",
+      "msg": "live news search \"Asian Paints supply chain automation digital transformation investments\" -> 5 headlines",
+      "data": [
+        "Odisha to pitch chemical, petrochemical investments at India Chem 2026 in Mumbai - ET Manufacturing",
+        "Asian Paints' Brand Moat Built Through Distribution, Technology, and Services - MarkHub24",
+        "Asian Paints appoints Leo Puri as Chairman - ET Manufacturing",
+        "Spend-IT: Asian Paints’ tech budget crosses ₹100-crore-mark riding on digital tech - Techcircle",
+        "Inside the next chapter of the Dani family office - ET Entrepreneur"
+      ]
+    },
+    {
+      "i": 4,
+      "t": 29.86,
+      "actor": "Researcher:sector",
+      "kind": "tool",
+      "msg": "live news search \"Indian paint industry supply chain logistics trends\" -> 5 headlines",
+      "data": [
+        "India Paints Industry: Structure & Growth Drivers - IBEF",
+        "India Powder Coatings Market Size, Share,Trends, Growth Analysis Report, 2031 - MarketsandMarkets",
+        "Is the Global Paint Industry Facing a Perfect Storm Amid Oil Price Surge and War? - ChemAnalyst",
+        "India's paint industry remains optimistic on growth despite crude volatility, pricing pressures and compet - The Economic Times",
+        "Chemicals 2025: A new reality for the global chemical industry - McKinsey & Company"
+      ]
+    },
+    {
+      "i": 5,
+      "t": 29.92,
+      "actor": "Researcher:competitors",
+      "kind": "tool",
+      "msg": "live news search \"Asian Paints vs Berger Paints distribution network comparison\" -> 5 headlines",
+      "data": [
+        "Best Paint Stocks: Asian Paints vs Berger Paints - Equitymaster",
+        "Asian Paints vs Berger Paints: Which is Better? - Livemint",
+        "Asian Paints Analysis: Past, Present and What is in Store Going Ahead? - Groww",
+        "Berger Paints Marketing Mix (4Ps) & Marketing Strategy - MBA Skool",
+        "Asian Paints vs Berger Paints: Which Paint Stock is Better? - Equitymaster"
+      ]
+    },
+    {
+      "i": 6,
+      "t": 30.33,
+      "actor": "Researcher:news",
+      "kind": "tool",
+      "msg": "live news search \"Asian Paints supply chain updates warehousing news\" -> 5 headlines",
+      "data": [
+        "Asian Paints Launches VAE Emulsion Production at Dahej Facility - European Coatings",
+        "Business environment to remain dynamic in FY27, says Asian Paints CEO - Business Standard",
+        "Satyabhan Appointed as Group Supply Chain Head at Dayal Group - https://hrtoday.in/",
+        "Asian Paints Reaffirms 18-20% PBDIT Margin Target Through Strategic Cost Management and Innovation - scanx.trade",
+        "Ankur Malviya Promoted to Vice President at Prozo - https://hrtoday.in/"
+      ]
+    },
+    {
+      "i": 7,
+      "t": 30.45,
+      "actor": "Researcher:profile",
+      "kind": "tool",
+      "msg": "live news search \"Asian Paints supply chain model distribution network overview\" -> 5 headlines",
+      "data": [
+        "Asian Paints Dividend: Here's what 9.2 lakh retail investors need to know about past payouts, record date and more - CNBC TV18 - LinkedIn",
+        "Why Asian Paints Lost Its Moat - HDFC Sky",
+        "Asian Paints' Brand Moat Built Through Distribution, Technology, and Services - MarkHub24",
+        "Asian Paints Supply Chain: Adaptive and Resilient - Logistics Viewpoints",
+        "How Birla Opus Broke into India’s Paints Industry with Scale, Capital and 45,000 Tinting Machines - Outlook Business"
+      ]
+    },
+    {
+      "i": 8,
+      "t": 31.09,
+      "actor": "Researcher:signals",
+      "kind": "tool",
+      "msg": "live news search \"Asian Paints warehouse technology supply chain optimization signals\" -> 0 headlines",
+      "data": []
+    },
+    {
+      "i": 9,
+      "t": 31.1,
+      "actor": "Researcher:signals",
+      "kind": "tool",
+      "msg": "selected 4 passages from Wikipedia / Wikidata / company website",
+      "data": [
+        "Wikipedia: Asian Paints (part 1)",
+        "Wikipedia: Asian Paints (part 2)",
+        "Wikipedia: Asian Paints (part 4)",
+        "Wikidata: Asian Paints"
+      ]
+    },
+    {
+      "i": 10,
+      "t": 31.27,
+      "actor": "Researcher:sector",
+      "kind": "tool",
+      "msg": "live news search \"Decorative paints distribution channel dynamics India\" -> 5 headlines",
+      "data": [
+        "Enamel Paint Market To 2035: Growth Momentum Builds on DIY and Premiumization - News and Statistics - IndexBox",
+        "Asian Paints' Brand Moat Built Through Distribution, Technology, and Services - MarkHub24",
+        "Art & Craft Materials Market Size, Share and Forecast 2034 - Fortune Business Insights",
+        "Birla Opus: Transforming India’s Decorative Paint Market - Aditya Birla Group",
+        "Acrylic Paint Market - Future Market Insights"
+      ]
+    },
+    {
+      "i": 11,
+      "t": 31.32,
+      "actor": "Researcher:sector",
+      "kind": "tool",
+      "msg": "selected 4 passages from Wikipedia / Wikidata / company website",
+      "data": [
+        "Wikipedia: Asian Paints (part 1)",
+        "Wikipedia: Asian Paints (part 2)",
+        "Official website: http://www.asianpaints.com/",
+        "Wikidata: Asian Paints"
+      ]
+    },
+    {
+      "i": 12,
+      "t": 31.8,
+      "actor": "Researcher:competitors",
+      "kind": "tool",
+      "msg": "live news search \"Indian paint manufacturers supply chain competitive analysis\" -> 5 headlines",
+      "data": [
+        "India Paints Industry: Structure & Growth Drivers - IBEF",
+        "Advancing Solar Cell Manufacturing in India - CEEW",
+        "Acrylic Paint Market - Future Market Insights",
+        "Paints and Coatings Market | Global Market Analysis Report - 2036 - Fact.MR",
+        "rest-of-europe Powder Coatings Market Size, Share,Trends, Growth Analysis Report, 2031 - MarketsandMarkets"
+      ]
+    },
+    {
+      "i": 13,
+      "t": 31.84,
+      "actor": "Researcher:competitors",
+      "kind": "tool",
+      "msg": "selected 4 passages from Wikipedia / Wikidata / company website",
+      "data": [
+        "Wikipedia: Asian Paints (part 1)",
+        "Wikipedia: Asian Paints (part 2)",
+        "Official website: http://www.asianpaints.com/",
+        "Wikidata: Asian Paints"
+      ]
+    },
+    {
+      "i": 14,
+      "t": 31.93,
+      "actor": "Researcher:profile",
+      "kind": "tool",
+      "msg": "live news search \"Asian Paints manufacturing plants logistics infrastructure\" -> 5 headlines",
+      "data": [
+        "GAIL subsidiary commissions 1.25 MTPA PTA plant at Mangalore - scanx.trade",
+        "India Paints Industry: Structure & Growth Drivers - IBEF",
+        "Asian Paints' Brand Moat Built Through Distribution, Technology, and Services - MarkHub24",
+        "Q4 results: Asian Paints, IndiGo, NMDC, Glenmark Pharma, IREDA, BEML, Inox Wind, Rubicon Research, others to post earnings on May 29 - Upstox",
+        "Kansai Nerolac Paints Ltd (KNPL) will invest ₹98 crore to expand its Hosur factory in Tamil Nadu, increasing its production capacity from 15,500 to 28,140 tonnes per month. The expansion will generate 280 job opportunities and strengthen KNPL’s presence i - Instagram"
+      ]
+    },
+    {
+      "i": 15,
+      "t": 31.97,
+      "actor": "Researcher:profile",
+      "kind": "tool",
+      "msg": "selected 5 passages from Wikipedia / Wikidata / company website",
+      "data": [
+        "Wikipedia: Asian Paints (part 1)",
+        "Wikipedia: Asian Paints (part 2)",
+        "Wikipedia: Asian Paints (part 3)",
+        "Wikidata: Asian Paints",
+        "Official website: http://www.asianpaints.com/"
+      ]
+    },
+    {
+      "i": 16,
+      "t": 32.09,
+      "actor": "Researcher:news",
+      "kind": "tool",
+      "msg": "live news search \"Asian Paints distribution expansion recent initiatives\" -> 5 headlines",
+      "data": [
+        "Asian Paints Launches Hydronaa, Ultraa Wood Adhesives With 384-Sq-Ft Wooden Mosaic - The Kashmir Horizon",
+        "Assemble perfection effortlessly with Asian Paints’ latest adhesive duo - Architect and Interiors India",
+        "Berger Paints sees strong demand, monsoon driving growth in FY27 - Livemint",
+        "Asian Paints FY26 net profit rises 17.9% to ₹4,325.4 crores - scanx.trade",
+        "Asian Paints' Brand Moat Built Through Distribution, Technology, and Services - MarkHub24"
+      ]
+    },
+    {
+      "i": 17,
+      "t": 32.12,
+      "actor": "Researcher:news",
+      "kind": "tool",
+      "msg": "selected 4 passages from Wikipedia / Wikidata / company website",
+      "data": [
+        "Wikipedia: Asian Paints (part 1)",
+        "Wikipedia: Asian Paints (part 2)",
+        "Wikipedia: Asian Paints (part 4)",
+        "Wikidata: Asian Paints"
+      ]
+    },
+    {
+      "i": 18,
+      "t": 42.83,
+      "actor": "Researcher:signals",
+      "kind": "llm",
+      "msg": "5 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 5,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 19,
+      "t": 46.81,
+      "actor": "Researcher:sector",
+      "kind": "llm",
+      "msg": "5 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 5,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 20,
+      "t": 55.38,
+      "actor": "Researcher:competitors",
+      "kind": "llm",
+      "msg": "6 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 6,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 21,
+      "t": 58.27,
+      "actor": "Researcher:profile",
+      "kind": "llm",
+      "msg": "6 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 6,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 22,
+      "t": 69.15,
+      "actor": "Researcher:news",
+      "kind": "llm",
+      "msg": "6 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 6,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 23,
+      "t": 69.16,
+      "actor": "Orchestrator",
+      "kind": "agent",
+      "msg": "Research complete: 28 verified findings from 41 sources",
+      "data": null
+    },
+    {
+      "i": 24,
+      "t": 88.17,
+      "actor": "Synthesizer",
+      "kind": "llm",
+      "msg": "Draft 1: 5 facts, 3 hypotheses",
+      "data": null
+    },
+    {
+      "i": 25,
+      "t": 124.57,
+      "actor": "Critic",
+      "kind": "critic",
+      "msg": "Round 1: 5/8 claims supported",
+      "data": [
+        {
+          "kind": "pain_point",
+          "idx": 0,
+          "ok": false,
+          "issue": "The evidence does not state that Asian Paints' loss of moat was 'exacerbated by competitors like Birla Opus', nor does it mention a 'core distribution moat' (only 'competitive moat')."
+        },
+        {
+          "kind": "pain_point",
+          "idx": 1,
+          "ok": false,
+          "issue": "The evidence mentions 'geopolitical disruption' and 'crude oil volatility', but does not mention 'global supply chain disruptions'."
+        },
+        {
+          "kind": "pain_point",
+          "idx": 2,
+          "ok": false,
+          "issue": "The evidence specifies VAE emulsion production at the Dahej facility, not that category expansions are occurring 'across its 27 manufacturing plants'."
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "t": 124.57,
+      "actor": "Critic",
+      "kind": "critic",
+      "msg": "Sending rejected claims back to the synthesizer",
+      "data": null
+    },
+    {
+      "i": 27,
+      "t": 148.58,
+      "actor": "Synthesizer",
+      "kind": "llm",
+      "msg": "Draft 2: 5 facts, 3 hypotheses",
+      "data": null
+    },
+    {
+      "i": 28,
+      "t": 161.96,
+      "actor": "Critic",
+      "kind": "critic",
+      "msg": "Round 2: 8/8 claims supported",
+      "data": []
+    },
+    {
+      "i": 29,
+      "t": 168.35,
+      "actor": "Synthesizer",
+      "kind": "llm",
+      "msg": "Wrote executive summary from verified points only",
+      "data": null
+    },
+    {
+      "i": 30,
+      "t": 179.1,
+      "actor": "Drafter",
+      "kind": "llm",
+      "msg": "Drafted pitch outline, scope, discovery questions and outreach email",
+      "data": null
+    },
+    {
+      "i": 31,
+      "t": 179.1,
+      "actor": "Gate",
+      "kind": "gate",
+      "msg": "Waiting for human approval: Review the outreach email before it is finalized",
+      "data": {
+        "email": {
+          "subject": "Enhancing Supply Chain Resilience & Margin Protection for Asian Paints",
+          "body": "Dear Asian Paints Leadership Team,\n\nAs Asian Paints expands into home improvement across 27 manufacturing facilities in 15 countries, managing multi-category operational complexity becomes critical. Protecting your target 18-20% PBDIT margin against crude oil price volatility and geopolitical disruption requires continuous cost management and innovation.\n\nAmid threats of competitive moat erosion from new market entrants, leveraging your strong distribution capabilities and your ₹100+ crore technology integration budget is essential. Our firm specializes in supply chain and distribution transformation. We would value the opportunity to discuss how we can help streamline your complex operations and secure your market position.\n\nBest regards,\n\n[Your Name]"
+        }
+      }
+    },
+    {
+      "i": 32,
+      "t": 179.1,
+      "actor": "Gate",
+      "kind": "gate",
+      "msg": "Auto-approved (auto_approve is on)",
+      "data": null
+    },
+    {
+      "i": 33,
+      "t": 179.11,
+      "actor": "Orchestrator",
+      "kind": "done",
+      "msg": "Run complete",
+      "data": null
+    }
+  ],
+  "result": {
+    "company": "Asian Paints",
+    "service_line": "supply chain and distribution",
+    "summary": "Asian Paints operates a resilient supply chain across 27 manufacturing facilities in 15 countries, leveraging distribution capabilities, technology integration with a budget crossing ₹100 crore, and expansion into the home improvement sector. While targeting an 18-20% PBDIT margin via cost management and innovation, the company faces risks of competitive moat erosion, multi-category operational complexity, and crude oil price volatility.",
+    "key_facts": [
+      {
+        "text": "Asian Paints operates an adaptive and resilient supply chain model supported by a global footprint of 27 manufacturing facilities across 15 countries.",
+        "finding_ids": [
+          "F5",
+          "F26"
+        ],
+        "sources": [
+          "S23",
+          "S25"
+        ],
+        "evidence": [
+          {
+            "id": "F5",
+            "claim": "Asian Paints operates a supply chain model designed to be adaptive and resilient.",
+            "quote": "Asian Paints Supply Chain: Adaptive and Resilient",
+            "source": "S23"
+          },
+          {
+            "id": "F26",
+            "claim": "Asian Paints has established a global operational footprint with 27 manufacturing facilities spanning 15 countries.",
+            "quote": "The company has 27 paint manufacturing facilities in 15 countries, servicing consumers in over 60 countries.",
+            "source": "S25"
+          }
+        ]
+      },
+      {
+        "text": "Asian Paints built its competitive brand moat around distribution capabilities, technology integration, and customer services.",
+        "finding_ids": [
+          "F4",
+          "F15",
+          "F27"
+        ],
+        "sources": [
+          "S2"
+        ],
+        "evidence": [
+          {
+            "id": "F4",
+            "claim": "Asian Paints developed its market brand moat through distribution network, technology integration, and customer services.",
+            "quote": "Asian Paints' Brand Moat Built Through Distribution, Technology, and Services",
+            "source": "S2"
+          },
+          {
+            "id": "F15",
+            "claim": "Asian Paints has built its competitive brand moat around distribution capabilities, technology, and services.",
+            "quote": "Asian Paints' Brand Moat Built Through Distribution, Technology, and Services",
+            "source": "S2"
+          },
+          {
+            "id": "F27",
+            "claim": "Asian Paints built its brand moat around distribution capabilities, technology, and services.",
+            "quote": "Asian Paints' Brand Moat Built Through Distribution, Technology, and Services",
+            "source": "S2"
+          }
+        ]
+      },
+      {
+        "text": "Asian Paints' technology budget crossed the ₹100-crore mark, driven by digital technology initiatives.",
+        "finding_ids": [
+          "F24"
+        ],
+        "sources": [
+          "S4"
+        ],
+        "evidence": [
+          {
+            "id": "F24",
+            "claim": "Asian Paints' technology budget crossed the ₹100-crore mark, driven by digital technology initiatives.",
+            "quote": "Asian Paints’ tech budget crosses ₹100-crore-mark riding on digital tech",
+            "source": "S4"
+          }
+        ]
+      },
+      {
+        "text": "Asian Paints has expanded beyond core paints into the home improvement and décor sector, initiating VAE emulsion manufacturing at its Dahej facility and introducing Ultraa and Hydronaa wood adhesives.",
+        "finding_ids": [
+          "F7",
+          "F9",
+          "F28"
+        ],
+        "sources": [
+          "S16",
+          "S25",
+          "S38"
+        ],
+        "evidence": [
+          {
+            "id": "F7",
+            "claim": "Asian Paints initiated VAE emulsion manufacturing at its Dahej facility.",
+            "quote": "Asian Paints Launches VAE Emulsion Production at Dahej Facility",
+            "source": "S16"
+          },
+          {
+            "id": "F9",
+            "claim": "Asian Paints introduced the Hydronaa and Ultraa wood adhesives featured with a 384-square-foot wooden mosaic.",
+            "quote": "Asian Paints Launches Hydronaa, Ultraa Wood Adhesives With 384-Sq-Ft Wooden Mosaic",
+            "source": "S38"
+          },
+          {
+            "id": "F28",
+            "claim": "Asian Paints expanded beyond core paints into the home improvement and décor sector in India.",
+            "quote": "Asian Paints is also present in the home improvement and décor space in India.",
+            "source": "S25"
+          }
+        ]
+      },
+      {
+        "text": "Asian Paints reaffirmed its operational target of maintaining an 18-20% PBDIT margin via cost management and innovation, while expecting a dynamic business environment in FY27.",
+        "finding_ids": [
+          "F8",
+          "F10"
+        ],
+        "sources": [
+          "S17",
+          "S19"
+        ],
+        "evidence": [
+          {
+            "id": "F8",
+            "claim": "Asian Paints reaffirmed its operational target of maintaining an 18-20% PBDIT margin via cost management and innovation.",
+            "quote": "Asian Paints Reaffirms 18-20% PBDIT Margin Target Through Strategic Cost Management and Innovation",
+            "source": "S19"
+          },
+          {
+            "id": "F10",
+            "claim": "The chief executive officer of Asian Paints stated that the company expects a dynamic business environment in FY27.",
+            "quote": "Business environment to remain dynamic in FY27, says Asian Paints CEO",
+            "source": "S17"
+          }
+        ]
+      }
+    ],
+    "pain_points": [
+      {
+        "hypothesis": "Threat of competitive moat erosion amid structural industry shifts and new market entrants.",
+        "why": "Industry analyses indicate structural challenges leading to Asian Paints losing its competitive moat, while new entrants like Birla Opus have expanded their presence using scale, capital, and 45,000 tinting machines.",
+        "service_fit": "Strategic distribution management, network optimization, and competitive positioning consulting to reinforce market moats.",
+        "finding_ids": [
+          "F2",
+          "F6"
+        ],
+        "sources": [
+          "S22",
+          "S24"
+        ],
+        "evidence": [
+          {
+            "id": "F2",
+            "claim": "Birla Opus expanded its presence in the Indian paints industry using scale, capital, and 45,000 tinting machines.",
+            "quote": "How Birla Opus Broke into India’s Paints Industry with Scale, Capital and 45,000 Tinting Machines",
+            "source": "S24"
+          },
+          {
+            "id": "F6",
+            "claim": "Industry analyses have evaluated the structural challenges leading to Asian Paints losing its competitive moat.",
+            "quote": "Why Asian Paints Lost Its Moat",
+            "source": "S22"
+          }
+        ]
+      },
+      {
+        "hypothesis": "Margin compression risks stemming from crude oil price volatility and geopolitical disruption.",
+        "why": "Asian Paints targets an 18-20% PBDIT margin, but operating conditions across the global and Indian paint sectors are constrained by oil price surges, crude oil volatility, pricing pressures, and geopolitical disruption.",
+        "service_fit": "Supply chain cost management, strategic sourcing, and margin protection consulting.",
+        "finding_ids": [
+          "F8",
+          "F13",
+          "F16"
+        ],
+        "sources": [
+          "S19",
+          "S8",
+          "S9"
+        ],
+        "evidence": [
+          {
+            "id": "F8",
+            "claim": "Asian Paints reaffirmed its operational target of maintaining an 18-20% PBDIT margin via cost management and innovation.",
+            "quote": "Asian Paints Reaffirms 18-20% PBDIT Margin Target Through Strategic Cost Management and Innovation",
+            "source": "S19"
+          },
+          {
+            "id": "F13",
+            "claim": "India's paint sector maintains an optimistic growth outlook despite facing crude oil volatility and pricing pressures.",
+            "quote": "India's paint industry remains optimistic on growth despite crude volatility, pricing pressures",
+            "source": "S9"
+          },
+          {
+            "id": "F16",
+            "claim": "The global paint sector faces challenging operating conditions driven by oil price surges and geopolitical disruption.",
+            "quote": "Is the Global Paint Industry Facing a Perfect Storm Amid Oil Price Surge and War?",
+            "source": "S8"
+          }
+        ]
+      },
+      {
+        "hypothesis": "Operational and supply chain complexity from multi-category business expansion.",
+        "why": "Asian Paints is actively diversifying beyond core paints into home improvement and décor, including localized VAE emulsion production at Dahej, while expecting a dynamic business environment in FY27.",
+        "service_fit": "Supply chain transformation, integrated business planning, and operational alignment for non-core category growth.",
+        "finding_ids": [
+          "F7",
+          "F10",
+          "F28"
+        ],
+        "sources": [
+          "S16",
+          "S17",
+          "S25"
+        ],
+        "evidence": [
+          {
+            "id": "F7",
+            "claim": "Asian Paints initiated VAE emulsion manufacturing at its Dahej facility.",
+            "quote": "Asian Paints Launches VAE Emulsion Production at Dahej Facility",
+            "source": "S16"
+          },
+          {
+            "id": "F10",
+            "claim": "The chief executive officer of Asian Paints stated that the company expects a dynamic business environment in FY27.",
+            "quote": "Business environment to remain dynamic in FY27, says Asian Paints CEO",
+            "source": "S17"
+          },
+          {
+            "id": "F28",
+            "claim": "Asian Paints expanded beyond core paints into the home improvement and décor sector in India.",
+            "quote": "Asian Paints is also present in the home improvement and décor space in India.",
+            "source": "S25"
+          }
+        ]
+      }
+    ],
+    "proposal": {
+      "pitch_outline": [
+        "Optimizing supply chain operations across 27 manufacturing facilities in 15 countries",
+        "Mitigating margin compression risks driven by crude oil volatility and geopolitical disruption",
+        "Defending competitive moat against new market entrants and structural industry shifts",
+        "Managing operational complexity stemming from expansion into the home improvement sector",
+        "Maximizing value from technology integration initiatives backed by a ₹100+ crore budget to support 18-20% PBDIT margins"
+      ],
+      "proposed_scope": [
+        {
+          "workstream": "Multi-Category Supply Chain Rationalization",
+          "deliverable": "Operational complexity reduction roadmap for home improvement expansion",
+          "weeks": 4
+        },
+        {
+          "workstream": "Margin Protection & Volatility Risk Management",
+          "deliverable": "Cost management and input-price volatility mitigation strategy to support 18-20% PBDIT margin targets",
+          "weeks": 4
+        },
+        {
+          "workstream": "Distribution & Tech Integration Alignment",
+          "deliverable": "Distribution enhancement blueprint maximizing the ₹100+ crore technology investment",
+          "weeks": 4
+        }
+      ],
+      "discovery_questions": [
+        "How is the expansion into multi-category home improvement impacting supply chain complexity across your 27 manufacturing facilities?",
+        "What specific measures are being taken to protect your 18-20% PBDIT margin target against crude oil price volatility?",
+        "How is the ₹100+ crore tech integration budget being allocated to enhance distribution capabilities?",
+        "How are geopolitical disruptions affecting raw material sourcing and international supply chains across your 15 operating countries?",
+        "What strategies are in place to counteract competitive moat erosion from new industry entrants?",
+        "Where do you see the biggest distribution bottlenecks as your product portfolio expands into non-paint categories?"
+      ],
+      "email": {
+        "subject": "Enhancing Supply Chain Resilience & Margin Protection for Asian Paints",
+        "body": "Dear Asian Paints Leadership Team,\n\nAs Asian Paints expands into home improvement across 27 manufacturing facilities in 15 countries, managing multi-category operational complexity becomes critical. Protecting your target 18-20% PBDIT margin against crude oil price volatility and geopolitical disruption requires continuous cost management and innovation.\n\nAmid threats of competitive moat erosion from new market entrants, leveraging your strong distribution capabilities and your ₹100+ crore technology integration budget is essential. Our firm specializes in supply chain and distribution transformation. We would value the opportunity to discuss how we can help streamline your complex operations and secure your market position.\n\nBest regards,\n\n[Your Name]"
+      },
+      "email_status": "approved"
+    },
+    "sources": [
+      {
+        "id": "S1",
+        "title": "Odisha to pitch chemical, petrochemical investments at India Chem 2026 in Mumbai - ET Manufacturing",
+        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQN1c1eEVGMkw4YWtkVkdIYUF1LUQwSkNXU2xoRkQ1WXlzaEQ2WURBaEhueE01R3Z2ZG9VMFQ5TXFXek40ZGUwcEp0N2I1NVBwbm5ZczczTnJBeVExcVNwXzM4M2NkTUJUVzcyOEZfRm55Z0VWM1V6R1cyM2cwWDA2QWJzaUlTOHg4dW9vQ2l5LV92dTNiemxYVnFVVEJyVlBSMUx1NTVjcGpLU2NvN1J6OVNNdjRFeHNZN2o5T1R4cDZXZERZeXZhcUZ6NzFScE5aSWtGTHBHdXg2d1RXNFdfRjBPczkyQmhXcEhj0gHvAUFVX3lxTE1rTE5WQ1o5ZlNld3IySElpbm5vMTRVTzBWVFhUUTJzenZ1dkg3NUhxdzlzQ1dLaXlzSnFKeWJZV0FfQmpQckE3UlB1azFlR1Z2S1V0bV9lU2IxeDhlTmtubHg4M21VN2g3UlhDcDBZcmdBeTBWWjlvb1hSRUtfOUVtT0RDa291bEp6WFJMLWE3d2RCUmdDZFNOVHZKNnZZYkNJek83Y2hTVi1RVlUtQkVYYWZrd0l4bUhoQ2Q3d1U2OUhVX2pobU81bHpGdUtPQmIyekRiLUZtWktSb0RrRW5tMVkwVTJQZzQ4R0xIN2dr?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S2",
+        "title": "Asian Paints' Brand Moat Built Through Distribution, Technology, and Services - MarkHub24",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUEJfenlZWnp1cHdqc00yRElsbWpVN2d5dkdSY1M5eDNMb3dpcUtKeTZiVmZQRlpuMnZFWm9WYlVOMWhLcF84OUFsRWg1WXlnNTUtUlRWbUo0ZlhzdzExQVpvbzFPakdyd2F6b3FoY3E1dFl4T2FOdW1Hdi10dWpSVHdPa3A5a1FrSzJoSnBzTTJDY04xYnpLT1FYQ3dseGplekRlOU9vSzA?oc=5",
+        "kind": "news",
+        "cited": true
+      },
+      {
+        "id": "S3",
+        "title": "Asian Paints appoints Leo Puri as Chairman - ET Manufacturing",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPbEtiU1FKYWlnSnQwRFBWT1UzYUFpUjdBS1RFLXRwZzFTcVpybzJsUmtUaWExcDhZbHlnWVhZZFNxNk82RzlpOEYtbzBZMUVlOUR6WnR5SXNhbE9wSXBxc2VoUU96RGViWTBkT2Z4OVl5amVJOG9hdjFkYkdoSmJtRHcxakNRcTA3TG5KMWdxT2xHckY2ckRIeEhqT3RmWEtpdWNoT0RuNFZRSElzMjd4ODNpZExEVTZmN3VTVEhLWFpyUzDSAb4BQVVfeXFMTnNlRUZBdlBPYko0Q0lDd3U3SVpsM09mVmstd05zVm52RUVoMFVIQnBNcmhrYW9ORm5TeE16bzEyTE1QZEJINVAzaHJKTVpkX2JmZzZzUHkyX3VfSWVfYmlYeDR4a3JRblE5YTlHZkJkMnNqeC1IZ0psdmRIcVN2NjlMdHNfWjAxc1J1ZDJwc0pRMHA4R05EZjM4dWtYTU1YVDNLNlpScFVhMFpFanJicGNRMmJuV0M2eUxzeFI0dw?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S4",
+        "title": "Spend-IT: Asian Paints’ tech budget crosses ₹100-crore-mark riding on digital tech - Techcircle",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQ3ZNcjdLcVdWRXVPdXlLYVpzTTZSa2xLcEV0cEM5Ql9Qc2NqeHllX2hyM0lhdUU4azcyNU9zeXpVUGg5V1ZSRkJTTWV4SXlGT0JSWThVblFlWnVLczh5NmQ0QklmNDE1bXBJcnIxdjdTb0RqdU42THNxTkM0R3N1dzRtYUFTN1JlQWZBRjEwY1lTUlVYRTBTTGhHWnhsdHJlbUVsUmJwZTNLdWtrZk5xYWh4M0hzWnJn?oc=5",
+        "kind": "news",
+        "cited": true
+      },
+      {
+        "id": "S5",
+        "title": "Inside the next chapter of the Dani family office - ET Entrepreneur",
+        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPTm5WWWdjc2J6TjMtbU9WT1VIWk1fTTdyZ1AxOG43RXhJcF8wNm9xUW9kSVVLaW9aR2dOUzlWY3hiQmlNMjd0N2F4eEY2TjRCUFNNRVNHT2hjcldyV0lHZXByVG1wVFNkX1hKSnQ0dnlsZ0NRN29adFdDaHpXYlVRaWhfSUpOOG1ldDR2elphWFVtWkk4eWtNczRYV3Jwdkd5Z0tEUTBNc3IyUXdoR3ExZ243SVdadkc5bjZuZ1gzSUQ4VGJxa0NqRFRZcEZFMWIyQ1FYTWw2WHJhRnlFeE8xZFgzVGtqX05mOUZJ0gHwAUFVX3lxTE5sTTJlQTRoak5vZVpUT2M4aXdCaHlaMjQ4cXN4Vi05UkJWRzE4RlV0cjRlSXZJekF3ZW5kLWlFTzRfR01XODhteGdSVDBrLVk4Y3BqdXY3LTBzZHNVRDRDZVlUd2xmSEIwWmliVy1UdEZweFFZRTBMM1B1TldpWDExQ19UUkxYMUFDUUJraEdBUDdEcUxDeW5xQ1hwMzlsS0RPbUp1M1NyTUM3cHFsZjRjcjItd2dxZEhHa2FXVldjcEVZS2hCdlRNYjZDQ0lzSnlEMGtjYnRnMGczS284MV9HbDJ0RWNIVGo3Unp1VVY5Qw?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S6",
+        "title": "India Paints Industry: Structure & Growth Drivers - IBEF",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQLVpPMV9hbmVnNkNySVl4TjdNSHZzY000MkNPZk94dUNheGlwREE3YXhkajFDS1gyUzVwN185aGkwY2FtcFU2M19WNF9qQ0NEa1BQYzI1NFlvSEd2ZXJucFVoRGlrd1FjWWN6OUJES1ZweVg3b3hBQ2FaWmdGa216VXFBRE0xX3gwVjJneg?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S7",
+        "title": "India Powder Coatings Market Size, Share,Trends, Growth Analysis Report, 2031 - MarketsandMarkets",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQbDZZUlJMR09GcTVkWlBoQnpWNEJoVURaV3NqRVYzZHhELTRqNTNXOXNGNVBoVFhESzlaZlhveFNWQ01xU3FIanc0dE9rbk1ueFNGTGs1aGpNTThJMnhkS09zREJ6TjBJMVhxa3JCRi1KekdldXE5MHJnR0pvbVZFN3I4ckhUVHBNY0VwU2xlNXA?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S8",
+        "title": "Is the Global Paint Industry Facing a Perfect Storm Amid Oil Price Surge and War? - ChemAnalyst",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNdnI1Z1owbFhPcWVqd0JGRHBEV1U3b2lPckZSM0Y3bzRFekhXQ2xiR2FudDZqd3VSQ1JvMnhwd2RQY3Bib1p2ZTIyYU9BaHVWdzJFblRQQmdTTGRsYkdRNDhsZmhxSUQwT3RXTmcyTjFqNFpGdUZiOTROcjZiZ1lKcUtoRFFVamtidmg4amhpb2Y1SWFJZFh5TlpRbW9nVkN1SVN0X3U0UFJpVkQ3R3I2RjhXR3cxcUoxR0tfOEl4VkdHOC0zNHB0d0dvSU9FM1lvSmx4VHFn?oc=5",
+        "kind": "news",
+        "cited": true
+      },
+      {
+        "id": "S9",
+        "title": "India's paint industry remains optimistic on growth despite crude volatility, pricing pressures and compet - The Economic Times",
+        "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxQRHlFM1pleWsyYUtaTVZHQmpuLVFTaXM3amZwNkhiRHNINndIMlk5SHZfNjFNc282blJLYmtBbktGLXgwWFFDV2cyemVEaVZQVk9oRy1SWE5lbFh4Vlp4UGFfR3hhcy1VNzlEcHpCZ05OVjdBcFJvZlJQQU9pOFdWMDdnT2otMkE2TGdZdG5nbloyaUZKT2lqTHp3elF2eHJYaHV3U2c2M0RuQjdSWFFHWHY1Y3EweTJsTHVKV3JobUI5SGlPakZHM3V2Y1RHdUs0c180U29rLTJWclQwRVgtMW54VFMycVVJZWlzZDZoM0NabzVVWUF4MzNERUY4Y0stanpKa2VaZnB5dXhCdkE3WHpBamJCV0xfZERWVE930gGjAkFVX3lxTE5OQ21RSGQzRnN5M0Iwd0tacjF5UldFWTVZdVdobzVOenFvekhlZHNkWGhnNzZ0bnlNdHZRZm5zc1FvS3h1a1RSdHZMazcwNTVuZkxhbzhYcUVwUlctRjg1UWRpdnBab2JpcGZuSjIwQWJ6VXlydTVmbkZwWGNnMUFVQlZYam9Wd0NxRVZiZzgwZmRsaGlMaURWNElrNV9Va3BCWG5WZms5a1EyRldPVmJ4VjVnOTNOaXN1WExiM0ZtRW5IVzZzc3lhMEFkUzl5LXA4dWVMSDY2Q2YzbGF5TVhlNlpwT3l2UzRuTlIzcG91ZEFRb1lndkRINXEtemVCU3hDNl9WTUk5b2Q1cXJ3RkZzV3pJX1VKV0VhTGFHQ0h4THJlQQ?oc=5",
+        "kind": "news",
+        "cited": true
+      },
+      {
+        "id": "S10",
+        "title": "Chemicals 2025: A new reality for the global chemical industry - McKinsey & Company",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNaTFGd1ZZemNHTG1LMktsUm5IU2dOM3JUYkw0clNSVjNSZlF2LXhwZ2ZRaFpnLTNUdm5fVkJiQTRONXp1ejdETFhFRFRVci1Rel9iYVdGSTZBaEZGWDNuWkkxejNZbzQyel9fNU9Xd28tTTlwc2tHVzV2bHV4ckFvM1JGZU55SE00X1RydExJb1FRVFl1?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S11",
+        "title": "Best Paint Stocks: Asian Paints vs Berger Paints - Equitymaster",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZ3l1bEFNM2lJUkdST1Iwb2k0WDhRTGFLV3NnU2ttc3dsc0JkZ2tPSXNPNXl4d0ZtaWNMSEFudkppV240V3lJVUZiangyTndMTHZzSXlaeXRUVUUwaXlJdlVTOW4ydjRGaVY4ZldlWjRZOFFjU29uZ2puSElwb1RuNjBmVzVfNTZFVWdUSC1hTVFRMkg5MlBCZ0RwY3dxR28wNVNWSV9NdWlPSVVpcW9WOFNpMzFDMkpS?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S12",
+        "title": "Asian Paints vs Berger Paints: Which is Better? - Livemint",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNb3lMS1VkaFRtdmZuUWZDMVJnVWFpRXRwenlrbmJ4cXBBdDExN2FXUGk0UTNkcGFUcmd2U3o5S1ZTdU5FUTB3eWctejN1emgwa2F6NHFpMF81MVc5SnU1dV9vVkl1NnVLNFNDVnhMQkcyekhTNXp2Qk90N1I2SDhiam9uVnQ5bk1xV2ROMHE3SGtCR3R0QmMtSkZqN2pLd1ZLZ19reG9HTzVheDVkUU5DMV8tMk9fZ9IBuwFBVV95cUxQRHQ3RkZZeG9WWjAxMFhMbFFBZlM4MmRJcm1jWk1QQTRiUEg3ay13UHhxRlBVWWJNWXozTGpNOThiNXhJUXdGZ2RsZGpwSnpEYkt3QVJRR096M3l6M0pjMl9mdVkwcThvLXpXdWVBSUJzSWJ6MVo1RXBpaTVUY2xxRm9nYUVablQ0UGJMSHJ4RGJtN0taM29QWUx1OUl2cTlfMVZXZjJGWlByR0Z6dldZN3NPS3JaQ3JyM1Zz?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S13",
+        "title": "Asian Paints Analysis: Past, Present and What is in Store Going Ahead? - Groww",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBTWnZCZ3JVZWdXYnJmWVVLaGhYUUVkM1duaTFzM0c0dFlqQTVsVG5ONEpMLUpJd0I0RFZxTmtVamFSbjRXWkc5TEZNOUZyb3k2bTJuRkxR?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S14",
+        "title": "Berger Paints Marketing Mix (4Ps) & Marketing Strategy - MBA Skool",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9CUVVTckp1MDVkSWFYTE8tNnVvVlIyQ0JqbzFSS0J1V01yaTVzWjcwVFUtTFhiZWNNQ3Z6VldHX1hzeEtMbWdmaExvdEtHR1hjUElPREJhWFdsM3plbjdxTjBnUTFCbnBOU2tzTTJ1LXpJWDRKWlIwajlPTzU?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S15",
+        "title": "Asian Paints vs Berger Paints: Which Paint Stock is Better? - Equitymaster",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdFM2U0JsU25PZEx3RW9jeGZURkFmQm8xUTY0d2ZKX0hnTTVEQVFmbktkQk85SUJ5Mmotb29PYXk1cDZCdV9pQktzc2ozTm5xQ2lUZVJZaTVpWVRLRlJzYVdsY1hJVTVIeGJrNjVsX2JESk5Ea2thcG9nakVlSDg2RTNyMHVGOTRRWVRMcmlfcnhwLVJvek9LLW5jendwTUFYUUVkdzRMdHd3NVZFSFZya3B2U2RhUQ?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S16",
+        "title": "Asian Paints Launches VAE Emulsion Production at Dahej Facility - European Coatings",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQQlBPMHFXeFZ4OWdQZVZNXzM1d0V4VlZwdEhqQ2VUWi1yVndiZUZ6cnJlZWNtaHNFU0NRR0F0ZGhWTFNINjdwY3g5NHNYaTJWNWQ3NE5EOFNxOGVweWZzakkyUENQUWN1ZjhaZjZieHNLNFBmbjJBVjFrNUpXYnNhVVpMUGlTNnRWS0Vab1h3VWRHOFhtbXJ5ZkhzQkNDbVY1Z2hkTEZ6ckc2OEJ3eVlJcnVDYzlUdHRYdFhpX3dB?oc=5",
+        "kind": "news",
+        "cited": true
+      },
+      {
+        "id": "S17",
+        "title": "Business environment to remain dynamic in FY27, says Asian Paints CEO - Business Standard",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPa2dmWmx0aWdRZVFEOHVPQllpZHdqclRMQ082WE1jY3hKV2RmWHVFZUpXcGNKTk1na2FkYTNudnltYXhKdk9SVm9mZFAzeXZTSjZqVzRNWG9DSm1JT3BYaVRFZ3h1SjVGNnpIZzVqeTI3Z3ltNXhzTEFFTWROXzV3UXF1NVhDZXhIaVJjLUFfZ0k5VmpWQWlad2pwbjVJdTlwbFVqSHpiSEY5THhiYTlraUlSTHdoaHBFTnFHdFpSY3JQTlM1SmxqOXFUcHhRZFNqS1NB0gHYAUFVX3lxTE8yTHJodDZKZWxhb2Ywd2N3Vi1YbFJ2ajE2dHYtSjFuSjF0QkJzbEdoMGtoMElmbkExd0dPanppTVNHclRIdXJoV0NkbnNKenI0LWJwLTBWNUpYYVg1SlVGZDZJdjdKcGx1RmtFVUNyakI4dEdXWGgzNEE0aFYtcFh1aXFscTNWQXQ5ZmtZbTc0dmxlU1pFeXNDNTJvNG5ZN0UxdUhRWkRudGVrbVRETS1zOUhGb214QkcwNFROTHZTY0xlSDB3cXhoaHBOdldNQlhZM2Q3d2trUg?oc=5",
+        "kind": "news",
+        "cited": true
+      },
+      {
+        "id": "S18",
+        "title": "Satyabhan Appointed as Group Supply Chain Head at Dayal Group - https://hrtoday.in/",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRm1aTTRfTG91UFhkU2NiS0V4NDMzZDNZMTAwSE1NQUZEMTFQSU1YcGFOSHNuUzNkZlJ0by1GTWUtNWtmWWxGMkJmdTBrU1dGVVJrbW9MUE5WeFFPdzRTNGIzYnJwUVVUTmFOMWlldzc1WXk0Vy1nSnJLWUt4S1RsdDRpRWNBQ3Bs?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S19",
+        "title": "Asian Paints Reaffirms 18-20% PBDIT Margin Target Through Strategic Cost Management and Innovation - scanx.trade",
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPV2ViRzhYZlB3SkF5NW8zdTZhLXlvTDJlSkRVX1hyZDRHT1ZUNThKTDhGbThmSndpU21haXJKOF9zRWRUQXR4VkF5STdMQVMyMDZWMFRSS25mYXBGY1B0RlNNb2lsZWd4dlpLZHVkczlwRzhBellXQnRGZ2tWNzEtcnRNQmoxRTIydmdJbkdya1Z4ZjZwNWNURmVvdU82UmlndC1tQXJjUE9oQW1Na05QVWUtb28wUGZMbnRYMG5Hdjk5eHVkYzlFNmNMV3hKdmxVWHViMUhTTE16SGRPMmhMU05JMy11Zw?oc=5",
+        "kind": "news",
+        "cited": true
+      },
+      {
+        "id": "S20",
+        "title": "Ankur Malviya Promoted to Vice President at Prozo - https://hrtoday.in/",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9iSlZuT2tuZF9uX3JVSGU3ZElSOV9IMnlMUUFZVVZNSEZVcXJRS2JETC1jc0hLaHlLcDNlN2JLWHhUYVU0QW9TN1RUcEVyaFNlVWNoQU5tY3pOLU8weEdrd01XMEVnRENPQUpHZDVsV3JwNUR5d3BMZA?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S21",
+        "title": "Asian Paints Dividend: Here's what 9.2 lakh retail investors need to know about past payouts, record date and more - CNBC TV18 - LinkedIn",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPalpMT1lraWJpRkljWkh4a3pjQzBVLWZiZWlqS3o1ano4ejlLTnVidGVVZ0hPaWVtWDRod3psakczNWxqcXhOYzBmQjZaSUszbEs4ejJyelVXQzNwNTJSQlItU2NfdkhVbjZXV01IZi1CZGdybnBuQ2pUeG91eXZEOEF0OUpxOERuN0JRY1FlWDFBY0M5c0JGNGg2ekR4MjRmT1RfRmdYaEVaREYyS21QSzZ6NkFnZw?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S22",
+        "title": "Why Asian Paints Lost Its Moat - HDFC Sky",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQS0NwWlVvcFU4Qng2b1N5RFFFM3JUcVdOdDZMaVR1Z0dEMi05RzZlS1JLaWx6Uzg2THVwZEhVRzgwTEFLS2xxa2wzTkMyTVI5QzlLVzNINXk0SHp5SnktdE1LS0ZmVjk5eHJjYWFEM1I0YXZ6M1o5X25PSlhURE1MWWRpd2k?oc=5",
+        "kind": "news",
+        "cited": true
+      },
+      {
+        "id": "S23",
+        "title": "Asian Paints Supply Chain: Adaptive and Resilient - Logistics Viewpoints",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9BRlVHbmdic2NzMzEtMnlMMmVUNTlqRW12QlVkQXItVm5NeFZXclJ2eTlHT0VFX3dTeGw0TXU1UzFRclhWd0JUbDl4YjZtMVZQdnNrTUVkMFJKYklBZU5YTDlUMWFlUUw0ZUdqZEs2ZllvMFJ5UVVEQg?oc=5",
+        "kind": "news",
+        "cited": true
+      },
+      {
+        "id": "S24",
+        "title": "How Birla Opus Broke into India’s Paints Industry with Scale, Capital and 45,000 Tinting Machines - Outlook Business",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRWo4YXRBbVhJRmg3c3hWWHZoUUlWUWVocWxNZ1BfU05Ld09KOHlRZ1FjMGY0b2dLb0E1cEVfaTBMLTRDcU9SQnRfQVgyS0JQMDU2aUdEU2ppMzY1cmhUQ0dDY2x3MldtQnVsSy1jNll3LWRfOTJhMlI1eVVRVTlyS2lDTEF3Z09iNFM5ZXdmRWxCMjE3Vkp4eEVMVVlYR3J6SVpTbzVqelVhVG5NVjBlRmoybUtuaXRuWjFXSWcyYVRCMlN5Nm9WcjJ3cTJ2UU1M0gHeAUFVX3lxTE9HZGU2cWlTOE5jc1J6VTRVbEFOcVplT3pwRlVRS09GS3NfUDRDcnhOdUEtNjBwM29mSjRfZEtXWWNkM1JPLWliUHo0ZnNwVXVhMTl4Nm9nNEJHblc4N2pUb1U5b3Npemw4UE5FMkEtcHAwbV8xUWo3TkNJc2hnZndnVnQ1Q0U4dDZhLU9YUXFzQ1hQTHhleFlPWW5EV2RUTkRVYjlMbjBabTN3akotNk1nY0Fnc2RWampVZVBna2JQUTNmb2RWSmdTQV9PNGxkSHlwRzZ0ZEU4NTlVVjRWUQ?oc=5",
+        "kind": "news",
+        "cited": true
+      },
+      {
+        "id": "S25",
+        "title": "Wikipedia: Asian Paints (part 1)",
+        "url": "https://en.wikipedia.org/wiki/Asian_Paints",
+        "kind": "wiki",
+        "cited": true
+      },
+      {
+        "id": "S26",
+        "title": "Wikidata: Asian Paints",
+        "url": "https://www.wikidata.org/wiki/Q28171825",
+        "kind": "wikidata",
+        "cited": false
+      },
+      {
+        "id": "S27",
+        "title": "Enamel Paint Market To 2035: Growth Momentum Builds on DIY and Premiumization - News and Statistics - IndexBox",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNOFNwXzQxaU43dHE1ZVRXc3duS19yY0Q0MW15ZU5UVTF4eWFPZEdNaXhseDhLbzAxSUI1RjVneWVUcmtJYThJT2FJd0hmMlBUbDRGTDVxbGZQS2l2M29HZ2lJZzZtYmo3eGQzY1RST2RRV3pEeU5tTm9wamQxelRVMnVFRDQtdHhlTmlRZENuOXdReW9jZ2JOdVQzajd2dGRlbXV5eFotUnVQa21MZWJiRmhlRlo2NUNRa0N0R2REZXNnX2c?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S28",
+        "title": "Art & Craft Materials Market Size, Share and Forecast 2034 - Fortune Business Insights",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA0amNwOU1rR1dXYTA4Wklfanlrd1ozcTAya3lXQ29PSjNVT19idjRiT1AyTGx2dkE3S04yRmRubWtxT1FNS1Q5bzE0c1dDMWhYWjVTbUZvX2dUcUdmT1dQNGlZem1PdnI4TnB0YjhHaHhnY1EyVk1kSlJpRXIxUQ?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S29",
+        "title": "Birla Opus: Transforming India’s Decorative Paint Market - Aditya Birla Group",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZzgtMnozTDR3MDF6a2lRa0Njc1VUeE9fOHdmMTBLX1JIR3pvRGFWMDhoUzRPMnBtMTFIZmxrWnlST29UdWt2S2VLT1hBR3lBMThBTm5NQTA4U0hlb0ZZY3FCZUdaU1VkOWNWaXYxUUhld1JfNE9jSU41MFdPd1BlaFNBSnlFUmx5MXZWdW53WU1hZi15S3ZxamR5S1BXX1R1b200QTdBbW9KZDhV?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S30",
+        "title": "Acrylic Paint Market - Future Market Insights",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5tdnlmUzNTLVRjX09iamJfdXpMSzRiMDdVOVZZanVJc3hXWHlRNHU5UllSMkJ5cmpTazBkdnU4MmRNWnZpdFM2UWZzNnU3NjA2aGh0OFpxMlk4SVdRTnRVWGw4aC00WTFTZTZxcXhoWnYyZG5WYktSYUF2MXV1Zw?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S31",
+        "title": "Official website: http://www.asianpaints.com/",
+        "url": "http://www.asianpaints.com/",
+        "kind": "company-site",
+        "cited": false
+      },
+      {
+        "id": "S32",
+        "title": "Advancing Solar Cell Manufacturing in India - CEEW",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQVZMbkRkelpZcjhKOUloZm5jRm5rckozZ2JDTEJNWmstbG9EeUNrUVRyUm8zNy1kNFl4UUJjTms5dV9OaFFiQ1BkNldEaVh0aGs3c3BySmNzWUhFdVhTRXZjLWd3d056ZzNYakJ5U0trOFhUQ280em80M3JOVi0wRzNOWVdMbW9rZm1DQXZLSUE3QQ?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S33",
+        "title": "Paints and Coatings Market | Global Market Analysis Report - 2036 - Fact.MR",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1Wa3hHMkp5a0szX2ZZWG9oZWRmTTJQNzBTbHhBekwwZ3JuWGtPbWVMSENfTVBXd1BUWjJvMWp4TlVpTnYydXdHSThXYklPc1ZJRlBhTDBVb1JPcmdRS3MySDdYUFhIQkE?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S34",
+        "title": "rest-of-europe Powder Coatings Market Size, Share,Trends, Growth Analysis Report, 2031 - MarketsandMarkets",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNT2hvYklmbEFlcGFNdEZCT2RjYmRJVjIzVThEUW83RHJ1MTB3ZFpEWVdpMW9mTzdHZ3p5RFpIdzh0X3NkaWlXeUkzUkVFNHVTMHctN0RSWTVXbXducmFOT0dUdDNQNmdXYzRkVm1aTEJVcDNwVFBDMWFEZ1RFZkEwb2R4TVZ3ako2eUswLU9CbXBhbVpjYkNEc0FXb2I?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S35",
+        "title": "GAIL subsidiary commissions 1.25 MTPA PTA plant at Mangalore - scanx.trade",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxON0tzMl9ETERodGMxdUF6d1Y2c0tUcVo2YU9qUFd4bllBWklCaHo5c0VpNllBSUg4TEpBcWJxZTQtaUJPb1c3MzJPUVRYaGEteHYya3dBRXhZNVNhWDlBY3pDX3E5YmZXejFOZ19FV1pHcHJ2MmtyVE9RRGlnTXMxb3dCdmVIaFVKZlVacWpPNWlrS0daMEQyREtjR1FPMGpkNjhyVGVMNXczbXlaUF9HMHdKZ3E?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S36",
+        "title": "Q4 results: Asian Paints, IndiGo, NMDC, Glenmark Pharma, IREDA, BEML, Inox Wind, Rubicon Research, others to post earnings on May 29 - Upstox",
+        "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOMmQ3YjdmU3ZaYVMtTTRMa0g0ZzVLU0dqN2podzNUNjAwR3Z3NnBQQ0toclpzYnpZQllsd1JuZXIycFlrTU9GOW9yeXVsYmtjaUo5X2xhRk9WZU1wZGRIOHlQWVZCRWpXQ0NIM3pxam14U3JYUXJqc0pSbndvX3hxeGlSVFNua1hhclFuVzFNdmtHWkhQU0RCZ3dYV1YtdzhHaHlzWGFXUDhkVVNyZzhKU1hfRDBEVEt5U1VPZl94OGxnSnNnWVg3N1h2c0xVU1hMdmZERDhYcVZ1alZMdkdqcFVxbmFrNFA4eHpSY0NOUm42ZDVqRk5Wa2I2TExiZGRiMVQxdUkwUjhlS0lyTlhydWs0Yw?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S37",
+        "title": "Kansai Nerolac Paints Ltd (KNPL) will invest ₹98 crore to expand its Hosur factory in Tamil Nadu, increasing its production capacity from 15,500 to 28,140 tonnes per month. The expansion will generate 280 job opportunities and strengthen KNPL’s presence i - Instagram",
+        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5NRll1a0htVEd0SmlnRGJ5c3BtclAtTXkwelBBazBoZWxMLVBaUFBHRmljbUtZSWFrelhIOFQ0elVTU1luRUVKRW95WjMtVzZJcnc?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S38",
+        "title": "Asian Paints Launches Hydronaa, Ultraa Wood Adhesives With 384-Sq-Ft Wooden Mosaic - The Kashmir Horizon",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQMTZLR3ZnT28zLU9QWnJWTnNucVlaYkJYdVVQU08wYU1oOENJcW1VSUJvX1VpMGstY3IzWGRNU2FReFE3Q1JoSDBmcTBQbk4zU1VxbkNVV09ZY1pHUlJQYktDbWRrZ2VIMkNFSk5TVXpSX3ZoTHhFcWxQcERWVUlPQk9VZl91cG9jV29kbElpRlc0Rzdhczl5WVRaQkVNNkhmNTBrZjFaNDN5UHhOOTBhc082Z00yWjZwN3NXVGlweEc?oc=5",
+        "kind": "news",
+        "cited": true
+      },
+      {
+        "id": "S39",
+        "title": "Assemble perfection effortlessly with Asian Paints’ latest adhesive duo - Architect and Interiors India",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVU9FLVpvOGlnd1BRVE8wTkpEQjlyZHl3elVpUjViVFNhWFZVbmpPTVFvV2l1YkdGR2lQeFR5eW1GSWc2MGtQeWhBZ2lFY1k3ZDZ0d2o2X0lBQWFGTFdZVEJpbjZ1UzBIMGRBRC04WC1sM0UwM1FFcXFWTllRekJRcXFjMUFRX1RCVHU5Q3BmdHh0djk5Tmd4YzlwZUt5Ni1XaUhibUdib2pFc0ZlR2FYeTViczNzSjFJbnRNTXNpaw?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S40",
+        "title": "Berger Paints sees strong demand, monsoon driving growth in FY27 - Livemint",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQR20waGZfRnZqUmRsWHRGUmVaS0JWZXozVHNUazlUaHF5UzhDZUNncG1UQWdZQ1phY0RycVJpNGJxN3Zoa2haZ2FLRGVzclN5UXdIQ2xUVXNJbWs0R2RyNWZ3LV80MkJZdkpVbDhEMkFHZGh3Qi1POFhCWlludjZEelVpUW1NdjFTT1NFbWhHSUZqOHUyYUE4QXZ2bVdUNFdxTW5NN1pSMDhUakFJTFdOYllsaHFtSDJGLXBrVXU1QTlSQzJtOHR6eXZ1VzF4cknSAdQBQVVfeXFMTTZvTXlkMTY5d2FuLTl4c25jVWJsaURaVElSMndfa2d4Q0JWZGZxc1d1Z1hublc3WnkxT2lpNjRfeHc1aV9WM0tXNm4wVmIzQ3RZb1U0eTBjMjhXMmNPNHg3VjJmUURNX3BOdXBpd0tWZXFSTmhBUHZpanNZci1DNkZvZzEySWVLT1BfdnRKLWRNcG42S3RXZVQ4X0JzNVB4QVo0M0tiNnZsS054YnpvWmlmUjFNWjlaR0FHdzA1eklFYnprbDZEYzVfSXNic1lNeGYwNlc?oc=5",
+        "kind": "news",
+        "cited": false
+      },
+      {
+        "id": "S41",
+        "title": "Asian Paints FY26 net profit rises 17.9% to ₹4,325.4 crores - scanx.trade",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNaUpsM05BZkF1TFFwREN6X0VkUG1ocVNyN0VWdWhfb2hwdUZmaUZCY0w1LVB2cERXS2Yxbkt1TW03Vm9uYXFVR0hLZ0RvcXRDd0pqVFZYNlRhNGZqdUZKVERIM2RrQkJLMzNvU2o5aWpzZWZLcXJpNVBXd1RvSHpxbFFqanNtMUY1NDJrZFpXZnNuSzJoYkFvZEQ3NklkNS1sUWNURjRsQV9oSkIyLTJQRkFCXzlCZlB6bjNWNEMwb25odw?oc=5",
+        "kind": "news",
+        "cited": false
+      }
+    ],
+    "metrics": {
+      "sources": 41,
+      "findings_verified": 28,
+      "claims_checked": 8,
+      "claims_supported": 8,
+      "grounding_rate": 1.0,
+      "llm_calls": 12,
+      "cache_hits": 0,
+      "llm_seconds": 252.6
+    },
+    "markdown": "# Client briefing: Asian Paints\n\nAsian Paints operates a resilient supply chain across 27 manufacturing facilities in 15 countries, leveraging distribution capabilities, technology integration with a budget crossing ₹100 crore, and expansion into the home improvement sector. While targeting an 18-20% PBDIT margin via cost management and innovation, the company faces risks of competitive moat erosion, multi-category operational complexity, and crude oil price volatility.\n\n## Key facts\n- Asian Paints operates an adaptive and resilient supply chain model supported by a global footprint of 27 manufacturing facilities across 15 countries. [S23, S25]\n- Asian Paints built its competitive brand moat around distribution capabilities, technology integration, and customer services. [S2]\n- Asian Paints' technology budget crossed the ₹100-crore mark, driven by digital technology initiatives. [S4]\n- Asian Paints has expanded beyond core paints into the home improvement and décor sector, initiating VAE emulsion manufacturing at its Dahej facility and introducing Ultraa and Hydronaa wood adhesives. [S16, S25, S38]\n- Asian Paints reaffirmed its operational target of maintaining an 18-20% PBDIT margin via cost management and innovation, while expecting a dynamic business environment in FY27. [S17, S19]\n\n## Pain-point hypotheses\n- **Threat of competitive moat erosion amid structural industry shifts and new market entrants.**: Industry analyses indicate structural challenges leading to Asian Paints losing its competitive moat, while new entrants like Birla Opus have expanded their presence using scale, capital, and 45,000 tinting machines. _Fit: Strategic distribution management, network optimization, and competitive positioning consulting to reinforce market moats._ [S22, S24]\n- **Margin compression risks stemming from crude oil price volatility and geopolitical disruption.**: Asian Paints targets an 18-20% PBDIT margin, but operating conditions across the global and Indian paint sectors are constrained by oil price surges, crude oil volatility, pricing pressures, and geopolitical disruption. _Fit: Supply chain cost management, strategic sourcing, and margin protection consulting._ [S19, S8, S9]\n- **Operational and supply chain complexity from multi-category business expansion.**: Asian Paints is actively diversifying beyond core paints into home improvement and décor, including localized VAE emulsion production at Dahej, while expecting a dynamic business environment in FY27. _Fit: Supply chain transformation, integrated business planning, and operational alignment for non-core category growth._ [S16, S17, S25]\n\n## Pitch outline\n- Optimizing supply chain operations across 27 manufacturing facilities in 15 countries\n- Mitigating margin compression risks driven by crude oil volatility and geopolitical disruption\n- Defending competitive moat against new market entrants and structural industry shifts\n- Managing operational complexity stemming from expansion into the home improvement sector\n- Maximizing value from technology integration initiatives backed by a ₹100+ crore budget to support 18-20% PBDIT margins\n\n## Proposed scope\n- Multi-Category Supply Chain Rationalization: Operational complexity reduction roadmap for home improvement expansion (4 wks)\n- Margin Protection & Volatility Risk Management: Cost management and input-price volatility mitigation strategy to support 18-20% PBDIT margin targets (4 wks)\n- Distribution & Tech Integration Alignment: Distribution enhancement blueprint maximizing the ₹100+ crore technology investment (4 wks)\n\n## Discovery questions\n- How is the expansion into multi-category home improvement impacting supply chain complexity across your 27 manufacturing facilities?\n- What specific measures are being taken to protect your 18-20% PBDIT margin target against crude oil price volatility?\n- How is the ₹100+ crore tech integration budget being allocated to enhance distribution capabilities?\n- How are geopolitical disruptions affecting raw material sourcing and international supply chains across your 15 operating countries?\n- What strategies are in place to counteract competitive moat erosion from new industry entrants?\n- Where do you see the biggest distribution bottlenecks as your product portfolio expands into non-paint categories?\n\n## Outreach email (approved)\n**Subject:** Enhancing Supply Chain Resilience & Margin Protection for Asian Paints\n\nDear Asian Paints Leadership Team,\n\nAs Asian Paints expands into home improvement across 27 manufacturing facilities in 15 countries, managing multi-category operational complexity becomes critical. Protecting your target 18-20% PBDIT margin against crude oil price volatility and geopolitical disruption requires continuous cost management and innovation.\n\nAmid threats of competitive moat erosion from new market entrants, leveraging your strong distribution capabilities and your ₹100+ crore technology integration budget is essential. Our firm specializes in supply chain and distribution transformation. We would value the opportunity to discuss how we can help streamline your complex operations and secure your market position.\n\nBest regards,\n\n[Your Name]\n\n## Sources\n- [S2] Asian Paints' Brand Moat Built Through Distribution, Technology, and Services - MarkHub24 https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUEJfenlZWnp1cHdqc00yRElsbWpVN2d5dkdSY1M5eDNMb3dpcUtKeTZiVmZQRlpuMnZFWm9WYlVOMWhLcF84OUFsRWg1WXlnNTUtUlRWbUo0ZlhzdzExQVpvbzFPakdyd2F6b3FoY3E1dFl4T2FOdW1Hdi10dWpSVHdPa3A5a1FrSzJoSnBzTTJDY04xYnpLT1FYQ3dseGplekRlOU9vSzA?oc=5\n- [S4] Spend-IT: Asian Paints’ tech budget crosses ₹100-crore-mark riding on digital tech - Techcircle https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQ3ZNcjdLcVdWRXVPdXlLYVpzTTZSa2xLcEV0cEM5Ql9Qc2NqeHllX2hyM0lhdUU4azcyNU9zeXpVUGg5V1ZSRkJTTWV4SXlGT0JSWThVblFlWnVLczh5NmQ0QklmNDE1bXBJcnIxdjdTb0RqdU42THNxTkM0R3N1dzRtYUFTN1JlQWZBRjEwY1lTUlVYRTBTTGhHWnhsdHJlbUVsUmJwZTNLdWtrZk5xYWh4M0hzWnJn?oc=5\n- [S8] Is the Global Paint Industry Facing a Perfect Storm Amid Oil Price Surge and War? - ChemAnalyst https://news.google.com/rss/articles/CBMi1gFBVV95cUxNdnI1Z1owbFhPcWVqd0JGRHBEV1U3b2lPckZSM0Y3bzRFekhXQ2xiR2FudDZqd3VSQ1JvMnhwd2RQY3Bib1p2ZTIyYU9BaHVWdzJFblRQQmdTTGRsYkdRNDhsZmhxSUQwT3RXTmcyTjFqNFpGdUZiOTROcjZiZ1lKcUtoRFFVamtidmg4amhpb2Y1SWFJZFh5TlpRbW9nVkN1SVN0X3U0UFJpVkQ3R3I2RjhXR3cxcUoxR0tfOEl4VkdHOC0zNHB0d0dvSU9FM1lvSmx4VHFn?oc=5\n- [S9] India's paint industry remains optimistic on growth despite crude volatility, pricing pressures and compet - The Economic Times https://news.google.com/rss/articles/CBMingJBVV95cUxQRHlFM1pleWsyYUtaTVZHQmpuLVFTaXM3amZwNkhiRHNINndIMlk5SHZfNjFNc282blJLYmtBbktGLXgwWFFDV2cyemVEaVZQVk9oRy1SWE5lbFh4Vlp4UGFfR3hhcy1VNzlEcHpCZ05OVjdBcFJvZlJQQU9pOFdWMDdnT2otMkE2TGdZdG5nbloyaUZKT2lqTHp3elF2eHJYaHV3U2c2M0RuQjdSWFFHWHY1Y3EweTJsTHVKV3JobUI5SGlPakZHM3V2Y1RHdUs0c180U29rLTJWclQwRVgtMW54VFMycVVJZWlzZDZoM0NabzVVWUF4MzNERUY4Y0stanpKa2VaZnB5dXhCdkE3WHpBamJCV0xfZERWVE930gGjAkFVX3lxTE5OQ21RSGQzRnN5M0Iwd0tacjF5UldFWTVZdVdobzVOenFvekhlZHNkWGhnNzZ0bnlNdHZRZm5zc1FvS3h1a1RSdHZMazcwNTVuZkxhbzhYcUVwUlctRjg1UWRpdnBab2JpcGZuSjIwQWJ6VXlydTVmbkZwWGNnMUFVQlZYam9Wd0NxRVZiZzgwZmRsaGlMaURWNElrNV9Va3BCWG5WZms5a1EyRldPVmJ4VjVnOTNOaXN1WExiM0ZtRW5IVzZzc3lhMEFkUzl5LXA4dWVMSDY2Q2YzbGF5TVhlNlpwT3l2UzRuTlIzcG91ZEFRb1lndkRINXEtemVCU3hDNl9WTUk5b2Q1cXJ3RkZzV3pJX1VKV0VhTGFHQ0h4THJlQQ?oc=5\n- [S16] Asian Paints Launches VAE Emulsion Production at Dahej Facility - European Coatings https://news.google.com/rss/articles/CBMivgFBVV95cUxQQlBPMHFXeFZ4OWdQZVZNXzM1d0V4VlZwdEhqQ2VUWi1yVndiZUZ6cnJlZWNtaHNFU0NRR0F0ZGhWTFNINjdwY3g5NHNYaTJWNWQ3NE5EOFNxOGVweWZzakkyUENQUWN1ZjhaZjZieHNLNFBmbjJBVjFrNUpXYnNhVVpMUGlTNnRWS0Vab1h3VWRHOFhtbXJ5ZkhzQkNDbVY1Z2hkTEZ6ckc2OEJ3eVlJcnVDYzlUdHRYdFhpX3dB?oc=5\n- [S17] Business environment to remain dynamic in FY27, says Asian Paints CEO - Business Standard https://news.google.com/rss/articles/CBMi0wFBVV95cUxPa2dmWmx0aWdRZVFEOHVPQllpZHdqclRMQ082WE1jY3hKV2RmWHVFZUpXcGNKTk1na2FkYTNudnltYXhKdk9SVm9mZFAzeXZTSjZqVzRNWG9DSm1JT3BYaVRFZ3h1SjVGNnpIZzVqeTI3Z3ltNXhzTEFFTWROXzV3UXF1NVhDZXhIaVJjLUFfZ0k5VmpWQWlad2pwbjVJdTlwbFVqSHpiSEY5THhiYTlraUlSTHdoaHBFTnFHdFpSY3JQTlM1SmxqOXFUcHhRZFNqS1NB0gHYAUFVX3lxTE8yTHJodDZKZWxhb2Ywd2N3Vi1YbFJ2ajE2dHYtSjFuSjF0QkJzbEdoMGtoMElmbkExd0dPanppTVNHclRIdXJoV0NkbnNKenI0LWJwLTBWNUpYYVg1SlVGZDZJdjdKcGx1RmtFVUNyakI4dEdXWGgzNEE0aFYtcFh1aXFscTNWQXQ5ZmtZbTc0dmxlU1pFeXNDNTJvNG5ZN0UxdUhRWkRudGVrbVRETS1zOUhGb214QkcwNFROTHZTY0xlSDB3cXhoaHBOdldNQlhZM2Q3d2trUg?oc=5\n- [S19] Asian Paints Reaffirms 18-20% PBDIT Margin Target Through Strategic Cost Management and Innovation - scanx.trade https://news.google.com/rss/articles/CBMi5gFBVV95cUxPV2ViRzhYZlB3SkF5NW8zdTZhLXlvTDJlSkRVX1hyZDRHT1ZUNThKTDhGbThmSndpU21haXJKOF9zRWRUQXR4VkF5STdMQVMyMDZWMFRSS25mYXBGY1B0RlNNb2lsZWd4dlpLZHVkczlwRzhBellXQnRGZ2tWNzEtcnRNQmoxRTIydmdJbkdya1Z4ZjZwNWNURmVvdU82UmlndC1tQXJjUE9oQW1Na05QVWUtb28wUGZMbnRYMG5Hdjk5eHVkYzlFNmNMV3hKdmxVWHViMUhTTE16SGRPMmhMU05JMy11Zw?oc=5\n- [S22] Why Asian Paints Lost Its Moat - HDFC Sky https://news.google.com/rss/articles/CBMihAFBVV95cUxQS0NwWlVvcFU4Qng2b1N5RFFFM3JUcVdOdDZMaVR1Z0dEMi05RzZlS1JLaWx6Uzg2THVwZEhVRzgwTEFLS2xxa2wzTkMyTVI5QzlLVzNINXk0SHp5SnktdE1LS0ZmVjk5eHJjYWFEM1I0YXZ6M1o5X25PSlhURE1MWWRpd2k?oc=5\n- [S23] Asian Paints Supply Chain: Adaptive and Resilient - Logistics Viewpoints https://news.google.com/rss/articles/CBMieEFVX3lxTE9BRlVHbmdic2NzMzEtMnlMMmVUNTlqRW12QlVkQXItVm5NeFZXclJ2eTlHT0VFX3dTeGw0TXU1UzFRclhWd0JUbDl4YjZtMVZQdnNrTUVkMFJKYklBZU5YTDlUMWFlUUw0ZUdqZEs2ZllvMFJ5UVVEQg?oc=5\n- [S24] How Birla Opus Broke into India’s Paints Industry with Scale, Capital and 45,000 Tinting Machines - Outlook Business https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRWo4YXRBbVhJRmg3c3hWWHZoUUlWUWVocWxNZ1BfU05Ld09KOHlRZ1FjMGY0b2dLb0E1cEVfaTBMLTRDcU9SQnRfQVgyS0JQMDU2aUdEU2ppMzY1cmhUQ0dDY2x3MldtQnVsSy1jNll3LWRfOTJhMlI1eVVRVTlyS2lDTEF3Z09iNFM5ZXdmRWxCMjE3Vkp4eEVMVVlYR3J6SVpTbzVqelVhVG5NVjBlRmoybUtuaXRuWjFXSWcyYVRCMlN5Nm9WcjJ3cTJ2UU1M0gHeAUFVX3lxTE9HZGU2cWlTOE5jc1J6VTRVbEFOcVplT3pwRlVRS09GS3NfUDRDcnhOdUEtNjBwM29mSjRfZEtXWWNkM1JPLWliUHo0ZnNwVXVhMTl4Nm9nNEJHblc4N2pUb1U5b3Npemw4UE5FMkEtcHAwbV8xUWo3TkNJc2hnZndnVnQ1Q0U4dDZhLU9YUXFzQ1hQTHhleFlPWW5EV2RUTkRVYjlMbjBabTN3akotNk1nY0Fnc2RWampVZVBna2JQUTNmb2RWSmdTQV9PNGxkSHlwRzZ0ZEU4NTlVVjRWUQ?oc=5\n- [S25] Wikipedia: Asian Paints (part 1) https://en.wikipedia.org/wiki/Asian_Paints\n- [S38] Asian Paints Launches Hydronaa, Ultraa Wood Adhesives With 384-Sq-Ft Wooden Mosaic - The Kashmir Horizon https://news.google.com/rss/articles/CBMiwAFBVV95cUxQMTZLR3ZnT28zLU9QWnJWTnNucVlaYkJYdVVQU08wYU1oOENJcW1VSUJvX1VpMGstY3IzWGRNU2FReFE3Q1JoSDBmcTBQbk4zU1VxbkNVV09ZY1pHUlJQYktDbWRrZ2VIMkNFSk5TVXpSX3ZoTHhFcWxQcERWVUlPQk9VZl91cG9jV29kbElpRlc0Rzdhczl5WVRaQkVNNkhmNTBrZjFaNDN5UHhOOTBhc082Z00yWjZwN3NXVGlweEc?oc=5"
+  },
+  "error": null
+}

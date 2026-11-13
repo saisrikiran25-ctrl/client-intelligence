@@ -1,0 +1,1288 @@
+{
+  "id": "20261108-182650-2193",
+  "agent": "a",
+  "title": "Tata Consumer Products",
+  "params": {
+    "company": "Tata Consumer Products",
+    "service_line": "supply chain and distribution",
+    "use_web": true,
+    "agent": "a",
+    "auto_approve": false,
+    "cache": false,
+    "backend": "gemini"
+  },
+  "status": "done",
+  "events": [
+    {
+      "i": 0,
+      "t": 0.01,
+      "actor": "Orchestrator",
+      "kind": "agent",
+      "msg": "Agent A started for \"Tata Consumer Products\"",
+      "data": {
+        "web": true,
+        "doc_chunks": 0,
+        "llm": "gemini:gemini-3.5-flash"
+      }
+    },
+    {
+      "i": 1,
+      "t": 6.52,
+      "actor": "Planner",
+      "kind": "plan",
+      "msg": "Decomposed into 6 research angles",
+      "data": {
+        "profile": [
+          "Tata Consumer Products company profile business model",
+          "Tata Consumer Products distribution footprint scale"
+        ],
+        "news": [
+          "Tata Consumer Products recent news announcements 2024",
+          "Tata Consumer Products latest quarterly results business update"
+        ],
+        "sector": [
+          "India FMCG sector supply chain distribution trends",
+          "Indian CPG logistics digitization direct reach"
+        ],
+        "competitors": [
+          "Tata Consumer Products vs HUL ITC distribution reach",
+          "Tata Consumer Products FMCG market share competitors"
+        ],
+        "signals": [
+          "Tata Consumer Products logistics automation technology investment",
+          "Tata Consumer Products warehouse expansion supply chain"
+        ],
+        "service": [
+          "Tata Consumer Products supply chain and distribution",
+          "Tata Consumer Products supply chain and distribution challenges",
+          "Tata Consumer Products supply chain distribution initiatives"
+        ]
+      }
+    },
+    {
+      "i": 2,
+      "t": 18.55,
+      "actor": "Collector",
+      "kind": "tool",
+      "msg": "Fetched 15 real source passages: Wikipedia yes, Wikidata yes, official website pages 3",
+      "data": [
+        "Wikipedia: Tata Consumer Products (part 1)",
+        "Wikipedia: Tata Consumer Products (part 2)",
+        "Wikipedia: Tata Consumer Products (part 3)",
+        "Wikipedia: Tata Consumer Products (part 4)",
+        "Wikipedia: Tata Consumer Products (part 5)",
+        "Wikipedia: Tata Consumer Products (part 6)",
+        "Wikipedia: Tata Consumer Products (part 7)",
+        "Wikipedia: Tata Consumer Products (part 8)"
+      ]
+    },
+    {
+      "i": 3,
+      "t": 19.53,
+      "actor": "Researcher:service",
+      "kind": "tool",
+      "msg": "live news search \"Tata Consumer Products supply chain and distribution\" -> 5 headlines",
+      "data": [
+        "Rayapati Srinath Reddy launches FMCG logistics venture in South India - Indian Television Dot Com",
+        "How TATA Coffee Grand is Leveraging Distribution Strength of Tata Consumer Products to Expand Reach?? - Indian Retailer",
+        "Tata Consumer faces distributor anger over 'dumped' stock - Livemint",
+        "The Ching’s Secret recipe for Tata Consumer’s next growth chapter - Fortune India",
+        "The 100-day Playbook - The Tata group. Leadership with Trust."
+      ]
+    },
+    {
+      "i": 4,
+      "t": 19.6,
+      "actor": "Researcher:signals",
+      "kind": "tool",
+      "msg": "live news search \"Tata Consumer Products logistics automation technology investment\" -> 5 headlines",
+      "data": [
+        "Scotts Miracle-Gro FY2026 slides: margin gains drive 18% EPS growth By Investing.com - Investing.com India",
+        "ET Product of the Year Awards 2026: Categories recognising products driving market impact - The Economic Times",
+        "Tata Consumer Products approves ₹160 crore investment for instant tea plant - ET Manufacturing",
+        "Semiconductor Industry in India: Incentives and Key Players - India Briefing",
+        "Government approves 29 more proposals under the Electronics Component Manufacturing Scheme (ECMS) - www.pib.gov.in"
+      ]
+    },
+    {
+      "i": 5,
+      "t": 19.62,
+      "actor": "Researcher:competitors",
+      "kind": "tool",
+      "msg": "live news search \"Tata Consumer Products vs HUL ITC distribution reach\" -> 5 headlines",
+      "data": [
+        "Project Falcon and Tata's Consumer Coup: The Making of an FMCG Challenger to HUL, ITC - Outlook Business",
+        "ONDC DigiDukaan connects 21,000 retailers with 450 brands across three cities; Minister calls for FMCG participation - Organiser",
+        "ONDC’s DigiDukaan crosses 21,000 kirana retailers; govt pushes FMCG firms to scale digital procurement - Moneycontrol.com",
+        "Isha Ambani sets ₹1 lakh-crore business target as Reliance Consumer Products takes on HUL, ITC and Nestle - BusinessLine",
+        "HUL, ITC, and the ‘direct-reach’ quandary - The Ken"
+      ]
+    },
+    {
+      "i": 6,
+      "t": 20.44,
+      "actor": "Researcher:sector",
+      "kind": "tool",
+      "msg": "live news search \"India FMCG sector supply chain distribution trends\" -> 5 headlines",
+      "data": [
+        "Resilience in the FMCG & Retail Sector - Deloitte",
+        "WEF recognises impact of our supply chain tech investments - Unilever Global",
+        "Local Manufacturing and Trade Integration Driving FMCG Growth in West Africa - Maersk",
+        "Discover the Top 10 FMCG Trends in 2026 - StartUs Insights",
+        "2026 Retail Industry Global Outlook - Deloitte"
+      ]
+    },
+    {
+      "i": 7,
+      "t": 20.51,
+      "actor": "Researcher:news",
+      "kind": "tool",
+      "msg": "live news search \"Tata Consumer Products recent news announcements 2024\" -> 5 headlines",
+      "data": [
+        "TATA Consumer Products shares fall 2.07% in today's session - Moneycontrol.com",
+        "Tata Consumer Products raises stake in Ching’s Secret maker Capital Foods to 80% - CNBC TV18",
+        "TATA Consumer Products shares gain 2% in today's session, among top gainers on Nifty 50 - TradingView",
+        "Tata Consumer Products Receives 'A' ESG Rating from MSCI Under New Methodology - scanx.trade",
+        "Tata Consumer Products Q2 results: Net profit rises 11% to ₹397 crore, EBITDA jumps 7%, India business revenue advances 18% - Upstox"
+      ]
+    },
+    {
+      "i": 8,
+      "t": 20.55,
+      "actor": "Researcher:profile",
+      "kind": "tool",
+      "msg": "live news search \"Tata Consumer Products company profile business model\" -> 5 headlines",
+      "data": [
+        "Tata Consumer Products (NSEI:TATACONSUM) Stock Forecast & Analyst Predictions - Simply Wall St",
+        "Tata Consumer Products assigned ESG rating of 68/100 - scanx.trade",
+        "Tata Consumer Products Share Price after Fresh 52-Week Low - Univest",
+        "Tata Consumer Products Q3 Results: Tata group firm posts 38% YoY rise in net profit to ₹385 crore — Details here - Livemint",
+        "India's Tata Consumer Products rises as growth businesses boost sentiment - Reuters"
+      ]
+    },
+    {
+      "i": 9,
+      "t": 20.74,
+      "actor": "Researcher:service",
+      "kind": "tool",
+      "msg": "live news search \"Tata Consumer Products supply chain and distribution challenges\" -> 5 headlines",
+      "data": [
+        "Tata’s leadership challenge: Building the team around the Chairman - Exchange4Media",
+        "How India's Non-Metro Supply Chains Are Adapting To Global Trade Uncertainty - BW Businessworld",
+        "Tata Consumer faces distributor anger over 'dumped' stock - Livemint",
+        "How TATA Coffee Grand is Leveraging Distribution Strength of Tata Consumer Products to Expand Reach?? - Indian Retailer",
+        "AI Adoption in Agriculture and Crop Management: A Roadmap - Tata Consultancy Services"
+      ]
+    },
+    {
+      "i": 10,
+      "t": 20.77,
+      "actor": "Researcher:signals",
+      "kind": "tool",
+      "msg": "live news search \"Tata Consumer Products warehouse expansion supply chain\" -> 5 headlines",
+      "data": [
+        "Tata Consumer Products Q2 Results Show Strong Growth in India Business - Indian Retailer",
+        "Rayapati Srinath Reddy launches FMCG logistics venture in South India - Indian Television Dot Com",
+        "Tata Starbucks could expand to 8,000 stores in India: Chandrasekaran - Business Standard",
+        "Artificial intelligence, geopolitics reshaping biz landscape: Chandra - Business Standard",
+        "How TATA Coffee Grand is Leveraging Distribution Strength of Tata Consumer Products to Expand Reach?? - Indian Retailer"
+      ]
+    },
+    {
+      "i": 11,
+      "t": 20.78,
+      "actor": "Researcher:signals",
+      "kind": "tool",
+      "msg": "selected 4 passages from Wikipedia / Wikidata / company website",
+      "data": [
+        "Wikipedia: Tata Consumer Products (part 8)",
+        "Wikipedia: Tata Consumer Products (part 1)",
+        "Wikipedia: Tata Consumer Products (part 5)",
+        "Wikidata: Tata Consumer Products"
+      ]
+    },
+    {
+      "i": 12,
+      "t": 21.28,
+      "actor": "Researcher:competitors",
+      "kind": "tool",
+      "msg": "live news search \"Tata Consumer Products FMCG market share competitors\" -> 5 headlines",
+      "data": [
+        "Project Falcon and Tata's Consumer Coup: The Making of an FMCG Challenger to HUL, ITC - Outlook Business",
+        "As Markets Turn Volatile Amid West Asia Conflict, Investors Rush to Defensive FMCG Stocks - NiftyTrader",
+        "Fast Moving Consumer Goods (FMCG) Market Size, Share & Growth, 2026-2035 - SNS Insider",
+        "Tata Consumer likely to take 'calibrated' price hikes if cost woes persist; eyes double-digit FY27 growth - The Economic Times",
+        "How Tata Consumer Products emerged as a strong contender in India's highly competitive FMCG space - Fortune India"
+      ]
+    },
+    {
+      "i": 13,
+      "t": 21.29,
+      "actor": "Researcher:competitors",
+      "kind": "tool",
+      "msg": "selected 4 passages from Wikipedia / Wikidata / company website",
+      "data": [
+        "Wikipedia: Tata Consumer Products (part 3)",
+        "Official website: https://www.tataconsumer.com",
+        "Official website: https://www.tataconsumer.com/about",
+        "Wikidata: Tata Consumer Products"
+      ]
+    },
+    {
+      "i": 14,
+      "t": 21.55,
+      "actor": "Researcher:sector",
+      "kind": "tool",
+      "msg": "live news search \"Indian CPG logistics digitization direct reach\" -> 1 headlines",
+      "data": [
+        "The great unbundling of Indian e-commerce: MSMEs and the direct-to-consumer revolution - McKinsey & Company"
+      ]
+    },
+    {
+      "i": 15,
+      "t": 21.55,
+      "actor": "Researcher:sector",
+      "kind": "tool",
+      "msg": "selected 4 passages from Wikipedia / Wikidata / company website",
+      "data": [
+        "Official website: https://www.tataconsumer.com",
+        "Official website: https://www.tataconsumer.com/about",
+        "Wikipedia: Tata Consumer Products (part 1)",
+        "Wikidata: Tata Consumer Products"
+      ]
+    },
+    {
+      "i": 16,
+      "t": 21.98,
+      "actor": "Researcher:profile",
+      "kind": "tool",
+      "msg": "live news search \"Tata Consumer Products distribution footprint scale\" -> 5 headlines",
+      "data": [
+        "Herbal Tea Market Size, Share, Trends 2036 - Future Market Insights",
+        "Packaged Food Market in India: Size, Industry Trends 2034 - IMARC Group",
+        "India Olive Oil Market Size, Share, Demand and Report 2034 - IMARC Group",
+        "Tata Consumer Products launches first corporate brand film, showcases transformation into diversified FMCG company - MediaNews4U",
+        "Media Release - Reliance Consumer Products Partners with Nigeria’s Leading Business TGI Group Expanding Global Footprint to Nigeria: RCPL signs agreement to form majority-owned Joint Venture with TGI Group Bengaluru, 16th February 2026: Reliance - Facebook"
+      ]
+    },
+    {
+      "i": 17,
+      "t": 21.98,
+      "actor": "Researcher:profile",
+      "kind": "tool",
+      "msg": "selected 5 passages from Wikipedia / Wikidata / company website",
+      "data": [
+        "Official website: https://www.tataconsumer.com/about",
+        "Official website: https://www.tataconsumer.com",
+        "Wikipedia: Tata Consumer Products (part 1)",
+        "Wikidata: Tata Consumer Products",
+        "Official website: https://www.tataconsumer.com/about/caution-notice-disclaimer"
+      ]
+    },
+    {
+      "i": 18,
+      "t": 21.99,
+      "actor": "Researcher:service",
+      "kind": "tool",
+      "msg": "live news search \"Tata Consumer Products supply chain distribution initiatives\" -> 5 headlines",
+      "data": [
+        "Tata Consumer Products Q2 Results Show Strong Growth in India Business - Indian Retailer",
+        "Swagatika Mohanty Appointed Deputy General Manager – Human Resources, North Cluster at Tata Consumer Products - https://hrtoday.in/",
+        "Krishival Foods appoints former Nestlé, Tata Consumer executive Vivek Kumar Jain as CBO - ET Retail",
+        "Tata Consumer Products Receives 'A' ESG Rating from MSCI Under New Methodology - scanx.trade",
+        "How TATA Coffee Grand is Leveraging Distribution Strength of Tata Consumer Products to Expand Reach?? - Indian Retailer"
+      ]
+    },
+    {
+      "i": 19,
+      "t": 22.0,
+      "actor": "Researcher:service",
+      "kind": "tool",
+      "msg": "selected 4 passages from Wikipedia / Wikidata / company website",
+      "data": [
+        "Wikipedia: Tata Consumer Products (part 6)",
+        "Wikipedia: Tata Consumer Products (part 8)",
+        "Wikipedia: Tata Consumer Products (part 10)",
+        "Wikidata: Tata Consumer Products"
+      ]
+    },
+    {
+      "i": 20,
+      "t": 22.19,
+      "actor": "Researcher:news",
+      "kind": "tool",
+      "msg": "live news search \"Tata Consumer Products latest quarterly results business update\" -> 5 headlines",
+      "data": [
+        "Tata Consumer Products Q2 net profit rises 16% to ₹469 cr, sales up 14% - Business Standard",
+        "Q2 results 2026 today, schedule: Paytm, Tata Con, REC among 90 firms to announce quarterly earnings | Full list - Livemint",
+        "Tata Consumer Q1 Numbers Strong: Profit Up 28%, Revenue Hits Rs 5,348 Cr - NiftyTrader",
+        "Q2 results: Paytm, REC, Tata Consumer Products among 98 firms on October 26 - Business Standard",
+        "Tata Consumer Products shares fall over 5% despite Q3 profit rising 38% to ₹385 crore; here’s what analysts said - Upstox"
+      ]
+    },
+    {
+      "i": 21,
+      "t": 22.19,
+      "actor": "Researcher:news",
+      "kind": "tool",
+      "msg": "selected 4 passages from Wikipedia / Wikidata / company website",
+      "data": [
+        "Official website: https://www.tataconsumer.com",
+        "Official website: https://www.tataconsumer.com/about/caution-notice-disclaimer",
+        "Official website: https://www.tataconsumer.com/about",
+        "Wikidata: Tata Consumer Products"
+      ]
+    },
+    {
+      "i": 22,
+      "t": 28.99,
+      "actor": "Researcher:signals",
+      "kind": "llm",
+      "msg": "4 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 4,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 23,
+      "t": 30.65,
+      "actor": "Researcher:competitors",
+      "kind": "llm",
+      "msg": "5 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 5,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 24,
+      "t": 39.47,
+      "actor": "Researcher:profile",
+      "kind": "llm",
+      "msg": "3 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 3,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 25,
+      "t": 44.45,
+      "actor": "Researcher:service",
+      "kind": "llm",
+      "msg": "6 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 6,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 26,
+      "t": 49.8,
+      "actor": "Researcher:news",
+      "kind": "llm",
+      "msg": "6 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 6,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 27,
+      "t": 54.12,
+      "actor": "Researcher:sector",
+      "kind": "llm",
+      "msg": "4 findings verified against source text, 0 dropped as ungrounded",
+      "data": {
+        "kept": 4,
+        "dropped": 0
+      }
+    },
+    {
+      "i": 28,
+      "t": 54.12,
+      "actor": "Orchestrator",
+      "kind": "agent",
+      "msg": "Research complete: 28 verified findings from 58 sources",
+      "data": null
+    },
+    {
+      "i": 29,
+      "t": 69.5,
+      "actor": "Synthesizer",
+      "kind": "llm",
+      "msg": "Draft 1: 5 facts, 4 hypotheses",
+      "data": null
+    },
+    {
+      "i": 30,
+      "t": 81.55,
+      "actor": "Critic",
+      "kind": "critic",
+      "msg": "Round 1: 8/9 claims supported",
+      "data": [
+        {
+          "kind": "pain_point",
+          "idx": 2,
+          "ok": false,
+          "issue": "The claim asserts that non-metro supply chains are 'actively struggling to adapt', whereas the evidence only states that they are 'adjusting operational strategies' / 'adapting'."
+        }
+      ]
+    },
+    {
+      "i": 31,
+      "t": 81.55,
+      "actor": "Critic",
+      "kind": "critic",
+      "msg": "Sending rejected claims back to the synthesizer",
+      "data": null
+    },
+    {
+      "i": 32,
+      "t": 97.21,
+      "actor": "Synthesizer",
+      "kind": "llm",
+      "msg": "Draft 2: 5 facts, 3 hypotheses",
+      "data": null
+    },
+    {
+      "i": 33,
+      "t": 108.35,
+      "actor": "Critic",
+      "kind": "critic",
+      "msg": "Round 2: 5/8 claims supported",
+      "data": [
+        {
+          "kind": "pain_point",
+          "idx": 0,
+          "ok": false,
+          "issue": "The evidence mentions stock dumping concerns but does not mention misaligned distribution scheduling."
+        },
+        {
+          "kind": "pain_point",
+          "idx": 1,
+          "ok": false,
+          "issue": "The evidence mentions integrating the brand to drive growth, but does not mention supply chain/distribution network integration complexity."
+        },
+        {
+          "kind": "pain_point",
+          "idx": 2,
+          "ok": false,
+          "issue": "The evidence specifies global trade uncertainties and non-metro supply chains, not macroeconomic changes or regional distribution networks."
+        }
+      ]
+    },
+    {
+      "i": 34,
+      "t": 108.35,
+      "actor": "Critic",
+      "kind": "critic",
+      "msg": "Sending rejected claims back to the synthesizer",
+      "data": null
+    },
+    {
+      "i": 35,
+      "t": 129.48,
+      "actor": "Synthesizer",
+      "kind": "llm",
+      "msg": "Draft 3: 6 facts, 3 hypotheses",
+      "data": null
+    },
+    {
+      "i": 36,
+      "t": 138.08,
+      "actor": "Critic",
+      "kind": "critic",
+      "msg": "Round 3: 9/9 claims supported",
+      "data": []
+    },
+    {
+      "i": 37,
+      "t": 144.07,
+      "actor": "Synthesizer",
+      "kind": "llm",
+      "msg": "Wrote executive summary from verified points only",
+      "data": null
+    },
+    {
+      "i": 38,
+      "t": 154.56,
+      "actor": "Drafter",
+      "kind": "llm",
+      "msg": "Drafted pitch outline, scope, discovery questions and outreach email",
+      "data": null
+    },
+    {
+      "i": 39,
+      "t": 154.56,
+      "actor": "Gate",
+      "kind": "gate",
+      "msg": "Waiting for human approval: Review the outreach email before it is finalized",
+      "data": {
+        "email": {
+          "subject": "Supply Chain & Distribution Network Strategy | Tata Consumer Products",
+          "body": "Dear Tata Consumer Products Team,\n\nFollowing recent public developments regarding distributor channel friction driven by stock dumping concerns and operational strategy adjustments required for non-metro supply chains amidst global trade uncertainties, our firm would welcome an introductory dialogue.\n\nWe specialize exclusively in supply chain and distribution management. We would be keen to understand whether your current route-to-market framework fully supports distribution network scaling for integrated brands while maintaining channel alignment.\n\nOur team can assist in evaluating non-metro supply chain resilience and refining distribution mechanisms to mitigate channel friction. \n\nAre you available for a brief meeting next week to discuss your supply chain priorities?\n\nBest regards,\n[Your Name]"
+        }
+      }
+    },
+    {
+      "i": 40,
+      "t": 160.86,
+      "actor": "Gate",
+      "kind": "gate",
+      "msg": "Approved by human",
+      "data": {
+        "approved": true,
+        "email": {
+          "subject": "Supply Chain & Distribution Network Strategy | Tata Consumer Products",
+          "body": "Dear Tata Consumer Products Team,\n\nFollowing recent public developments regarding distributor channel friction driven by stock dumping concerns and operational strategy adjustments required for non-metro supply chains amidst global trade uncertainties, our firm would welcome an introductory dialogue.\n\nWe specialize exclusively in supply chain and distribution management. We would be keen to understand whether your current route-to-market framework fully supports distribution network scaling for integrated brands while maintaining channel alignment.\n\nOur team can assist in evaluating non-metro supply chain resilience and refining distribution mechanisms to mitigate channel friction. \n\nAre you available for a brief meeting next week to discuss your supply chain priorities?\n\nBest regards,\n[Your Name]"
+        }
+      }
+    },
+    {
+      "i": 41,
+      "t": 160.94,
+      "actor": "Orchestrator",
+      "kind": "done",
+      "msg": "Run complete",
+      "data": null
+    }
+  ],
+  "result": {
+    "company": "Tata Consumer Products",
+    "service_line": "supply chain and distribution",
+    "summary": "To drive corporate growth and expand market reach, Tata Consumer Products raised its stake in Capital Foods to 80%, utilized its distribution network for TATA Coffee Grand, and approved a ₹160 crore capital allocation to establish an instant tea manufacturing facility. However, in October 2025, the company faced distributor friction driven by stock dumping concerns, while non-metro supply chains adjusted operational strategies amidst global trade uncertainties.",
+    "key_facts": [
+      {
+        "text": "Tata Consumer faced distributor friction driven by stock dumping concerns in October 2025.",
+        "finding_ids": [
+          "F24"
+        ],
+        "sources": [
+          "S3"
+        ],
+        "evidence": [
+          {
+            "id": "F24",
+            "claim": "Tata Consumer faced friction with distributors due to stock dumping concerns in October 2025.",
+            "quote": "Tata Consumer faces distributor anger over 'dumped' stock",
+            "source": "S3",
+            "strength": "headline"
+          }
+        ],
+        "evidence_level": "headline-only"
+      },
+      {
+        "text": "TATA Coffee Grand expanded its market reach by utilizing Tata Consumer Products' existing distribution network.",
+        "finding_ids": [
+          "F25"
+        ],
+        "sources": [
+          "S2"
+        ],
+        "evidence": [
+          {
+            "id": "F25",
+            "claim": "TATA Coffee Grand expanded its reach by utilizing Tata Consumer Products' existing distribution network.",
+            "quote": "How TATA Coffee Grand is Leveraging Distribution Strength of Tata Consumer Products to Expand Reach??",
+            "source": "S2",
+            "strength": "headline"
+          }
+        ],
+        "evidence_level": "headline-only"
+      },
+      {
+        "text": "Tata Consumer Products raised its stake in Capital Foods (maker of Ching's Secret) to 80% and integrated the brand to drive corporate growth.",
+        "finding_ids": [
+          "F4",
+          "F26"
+        ],
+        "sources": [
+          "S22",
+          "S4"
+        ],
+        "evidence": [
+          {
+            "id": "F4",
+            "claim": "Tata Consumer Products raised its stake in Capital Foods, the maker of Ching's Secret, to 80%.",
+            "quote": "Tata Consumer Products raises stake in Ching’s Secret maker Capital Foods to 80%",
+            "source": "S22",
+            "strength": "headline"
+          },
+          {
+            "id": "F26",
+            "claim": "Tata Consumer integrated Ching's Secret to drive its next phase of corporate growth.",
+            "quote": "The Ching’s Secret recipe for Tata Consumer’s next growth chapter",
+            "source": "S4",
+            "strength": "headline"
+          }
+        ],
+        "evidence_level": "headline-only"
+      },
+      {
+        "text": "Tata Consumer Products approved a ₹160 crore capital allocation to establish an instant tea manufacturing facility.",
+        "finding_ids": [
+          "F19"
+        ],
+        "sources": [
+          "S8"
+        ],
+        "evidence": [
+          {
+            "id": "F19",
+            "claim": "Tata Consumer Products approved a ₹160 crore capital allocation to establish an instant tea manufacturing facility.",
+            "quote": "Tata Consumer Products approves ₹160 crore investment for instant tea plant",
+            "source": "S8",
+            "strength": "headline"
+          }
+        ],
+        "evidence_level": "headline-only"
+      },
+      {
+        "text": "Supply chains in non-metro regions of India are adjusting operational strategies in response to global trade uncertainties.",
+        "finding_ids": [
+          "F27"
+        ],
+        "sources": [
+          "S32"
+        ],
+        "evidence": [
+          {
+            "id": "F27",
+            "claim": "Supply chains in India's non-metro regions are adjusting operational strategies in response to global trade uncertainties.",
+            "quote": "How India's Non-Metro Supply Chains Are Adapting To Global Trade Uncertainty",
+            "source": "S32",
+            "strength": "headline"
+          }
+        ],
+        "evidence_level": "headline-only"
+      },
+      {
+        "text": "Tata Tea is selected by one in three Indian households, making it one of the largest packaged tea brands in India.",
+        "finding_ids": [
+          "F12"
+        ],
+        "sources": [
+          "S43"
+        ],
+        "evidence": [
+          {
+            "id": "F12",
+            "claim": "Tata Tea is selected by one in three Indian households, making it one of the largest packaged tea brands in the country.",
+            "quote": "One of India’s largest packaged tea brands that 1 in 3 Indian households choose to wake up to.",
+            "source": "S43",
+            "strength": "strong"
+          }
+        ],
+        "evidence_level": "strong"
+      }
+    ],
+    "pain_points": [
+      {
+        "hypothesis": "Distributor channel friction caused by stock dumping concerns",
+        "why": "Tata Consumer experienced distributor friction in October 2025 specifically arising from stock dumping concerns.",
+        "service_fit": "We can assist in redesigning demand forecasting, primary-to-secondary sales replenishment models, and distributor inventory management to eliminate stock dumping.",
+        "finding_ids": [
+          "F24"
+        ],
+        "sources": [
+          "S3"
+        ],
+        "evidence": [
+          {
+            "id": "F24",
+            "claim": "Tata Consumer faced friction with distributors due to stock dumping concerns in October 2025.",
+            "quote": "Tata Consumer faces distributor anger over 'dumped' stock",
+            "source": "S3",
+            "strength": "headline"
+          }
+        ],
+        "evidence_level": "headline-only"
+      },
+      {
+        "text": null,
+        "hypothesis": "Operational strategy adjustments required for non-metro supply chains amidst global trade uncertainties",
+        "why": "Supply chains operating across non-metro regions in India are currently adjusting operational strategies to cope with global trade uncertainties.",
+        "service_fit": "We can help optimize non-metro supply chain resilience, inventory buffer placement, and operational strategy design to handle trade disruptions.",
+        "finding_ids": [
+          "F27"
+        ],
+        "sources": [
+          "S32"
+        ],
+        "evidence": [
+          {
+            "id": "F27",
+            "claim": "Supply chains in India's non-metro regions are adjusting operational strategies in response to global trade uncertainties.",
+            "quote": "How India's Non-Metro Supply Chains Are Adapting To Global Trade Uncertainty",
+            "source": "S32",
+            "strength": "headline"
+          }
+        ],
+        "evidence_level": "headline-only"
+      },
+      {
+        "hypothesis": "Distribution network scaling and route-to-market optimization for integrated brands",
+        "why": "Tata Consumer has integrated Ching's Secret (raising stake to 80%) for growth and utilized its existing distribution network to expand TATA Coffee Grand.",
+        "service_fit": "We can assist in optimizing shared distribution network utilization and route-to-market execution across newly integrated and existing brand lines.",
+        "finding_ids": [
+          "F4",
+          "F25",
+          "F26"
+        ],
+        "sources": [
+          "S2",
+          "S22",
+          "S4"
+        ],
+        "evidence": [
+          {
+            "id": "F4",
+            "claim": "Tata Consumer Products raised its stake in Capital Foods, the maker of Ching's Secret, to 80%.",
+            "quote": "Tata Consumer Products raises stake in Ching’s Secret maker Capital Foods to 80%",
+            "source": "S22",
+            "strength": "headline"
+          },
+          {
+            "id": "F25",
+            "claim": "TATA Coffee Grand expanded its reach by utilizing Tata Consumer Products' existing distribution network.",
+            "quote": "How TATA Coffee Grand is Leveraging Distribution Strength of Tata Consumer Products to Expand Reach??",
+            "source": "S2",
+            "strength": "headline"
+          },
+          {
+            "id": "F26",
+            "claim": "Tata Consumer integrated Ching's Secret to drive its next phase of corporate growth.",
+            "quote": "The Ching’s Secret recipe for Tata Consumer’s next growth chapter",
+            "source": "S4",
+            "strength": "headline"
+          }
+        ],
+        "evidence_level": "headline-only"
+      }
+    ],
+    "proposal": {
+      "pitch_outline": [
+        "Addressing distributor channel friction linked to stock dumping concerns",
+        "Adapting non-metro supply chain strategies amidst global trade uncertainties",
+        "Scaling distribution networks and route-to-market execution for integrated brands",
+        "Aligning primary stock allocations with secondary distribution capacity",
+        "Enhancing operational resilience across non-metro logistics channels"
+      ],
+      "proposed_scope": [
+        {
+          "workstream": "Distributor Channel Alignment & RTM Optimization",
+          "deliverable": "Distributor friction mitigation roadmap and revised route-to-market strategy",
+          "weeks": 4
+        },
+        {
+          "workstream": "Non-Metro Supply Chain Strategy Refinement",
+          "deliverable": "Operational strategy framework for non-metro supply chains amidst trade uncertainties",
+          "weeks": 5
+        },
+        {
+          "workstream": "Integrated Brand Distribution Network Scaling",
+          "deliverable": "Multi-brand distribution integration and stock replenishment playbook",
+          "weeks": 4
+        }
+      ],
+      "discovery_questions": [
+        "We would be keen to understand whether recent stock dumping concerns have altered distributor engagement across key regional markets.",
+        "How are your non-metro supply chain operational strategies adapting to ongoing global trade uncertainties?",
+        "What frameworks are currently utilized for distribution network scaling and route-to-market optimization for integrated brands?",
+        "We would be keen to explore whether current primary dispatch schedules align effectively with secondary distributor sell-through.",
+        "What operational adjustments are being prioritized to build resilience in non-metro supply chain logistics?",
+        "How are inventory allocation policies being reviewed to minimize potential distributor channel friction?"
+      ],
+      "email": {
+        "subject": "Supply Chain & Distribution Network Strategy | Tata Consumer Products",
+        "body": "Dear Tata Consumer Products Team,\n\nFollowing recent public developments regarding distributor channel friction driven by stock dumping concerns and operational strategy adjustments required for non-metro supply chains amidst global trade uncertainties, our firm would welcome an introductory dialogue.\n\nWe specialize exclusively in supply chain and distribution management. We would be keen to understand whether your current route-to-market framework fully supports distribution network scaling for integrated brands while maintaining channel alignment.\n\nOur team can assist in evaluating non-metro supply chain resilience and refining distribution mechanisms to mitigate channel friction. \n\nAre you available for a brief meeting next week to discuss your supply chain priorities?\n\nBest regards,\n[Your Name]"
+      },
+      "email_status": "approved"
+    },
+    "sources": [
+      {
+        "id": "S1",
+        "title": "Rayapati Srinath Reddy launches FMCG logistics venture in South India - Indian Television Dot Com",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNODdsSld5UVY2THFHaVUwY29rZUw0ak5RREFxb2Rlam5vV3dFUW9RdW9nLXNvSGFvU3JNVWxCa2k1R044MFJkMTNiRmRoTXdTNjRqRHJWR2tkNHlzZC0tb3Jyd09Sel8wOG8xbjlDQ29wMTZwYS1rVjBMU21fYmlEMUd3SFN2Q2xIRDVfSk9Na29kVXBXRzR0blRaUTZZNWM5TkV1X3BR?oc=5",
+        "kind": "news",
+        "date": "2026-08-05",
+        "cited": false
+      },
+      {
+        "id": "S2",
+        "title": "How TATA Coffee Grand is Leveraging Distribution Strength of Tata Consumer Products to Expand Reach?? - Indian Retailer",
+        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNUHh3bDRvdFU4QldRSmtHLTRVWnE4bW5XTWFBWktnNEc1T01QTFlxZWpIWlBzM2hBS0N4b1ptUEtRQUx5OW9CUVREd0F4ZUxBVU50THhXcDhxak50azlXNkN4VTNGRFB5WTViN2duVXUwSGdSSUtBMkZEa3VQWVRuQUdteDZMMzI1MEJuel9aNHB3bGdmZ18xbHBpcU5rbmFoYVZiUWZkRURYeHpKS3lVbGdKblE1U29PRUs0dmhTMVQyMElpZWdRWF9IMk1XczlIdnVDMGdoaXhnLXRTNlRabDNDZnhwakdDb3VSeWFkZHRtZw?oc=5",
+        "kind": "news",
+        "date": "2026-04-10",
+        "cited": true
+      },
+      {
+        "id": "S3",
+        "title": "Tata Consumer faces distributor anger over 'dumped' stock - Livemint",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNcVMzRjI4R0dOTHJrMDFRdnB4TEtMeTBNNTRRd3ZCbERVMGpraXViYTNYQjBrV1R2MnZZRmNDYjNDOGFjVkpLYTdpVFl4WUtJcTM1bWxXRnRfMlpUZHlua1JuYURIOGQ3MmJjQUJqVHFHSFkwMjV1T0tEWERGTVNsWXlOak5YcW5ZdGVXSmREV29aaTVTLVVJOHpnNHAycjBpc1hNMHU5cVVaMXdOdEVoZ3Z6aEJnVkxhTUpDTEVRakxNUnRJOF95NXA0ZS3SAdIBQVVfeXFMTW5JeTU0QVhXLVVZQlNZZGpselRGSHJLQkJsN216WUhCLUF0cTVHa3lvOG5GZW5WVlZXcTVyQlZhZ095cWM1NUdtcjZ1NUVEeDZzeUlRb1pLS1VlRE9hRkhLcW5FQi02ZVlZM0FVOXBobkl6NjlTRmE2TTVDRGdGd0ZKMnhlbjF3ZFl4OFhWOFoydkxhYXFEVXBNb3JWcEpXMEZEdmJVUGdEVXRmNVcySXZQazVZZlAyRy1RUzc0VG4yZFg1RTJVa1c2VDhsdnBtQ3Zn?oc=5",
+        "kind": "news",
+        "date": "2025-10-27",
+        "cited": true
+      },
+      {
+        "id": "S4",
+        "title": "The Ching’s Secret recipe for Tata Consumer’s next growth chapter - Fortune India",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPYWgzQlBQSGg0dUpLOUo0VWdwdERjeTdXT2ZmWnl5SldUM2lnSkNJRWFGWWQ4MzVrZEVvakx0UHdPWWMyZGh6N19CSFNDUTB1T0RjQTlHMzNnMFF5blIydExqOVdfWktZRlVjWHFRVDMyQTJFbEdBdjd1UWQxUFljWkt5R3VLdkVjREozT2VvTnFNYnJKRTF1ZEl3ald3YlhkTFExWFhCaHhmcFVmT0c0TDNLZ9IBwAFBVV95cUxQdVQ2d0VKV3lUdzVRRnozVnJWdTBjNEFEZTBaaFVEeGV0dUk1dDVKR1lWT24zNkk4dHItZjh1SGZ4dW9MV1NjNFFvakU0WjB2ekUzNmxoNjZOcV85SWxnVldMUkRYUFcxbFRUeTZNVlMtdWRKWE5uYTBuMHpKQW9JYlRsS215NUJNX0FGM2NpVHFhOTAtYkFsZnZJY2h4dUE0ZzVFUzM4cllPRWJGUkZaa1cySnJlQXUxelNyVnhjcVo?oc=5",
+        "kind": "news",
+        "date": "2025-11-05",
+        "cited": true
+      },
+      {
+        "id": "S5",
+        "title": "The 100-day Playbook - The Tata group. Leadership with Trust.",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPcXZ5M1BuN3d0LWljUFcyc0M4Z3kzWWRFMEd5WDVwalZTY1k4ZDFiU3BWX2Y1V0hNRXdEYjlHZFlYRjdiT3NEZXBFdzY3NE1xU1k5NmloWkk1V05SZFZqQXlEYWdLNzVUUE5FbUtENEtOVVEzczMyNmE0YmpweHJWdFFn?oc=5",
+        "kind": "news",
+        "date": "2025-09-13",
+        "cited": false
+      },
+      {
+        "id": "S6",
+        "title": "Scotts Miracle-Gro FY2026 slides: margin gains drive 18% EPS growth By Investing.com - Investing.com India",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWXN2WlZTMFhmNmVDTFZuOUd3YmlvNzlfNlMtX1R5N3BqWmo3QjBTTWZSVVhPenFwdlVDLTBWTnI3WFVZWEZtUml1akNwQ0hTWVZCRUhyU3lId1R1ckEwQlZLX05MRU1jc01Ka3F1QmM4NEwzVHFDc0ltRVVBUnFvSnE5Zjc1VE9QR2x6djJ3WUt4TmFtRnFWZDUyYW9fbTFqcWxLTDNyYUY4bVc2c2JlWENWdzM3elY5eS1JSGxjb0tkN0k?oc=5",
+        "kind": "news",
+        "date": "2026-11-04",
+        "cited": false
+      },
+      {
+        "id": "S7",
+        "title": "ET Product of the Year Awards 2026: Categories recognising products driving market impact - The Economic Times",
+        "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNRk51b09iaGxZODlWcnM0MHVVTjJ0Z3hRaERRdEUzY3VBMUhZNWdtN2dJdGR2dWVKSFVXSFBpZmdWeXByb3MxNFAxcTR4RGh1T0U5ZFZhZE93al9nbVFrbTVBb21iOTR1WUljT3lTS2ZERjZEclhtN19lTG9yR2IwemNhNE9hR1BQRVhSTFE4WHNFeDRkNm9rNFNpOWJZMkZfZ1ZaOXRQZ19rcGJRTzU1ME8xNmFiNzlxem9EWnlub05UaXBZT3lsWkVqVjJpdWFwSTB2TEdBaEIyc05FYkZwTU01cmNKM1lFOXRPX3ZYVWxtQU85QjVRYVMzUkJnRE9ZYUHSAYcCQVVfeXFMTkJnbGo1Nm9aNjR2a1FWeWhwMk9wVFpMN3ZYR1hSSDI3blVyeWQ5a2RCWVlzRENyMDRIRGlIbDFXWThRZTFaYlJkTUhnNDd5ZjltRjlqTXZKYWpHQkw2amJYdlEwS2FQdW1pNjhuZmVQLVpudTdFaXlQbm44TXllNWdZUUJTd3NoUm9UeUthSVAzS3BTa2pFU3M2emdkT0FSb2oweHhfclZzSlg3d3Z3MW9LaDNKNUtfVE9qSDFsMThVeVVwMnJ4emRZaXJlZjh1Ul8zZGxCcGNwVkdtWVRUZEpEZk93Mm5aYTJmNkVWdnF5TzlETWhuNHk1cEx6amlkQXNHX19kQnM?oc=5",
+        "kind": "news",
+        "date": "2026-11-02",
+        "cited": false
+      },
+      {
+        "id": "S8",
+        "title": "Tata Consumer Products approves ₹160 crore investment for instant tea plant - ET Manufacturing",
+        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNam0tRlJDc0pFZFpZOHBQenFnU0Zka1h2VW1qMHZJVTN5MnpJcmt2NGYxZzhIZlFpQWJXM1VwTGdTRS10aUZWSWZpV1ZxRG9wRmR4WjdWZWFBaGZEZGZabGdPWXZMWDNDeS1mOW1UOFIyTVdhcDROZUp3REtiaEtHdEQ3akpCNVBxb2s5bDJOR3RlUXg2NVljZFU3MXRLaHhoUGVrVWtUZmNlZ0NBMm84eExvbWFfbUFUdWVDY1ktcHlaMUJUYVpRSnhCLTZ0R1N6V2pvTUloSlVZR0Y4Y09Ublhpb3hpR2RmUGZz0gHvAUFVX3lxTE53OHRjLUs5YXQ3MTcyTktMTDZVckd1MHotSW1sUkI0TDFCcm94V3ZhQ3VqV3pqNWR4TDZLWWZTaTFERFFHTWNrTVpudU9ZZl9wZ1VsOUFjMExNMjljbGI1WXN3b2ExM3htaTZXZWx2NjFsNTJHWEpOVUxmX1JyVTRuWnBMS3F4RHFEY0MyYklxVDI5Ty1HQ0Z3cDhtMjhLS3RNZGdHSnByZXNDaW93dDF0SGxUYzMyZXFaMmtFS1VabDhJNWJDVUdpX2otSUhMbld3cHdlWE1QSnc1UFBfOGlEMjFtNzNieFRNNi1YMzNJ?oc=5",
+        "kind": "news",
+        "date": "2026-05-09",
+        "cited": true
+      },
+      {
+        "id": "S9",
+        "title": "Semiconductor Industry in India: Incentives and Key Players - India Briefing",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOQTVRbl9ZR3VpLVZOSUJfTG5yV2dtYzY3MG1WeEZrY3V0T0FoSHQzRzV3ZXptbWtxRHd4T0pCdjFqejdsVE9fTVY2WGRfaWtUR2pCTEE4VEFOOEpCcS1kMWRTZ2lGYnlZVF82YnloY3ZOOTJoQkRsLVZNQ3d5bjNIWXNnWGl2UVpRc3dJSURkSzc5U1FZMi03TUwyaWJhZlRhVmlseTNkbXRfTnhuZ2NJRUY5ZDJTc00tUjY0c0lsSGctMEJTNE9GWW1pcjZhSERsWXc?oc=5",
+        "kind": "news",
+        "date": "2026-09-30",
+        "cited": false
+      },
+      {
+        "id": "S10",
+        "title": "Government approves 29 more proposals under the Electronics Component Manufacturing Scheme (ECMS) - www.pib.gov.in",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9HZ0hDUnlrUmpYTWl4TE9VemtSa00yYWVaWHF5NW83RTlNTmNCYm5oTXJmRTlTQ1pKUm11OHpRNEV1eDNOeGN6SkZnNVhjNVg5MGItMWYwdlNETFRGeTRfRnRsdEVMU1Uw?oc=5",
+        "kind": "news",
+        "date": "2026-03-30",
+        "cited": false
+      },
+      {
+        "id": "S11",
+        "title": "Project Falcon and Tata's Consumer Coup: The Making of an FMCG Challenger to HUL, ITC - Outlook Business",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQR3h0SEFaYy1kSlNtSG1tNVhkUTh6RUlvTS1hWHZrcVl1aF9SZUtjMjlxNnUwV1Y4ZkZ3NjZLUnY2NlVwcnVicWlvc21TZEhGSmhWc0Q4Q1BqSElFOEhrUGJlbkhqM25HWFR0eEptWlVTNjk4UmxzZ1pXRmRWS2o4TlRhdXpuZDU5dm5GVWxBMTA0TXdNOEJEN3dRUXdmdkRXX24yempRWHpaVlA3LXdWejVnRGltUl9IeDQ4VjBlN1_SAc4BQVVfeXFMTlluRk0xQ0FwcWVrWXo5LWNsVF9MOHdOdkZ4Z3FzMzA2YlRCdHRsOUVuZFRraUNrQWY4RDlZUGxpZTJPMDh3c2VrTHM0NE1SRlkwUFVpeVIzZmk5NFo1OGQ2VFhqSnlDV3UwTkc0akNrbDlBMGtlSHFWd2N1OHg1X3ZtQ3R4SHdQUG4tV2U3ckhSU1pzblpuaVpBcERycFdZN1hHZ2FlWlRBcHd0QlZsSkFrbU80OHNvdXlXY3o2MEQzemhHcE5Edkg3bmhzQUE?oc=5",
+        "kind": "news",
+        "date": "2026-05-01",
+        "cited": false
+      },
+      {
+        "id": "S12",
+        "title": "ONDC DigiDukaan connects 21,000 retailers with 450 brands across three cities; Minister calls for FMCG participation - Organiser",
+        "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNSHgwNkhyRktldmgtRml2Z09Ick1oYmdpMmpkNl9WaE5ZYWlXQkVZRlFUQWgtSnQwalA3V1ZoUEppM1RjVzV0Y002OTJGY0dJbWJlSWwwYmxqR05GWllOUjJBMjI2ZnM3TDRHb1hORmpUOUNzX3RrSUZaaXV6czNpNG5pRG5QR0Y2b3YxS25RY3VJS05qZkY4TXRYVFIxS3U5QUlvR1RvcmMzajN6V01qNVRIQUVtQW5vN0NmUndJcWozX3NlUXpYcmp1UDdobWpaOThXQkt2TVpVUVVnZ3E4ZHZ6NERkWDB4a3gyZE9CckhwNHBD0gH6AUFVX3lxTFA0LTU3bnFBRXRtNW1hOVFPZFhiRnA0QVBFeENta2RHNmhqblRiM3NhOEMwTk9icjI1T3d6S1VGZGNrZ2dhNDgwbzMxR1NYTDVVSHdSajhQUm5samZiVUNCZkpVZzFyUmVGcS0zR29CSERackdmcTFibTJTX0lrUFkwV1R1RnlxUUs2dnRyam5IT3JMNWZvQzdKTkNQT1JLN0FBQUEzdktDR2lJUnJkYWthb01RSm0tUmlIaW1QUzhxV1lBZHIzTF9ZOVZkZ1k2TGN6WnhXNnpSTjlEY0VfdXNWakdLTWlLckEzblJ4TmNYUzBLQ3lUXzFoVFE?oc=5",
+        "kind": "news",
+        "date": "2026-11-03",
+        "cited": false
+      },
+      {
+        "id": "S13",
+        "title": "ONDC’s DigiDukaan crosses 21,000 kirana retailers; govt pushes FMCG firms to scale digital procurement - Moneycontrol.com",
+        "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPalVHNmw3X3F3R0ZoakpjQi1SRFZqYkNpek5XZndPUkUtVjBNLXhYaHN4YW9kSUMwUHRwaklRTWZGR3g5M3ZWSnVudkx6R0NyMnl5MURMZnl2QWVoeGxYVzhjalFuUEZfTnF6WFU3ZnlmaEhGX041QmFSODI3dXctVk03X1djdjUtZTlBcm5BVlk1WFlNZ3MtYUZsd0VGc3V4a3kwYmFnRFh1a09WbE43U0QtLU5JT0hVZDZzTnluYV9aNWlsdUljN0lqc0pSZk85UXE1OUVubVdfOHE0MXlxSGtzaFBXYV81Z2tWbEVVY9IB9AFBVV95cUxNZVNBSnkxaG51Y3kxRlFLOW9mM2I5MzNOM1NTZFJaMTNGei1CbHNlMG9UYjlRdTZZeTU1MzZrcHg5azdTalVtdDZrUXBnTFBwX2lzUzZXb3Z5a1R6OTFDaVRkTHROYk54NDY2c2pHSzdOc1o4LXFDYmhMLTQyVzVxdl93dDFrYWVkUVBPU05YUV9RU2JJTVJwdXk4U0FVWGJGZ2d1QXRhcm1QekNfOTNObXZHSmZPMHRyM2JhRl9rSjRxUmhGTmp5MllyOVg3NFdRbVlRNDhpTXBxb0J2SGlWTmtNenpoU091VTVUZ0Q2OXF0MG5Q?oc=5",
+        "kind": "news",
+        "date": "2026-10-30",
+        "cited": false
+      },
+      {
+        "id": "S14",
+        "title": "Isha Ambani sets ₹1 lakh-crore business target as Reliance Consumer Products takes on HUL, ITC and Nestle - BusinessLine",
+        "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOUTJPbVhQMWJjdXFKTzlnTEJjbURiVkRrYjJkNVRmeUxKLTRXOXJ1MVpnTHVPYkdFYk9QY3V5eEJxbXdMalp1MGZ6VHlyM0lzaWtyZHFfWG85bHlPcWR1RUZ2SS1wNzZpcXAwT3RiU0NHdjZOTkM4d21laHgzdHNOOWpzX3B6T19rdFlWVjlGRDltM044alptbFduVGVYS25velQ3b1Vid3F0R25yTXBpN1NkNFlfT05uMXJ3andkYXZaclh0VDEyWS1OSzlnblZnSmkxaGIxUzZ3dlRsSnhnNlJjaFhtbHVnU29DS3FTN0s3SGNMdG1jQTFMQTI2Q0HSAYYCQVVfeXFMT1NMeW8tQThGaUdRaHQ2VFZuSzVGQm9WMC0xZUJQRldfU2lMcDFiTFBaeGo3YXBlb1V6Qmg0MGlqaTY1ZlJWTDNwTzE2WGExbEtlSEo1cjFBZTRDQ2VseGJkQ3l2cHBqVGF4cHhlSi1vNmhfNU0zazc3VTQxMTh0bkJmMmZ0Z1hRVFg2Y1BQZkMxRWt5VVVtbjRKckRzZ3VCLW9zR05WSmZLVkk4WnpIYTJyVXBDSHZtRThkUzRxNHU0aVdJUGFiRWttdExwNkxMTXF5b0FjbVNpTkNVMHZfQ1pvS25KQmEtU0F3SXkxbm13LV9PNy16RXlOeEVGNVlOYXM5Ym5iQQ?oc=5",
+        "kind": "news",
+        "date": "2026-06-19",
+        "cited": false
+      },
+      {
+        "id": "S15",
+        "title": "HUL, ITC, and the ‘direct-reach’ quandary - The Ken",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE50VGM3SmpxcU9lVDBmdDlGQ2hvTFdMV0lmVXBwS29fcVB4MUdSMVFSa0ZqSXAyTUNUVExROERKM2t2T3ktUDB5cDd0YWZ4dFlEMlVoSlN5YXFJaXpoU09hbndXNVg1N0FNZVlnMDhFektYaDdmWWZwRW9R?oc=5",
+        "kind": "news",
+        "date": "2025-09-02",
+        "cited": false
+      },
+      {
+        "id": "S16",
+        "title": "Resilience in the FMCG & Retail Sector - Deloitte",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNSTFqaWN4OVVvc25xWk5DY0JRQ3F5ZXRiWjhIdmd1LXNvMURwOHJ2Z0Vvb2dzd092TGxjNk1IT3hMMWVURl9ES1FxQi1OcHJ6bEtlWjFPbzRRVHgxQ2F5WXpYM1JkU0dNc0RTQUJlYmZPeVdSRlNFUEpQeGFDX0UwMDU4dTNJNF9WX3NkU2hIRkJ2V28?oc=5",
+        "kind": "news",
+        "date": "2026-01-08",
+        "cited": false
+      },
+      {
+        "id": "S17",
+        "title": "WEF recognises impact of our supply chain tech investments - Unilever Global",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQVXk0eFBJa2E1bzZXM01fLVowOHpudUVGZDBfVjJZdXdaQklVWG9NQnM5NUhyWEZGVV9GUmtxQlJWT2ZDTWM2SDcxdDFCR28zYW10anJsNkpfYms0RkpWSzAtaC1qMWFTNlgxZ0phamw5WlFKc2U2ckVIMzdUZ2NSZTFyRW1VS2F3NU9oMVR1aF9weTI0OHM3ZXJIeUcxc1d0ekhSenhRbkFTbjlIOE9tQWxqeXQ1RU1XTnpuRUJR?oc=5",
+        "kind": "news",
+        "date": "2026-04-02",
+        "cited": false
+      },
+      {
+        "id": "S18",
+        "title": "Local Manufacturing and Trade Integration Driving FMCG Growth in West Africa - Maersk",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPbkpBc1F3Z1Z4ZFhKOGl0R2R1UzgtYkRHLXdGdEREWUNmNG9oNFFMSGlMTzhJQ2ZENEhQZGFfMHd6YlJyWHVmbFEzaGRYZjNQMEl5dWhheEFQQ3NfTHE2ZVRiNmtCUFdUWTh2ejBDcGo4SmNkUDhjWS1tRlJUTEp0NlBR?oc=5",
+        "kind": "news",
+        "date": "2025-11-19",
+        "cited": false
+      },
+      {
+        "id": "S19",
+        "title": "Discover the Top 10 FMCG Trends in 2026 - StartUs Insights",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBHUl9DVS1ScGcwd3VCbzh5b3BOZTJIbFBTeWxkQ001cW9zRTdaWDR3aEVoQm1sbWY0N3VSb1NBVU1hWnpxMGg0V0FuLWJxb0JIbzhfcTZCM2dfX0d6NkNFQTJoTUpLZ2NEX1RQTnlFUQ?oc=5",
+        "kind": "news",
+        "date": "2026-03-05",
+        "cited": false
+      },
+      {
+        "id": "S20",
+        "title": "2026 Retail Industry Global Outlook - Deloitte",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTVFFdGNJMU5tdFZhczNORHk1d1FQVjlSSEg3X2tNNDg1NUJEMXFhX0d6cHMwQXJORE5aSGhJT2YwUkhkTFFCVGZ4a01lWkJ1RUNtbzhfWHU5X0VMRDdHeUlwUXRTQVVyYzFHZlpHdF9sdFgyeDU1UmVtX1VPcW9rWldfY21waFE3M2hKWldRa3czTXJjRmZUOTlVd3pGSm9mSi0tY3ZOcFg4c3B4dDVv?oc=5",
+        "kind": "news",
+        "date": "2026-01-08",
+        "cited": false
+      },
+      {
+        "id": "S21",
+        "title": "TATA Consumer Products shares fall 2.07% in today's session - Moneycontrol.com",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQRmlvQXVJYlFGMHR2QzNTcnYzM1JUMjc5UXhKZUFabjNXZjc5WnZTTTVUYjRzSmw0bnlablp0QVZ6NmRyQ3JQd3hDS3N0cV82RkpXMXBSdHNpcXJVNTNGSGFvMGJLU0RFNE44RmllM1RzUkl6UzFQSFZ3R1FleUR5YTVrMTdmbl9rcmxKcnRMQWQ1T25wX2NvN2M0UnNYWEZBQ1FXbmpjWEdWNHhIOU9DbnY2b3Z4dGRzR0IzS080bVpUMGlaYmJyc19LUHA0alM3NlHSAdcBQVVfeXFMUFpHZVhSamc5RFlWU0JqcmxWVVNUd0hrZW9MX2tmVWljUzl5SjlrZzlFU1g2MjdVbDM3UW5IUWdFbURrakNQU3VSYnF5ZmdoN1JzZjl1WF96T0FIVjFFbGtpMVI5ZWpkRlBFZVcwanVPX3RDMDRJdF8zcU1hX3V1ODNieG1oYVFjcFRSQXgwRk1qSjQzWTAtODY0OGRNRnYwd2RkQlpUOFRsTjVyTkNCVXdJV3BrRzI5bjd2aTU3TXpaZDNZczZLaTBDSXBRZzM3QUt1T1pEcUE?oc=5",
+        "kind": "news",
+        "date": "2026-08-04",
+        "cited": false
+      },
+      {
+        "id": "S22",
+        "title": "Tata Consumer Products raises stake in Ching’s Secret maker Capital Foods to 80% - CNBC TV18",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdTdDXzZucTBaWXY5cmFEVk5vc2IzcmU2Y0tiR0ZCTmxhdEZsbVVtb0tVcXg1TVhUbTc4SWlsa201dl81NXpWN3VoTWVLSmZLeXcwRThBLWJPcnp4MllQaEtiV2kyLUlLbWs5Wk94eHg0SmQ4Ml9YZDJDNFF0Xzkzd0szdHlFN3c4cEZ2aW9QSnhJTzdIN0hYZ3hZczcwWVFWT21WVkFfamRwM0ljcG00RzlZakVza0gyVXlLS00xd281MjRJNnMzeUNB0gHPAUFVX3lxTE5EVy1EWlZaVTI2UHNDX3hPSVQ4TDZVT21kZ205WnFaeHl3dnlaZ2hqc0xpUkVGeHAwbEhnU2F0bFFmQzVUNUp0aXZGTWtoaFNsZnhqTUVCenBoT29yZjNpSU9ZX1oza0dMZjVaOVFqVHVsN3FYNWx4RjVxWm1LQkNqTTBZcmJZeXVOY1FhYktQdUdzeUxnS2c1Q3dxaGlsZXItZlV1b0Vfd0JXUXR4MjZnYXNhZUhkdm1ObWFvdXB6MUtrWlNHSy13UVF2Sm1EWQ?oc=5",
+        "kind": "news",
+        "date": "2026-09-01",
+        "cited": true
+      },
+      {
+        "id": "S23",
+        "title": "TATA Consumer Products shares gain 2% in today's session, among top gainers on Nifty 50 - TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQTmxqNGNpdVFZTVk1cHAxWkxaVlIyRG9LeXpfcXpueUR1SEhtRk9QQ3JTOFhoZXZTSXRyVk90THpvVnRqTnZ0aDVKa0hsUG1XZlFrcDdMRnlBTThuTmdELUZqMVVWTXhGYjBBenZuMjA1NTJZaDg5eFoxQU9ZS1d4d0Q1RHE0bDdMSFBoSEpDY2lsRmhLbXEwQ1FoMTZnSEV5Sl9iTEtaNWlGUjZuVHBGS0hXY1N5b3k4STlrUHh0MDdrNk9aUUdqWmtKNEtNWm5GaG1GaVl0N3RleFVwZVVLR3Bn?oc=5",
+        "kind": "news",
+        "date": "2026-08-10",
+        "cited": false
+      },
+      {
+        "id": "S24",
+        "title": "Tata Consumer Products Receives 'A' ESG Rating from MSCI Under New Methodology - scanx.trade",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTTNuYkpUQ0c1MUVlVUdUTXBFY1Q3RUJIUWJicVlHU0xGc1Nsb1Q3QlBCc0VYWVVOZEtIWmVhZVJPbjdZX2t0T2xBVjZhNTh0OWt4cVBRWDFaTWVFdkVkWkZxaWIwYzVzZGtUOHJxS2RwX3ZneUg5dDRSR0lZWEh4NUlTZ3ppTzl1bWtPaEpUY0tXMEJ1aUt3LU1rQjcxdjdiSUZveDdTaEJxQTVteVBEbjFkZldldTNkRWVhRGRDRjkyMTV2dnFGLTRNVjBxZw?oc=5",
+        "kind": "news",
+        "date": "2026-03-24",
+        "cited": false
+      },
+      {
+        "id": "S25",
+        "title": "Tata Consumer Products Q2 results: Net profit rises 11% to ₹397 crore, EBITDA jumps 7%, India business revenue advances 18% - Upstox",
+        "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOU01JSnM2d1dSb1J6SnNScnlqYWZFUE9yTkEzejhqaWxrNXppdC1xa1lkVXpBdlNYTDA3RVFWLVh1VXV6SzVFZlZRNmxvV0NJa2JDV3V4NTNuT1pMWldRR2tNaGhwQlJzTHRHZEpPTXI5cy14VkljWGx3akpwbUF6UlpvZ3VVM2NoVndzbW1xb2ZGTHUtV250WkNaV2NlQ1JkT3VuNHVieXJxNEV0aFlxYTBmcU43NjVLYXBPU1lmRzdUNTRFZXA0a2JISGgzb1EwVFNxZEVxbFplWGlmUTUwWU1OcmFIV09OYUhFRXYwbXdrSW1xeFdtYkdaeVhaRnVIUFhZbG1n?oc=5",
+        "kind": "news",
+        "date": "2025-11-02",
+        "cited": false
+      },
+      {
+        "id": "S26",
+        "title": "Tata Consumer Products (NSEI:TATACONSUM) Stock Forecast & Analyst Predictions - Simply Wall St",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQM3hrUktoRjNxNEdCS2lDVU5TOUU5bWNnWXctMllrUGRCNXhSQmxSeGtRSWZPLWNnN3lqNTJYd1RmMVRGSXU3ZnQzWDdPUElCV2wyX3VjanR4cnVramxiOGUwdTdTelMyOHNVME93LWZ2aC1ZbGdJSWRtR2l0a1h0TjgyYzNzcnpoY19XakxlZVVobjdJT0w5Q0R4MUNWY05IQTdqNlBKUFc?oc=5",
+        "kind": "news",
+        "date": "2026-10-30",
+        "cited": false
+      },
+      {
+        "id": "S27",
+        "title": "Tata Consumer Products assigned ESG rating of 68/100 - scanx.trade",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPM1VqRk03dklxamZuNm9Ob29jQUNkLXozbks0Qms1QmJmX0NnU1pvanFPU0FOZFptMGc3TVIzSXRXUkFZZ01ma3RVaFFVYXhOQkdMdXVRZ0xya1Z0cFViRDhyR3lLYm4wS2ZNYzkwTjhrRjhnOXFVLWt6aHR3U29oeWxqUVFBMWRXelBEMjFlSU1ETmhKbFMyUU9YYm1OV3pKVkZkQkNZVHZnQ3c0MEE?oc=5",
+        "kind": "news",
+        "date": "2026-06-03",
+        "cited": false
+      },
+      {
+        "id": "S28",
+        "title": "Tata Consumer Products Share Price after Fresh 52-Week Low - Univest",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNGFjT0tucUNnUzljVFFYQ2EwVDVtS2FtaUtFb0VkbHlQTXdkWmZwVXc5UzctdXFLd0EyQ2swVXVuekRqc0FuM2wxQ0xCb1B0d1BkZVFkVmw0ZGFDUlBJNjdJYXFtVDRXNFRLejV1amxiTTFJaFdBOENFQ3pIVUhmX05MZmpKRzd5dnJ4ME5MVVR4UDV4?oc=5",
+        "kind": "news",
+        "date": "2026-10-01",
+        "cited": false
+      },
+      {
+        "id": "S29",
+        "title": "Tata Consumer Products Q3 Results: Tata group firm posts 38% YoY rise in net profit to ₹385 crore — Details here - Livemint",
+        "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNc0Z4d3l2RG9RLVNYUWNXUjhJc2hvbkF1YmU0SFIzSlNwbE1ZR1hDWWVmdmhnRU9ycThyXzdkRDdFcEFmbzJRNjBzZmhRMnNMOFlHQkxOZGVBVGg5VFZZWVBmMWM3bkJPbkZjX09KN0FFdDk4cTFUeGRtMHNkd1NwbFhOWUd6T19QRkhrcTdRTXZnMExSU0haY0p1T1BmQTMxVmhDcXdLcm1DMk5nLXRxX0pVTXRjdXE1ODRRb1BocllNSkNIdnM1MEIzVDFtSFlOMEVobmRBWXIzcDQyUnNaWG5pRV9EMmFGdzgxQWU3N3hleGNJaWhtOFVWUXBZZzFuRU5SNWZrWGhfRU9f0gGSAkFVX3lxTFBTc1dFUjJwWGh6ZnhmM3JWeDF6dUROS2xnMTNYQlZ3MXR2bGhLYm1UdHJBcUE5V1dWLTVjTWowQlhiamdPS3IzREYwNHZsUElaRDZLYkZkcTV1eDAzdGFRRTJxUHJOOWRFcF9tcUg2TFFDRG1xckFNalFhamVDOXBVS2ZMMkdqUF93ZTBrYTkxc25PNW93ejN1Z3BJeVBlbEdOQndCNU1LV1Z0VkZ0WWNMeGtTRm1sUjlXdlppb1A2RzdzMHFzV21oSUJmNG9KeU1icVpmclRVczN0Y2xzUXN1bXJsZDhGMG51czA5eUNRX0trMjI4S3NMQTJ2X1JsNUVvelV0eWdrcEs1WHhaUUZPUUE?oc=5",
+        "kind": "news",
+        "date": "2026-01-27",
+        "cited": false
+      },
+      {
+        "id": "S30",
+        "title": "India's Tata Consumer Products rises as growth businesses boost sentiment - Reuters",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYmRPeFpwU0RoNTZ5d3g5eVFoN244dzJQbkNnd3VWYUk4SFY0M0sxeENzRDNTZ3U3UG5BVGlLWktnSEprYXd6cU1CZ3VtN1FvWld0cURUV3RPdnltdEkzUHFRMEF0ZmZPUjlxdzdZZEFLZHVJQXBxcVVLQ3FyX19IT0NUMEZwRDRaYlFKMjdPSTlRSXR0elIzUW05RU1IQnB3MVhseHMzcFFqaUEyckx5bEQ2cXJWTm1FeExuZ3ZR?oc=5",
+        "kind": "news",
+        "date": "2026-07-26",
+        "cited": false
+      },
+      {
+        "id": "S31",
+        "title": "Tata’s leadership challenge: Building the team around the Chairman - Exchange4Media",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQdW9UdDA1S1dDdUM4QV83MmdMbVBUTU8tOUdhbjZvckE5T2pSdEN4N3dXQ01CbE9zY3JWVU1LY3BBTHl0YkU4NDhSX2xub0VRTGUzTDNXVzVwWXBxX2RMZUdNYXZ0VnUtc1lLWXlheDZNVWxGanl3eGlYQWs1dVkwQzJUbVpELVQwTk80cWd5aElEQkxYd3lwdE14VURKVVJ6Z0lpRXQwWUpqNHJlV2tNZF9sWklJY3BzdnVScFAzUGdUZkU?oc=5",
+        "kind": "news",
+        "date": "2026-09-09",
+        "cited": false
+      },
+      {
+        "id": "S32",
+        "title": "How India's Non-Metro Supply Chains Are Adapting To Global Trade Uncertainty - BW Businessworld",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVHVLX0J2X19xTk1YNVdMRUhoT1Q4YWFpbTlUWWo4VURqY2h3ZkpTYk5UcG5kSmhGZ1dEWk90bDdFeWstWVpyT0t4SzlNU194cjdmczFFb05IcTA4c242ZE5VS1JzeG9MeU91ZnlwOWExZjBvNXB0aW1QdUVBdzBhTFNJOXBrdDVDN0hGQkhPZUdSdHp5dkZfaXVlV2VtM21Ydy1FWnlzcXVyYTIwQk9QMA?oc=5",
+        "kind": "news",
+        "date": "2026-07-13",
+        "cited": true
+      },
+      {
+        "id": "S33",
+        "title": "AI Adoption in Agriculture and Crop Management: A Roadmap - Tata Consultancy Services",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVkgxaUpiWjNZaW8tTVR1NGluNzRFSUFXdzhfczQzbjVKYXpSNy1uMVlLaDFsMlhNY2U5cldWV09UTkNCUlNjeGhjbHpaazRzbUVDTVJJV1NOSExMZzNLUmFtaUlnbVpDRUIweVNoS3BQcWVvQjd5dHFaZ2tmallwWkdCVERIOGlPTllRSktSclI4NldiNVdfVGhpSEJXS1JGbk11dFA4Mmwwdmhtcm5jZ3RZNWU4UlczSG5FcThnR2FXNjZOYlRUN2pJeGNiTG9PUThzdkxpMWIxdw?oc=5",
+        "kind": "news",
+        "date": "2026-02-26",
+        "cited": false
+      },
+      {
+        "id": "S34",
+        "title": "Tata Consumer Products Q2 Results Show Strong Growth in India Business - Indian Retailer",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSUpfTmdQSUdiMWhJSW5IbzJPZ2tqdWdzcC02TGhxTWVYc0JXQS1QdUk5QUFMdXhOeWtlTG9yTkJ5ZG16UUowSkFnYjRRaGlxdXoyQ3NNTWRsZEtlaHd0NW9YRGVQSkFhSFBleEZTSGt5NGI5MHM4SjBTaHB3aFRJTE5TeGhGM2F6N1lYQzJVaS1tSFdBeDJtbXJldUJ4YVR6SE14U3V3?oc=5",
+        "kind": "news",
+        "date": "2026-10-27",
+        "cited": false
+      },
+      {
+        "id": "S35",
+        "title": "Tata Starbucks could expand to 8,000 stores in India: Chandrasekaran - Business Standard",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNWFdCc0RCT1hWSV9DMDJrcGpXc1ZYWmJVMndnVlRuQlliSDBlREJJcnNvUmZwZjA5YlZkWGZYRFFiREZWZU9CNktOb2lIOTBsU2Vob3BGSXlvWnAtUlZiQXRReFpnaXFUXzdlT050aHRlQ2RoWUc3V0RoNUlpSnBTSGZwaTdHUHEwR3loZENESGdEVXFGNjhhX1VHdkhoTWlwVXNaS0tWMG82TlpFRzFGT3FyN0pnMlpXSVBCMjR6VHRkdGdFOVZTUnBKRlJyX2ViRFHSAdcBQVVfeXFMT3NXRnRWUzlIY2ZIcXlMUEdzUUM1Ylk0X2RVcTc4NWVmN0tyalRaRF94aFZzVkpKSTFXdlc2Q1F0X0FYLWU5NTIxVzJack55RGZwQnlTUDFJT2sySmJET0tlSTA5c1ZVTFhvZXd4WW9CLWN3enp4d0MzWHFjRGN4Mjd6bDV4WlpMMW91S3hMMWZwazF2Q2ptODlyVGU1amYwb0VpN2t2ZEhNTXVFd2hpMWNFNlZsUGtTY21yeTVCYTlrOWVsWHNEVHpiWThNRzBmZTU2M0J4SDA?oc=5",
+        "kind": "news",
+        "date": "2026-06-10",
+        "cited": false
+      },
+      {
+        "id": "S36",
+        "title": "Artificial intelligence, geopolitics reshaping biz landscape: Chandra - Business Standard",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNQVBqcWpQWDlfd0E4OHBYcjJ3eGhYNV9VMmE5Z2syQnBIM0tpTG1mYzJBeEQ1bDZRQkdUdTVENVlVaHp2dTlNYVpqakVRUW9kUDh0SkF0anRhckNRZUMxV1JGVDNCbDF2U3I0YW9MU2FpZk5DUDRRMWIyRU4xdDRyYldIVHhaNG1ia01TTkJ0dktvOFBBa0paeFFhbHlKN2VFWW1Pa29GYVhGSmVOeFEyX3BEQnJEODlpWk9TbklSeHR2T05GVURFaEJ3cG9zU2pteXJvMndNTdIB3AFBVV95cUxOcnM0YUhpVlpvYWNtQkdaYW5MYnRuWHpra0RlZmpNTG1iZFVEUXA1ZWduN3ZmOTdERklzSlVmekFwSzZpd001TTZrZVZXQTgyejdocDVISXJrY0gtTHdYd3JlRndzSW5nVGo1R1pWdmxoVUJMX3RRRnAzN01FbkExWWlwcWVHUzBLLVljdTBTSWFNSmxlVmx0RlNQcFhqdnhWdHpvMDZQeGhzdV9XSXgzdGVNeDNONThWeTA3RnlNMU02Mk9nSHRPVEVwUFhudE1oS3pJRDg0eENDTEta?oc=5",
+        "kind": "news",
+        "date": "2026-06-10",
+        "cited": false
+      },
+      {
+        "id": "S37",
+        "title": "Wikipedia: Tata Consumer Products (part 8)",
+        "url": "https://en.wikipedia.org/wiki/Tata_Consumer_Products",
+        "kind": "wiki",
+        "date": "",
+        "cited": false
+      },
+      {
+        "id": "S38",
+        "title": "Wikidata: Tata Consumer Products",
+        "url": "https://www.wikidata.org/wiki/Q795622",
+        "kind": "wikidata",
+        "date": "",
+        "cited": false
+      },
+      {
+        "id": "S39",
+        "title": "As Markets Turn Volatile Amid West Asia Conflict, Investors Rush to Defensive FMCG Stocks - NiftyTrader",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQm52Qkt0dlQ1Ql9MWThKRjV3NjdtUzRvNDN2Q1pXTXNSRl92NlZ1OXJZem9qWHZVUGdZSmpDcC05OFpQOHplWU52RUxpeFBCZktxdEkxM3M3OVBsVkhmZFlxb1NyNUdGRHctQzlnQUR1NXVTWHpmMEhqQTVxdndSNGV4akRIQnc2NDVUeQ?oc=5",
+        "kind": "news",
+        "date": "2026-03-13",
+        "cited": false
+      },
+      {
+        "id": "S40",
+        "title": "Fast Moving Consumer Goods (FMCG) Market Size, Share & Growth, 2026-2035 - SNS Insider",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9qaTdkc094ME91b3dHV3NBTUJUeGlWV3pKRUc5VDBaak9SN1EwQkwxUVptNjdKR3lEUHVMdS1Uc2RoYmFqUFNsbHcwN0xJNEhxUXRFNGhHaDBUU2wzTlpkXzltRDhRbHczQVVUaHhJS0QwalUwQzFfNG5QUVZhdw?oc=5",
+        "kind": "news",
+        "date": "2026-10-19",
+        "cited": false
+      },
+      {
+        "id": "S41",
+        "title": "Tata Consumer likely to take 'calibrated' price hikes if cost woes persist; eyes double-digit FY27 growth - The Economic Times",
+        "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQTTdjV05TN0JZaE90UmdEYmFyWkdSc196YnZ0OTR0VHJsTERpWEtzNkd3aHhPcFJfLUViVXhtdzJuRjF2R28xSFZ4ZXEtNkxIbmVBZEN0M3Z4emhWVDlOSC1OUkpSVDBNNEFobTdrTTRxV3ZpWkoxY0tITzJQWF9SS3lwZDBkSXh5ZFN2UFJfQU9aUkxnenlGTEFENzVNR0pNYmJVT0kxTUd4X1NrQWtucXdlLWJrZ0RhbU1XZHpoQU9LUWFobTVWTEpIeU56b214TUtyajZZOW94eW53YkZHbVJDdnhLRzRzeElDeElmV3ZrSDZhclE1Z3BxU2ZEOVhUa2lFRWJtUzlGWDlZallhSW5n0gGXAkFVX3lxTFA4SWQyWkdoOHN5Z3Fna3RwZ09nREdYd2JLdS11V2RVdm5xY0I2ZGU3czllZ3dlTzZaM0d2OUlnMk5RR25ZRUpWU1AtLUQ5ZUNTQ3RHR2tDa0Ryb3Q1Q2VhbkluQlZjckpudE5PdjY5c0tIb0dVS082UzRWS2d0am9fak91eDN1ZEpzdDlNSUZWUjhOckFsOUtpSjN6VUJET1dSYlBwRWJKOEJDcEFmSmRqUDhRMXdXWXBFTGx4OWZITmdxRkp0VGZvUWswaDN3b0tmREpnQ2xqNC1MU2lXeGVxa1NZRlRMbGtSd3VhYW01MlVUeHpELUpnNnlPaTJuUHVHcHVBTk4xMTJSazMxa0FWaGxid1Qxcw?oc=5",
+        "kind": "news",
+        "date": "2026-08-20",
+        "cited": false
+      },
+      {
+        "id": "S42",
+        "title": "How Tata Consumer Products emerged as a strong contender in India's highly competitive FMCG space - Fortune India",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQQ3BmLTNCX2k1dV92TDBQRWlZdXFzbktvTk9lczZlMjRCSW9DWTF0SlJQeElhUVJNVmZITV92LUpMR2tZdE1DV0xlZWowVDhucUVNVWdTTmthSWVNVU9Mdml0QTVqdHZjTFdDMFIyRF85WEZyYUJsMHVybDJhRWtiLWF0cWVyLWo0bmdYeEpaX1NmWXlkUEJTMnVCVGVReFNJZ1pWbUwxLXFjVlJsWjFFajhGeFZkYkpxeVBYeXZxVVlhT0ttenU4R01QSFdUOGZieEhhZkZIMVrSAeYBQVVfeXFMUHRiblBNd21QZTFSM2IzQ0NEWFJfaG0zZHlyWjEzeVJKNnB6VEVUbmpSX2NCZWdscVRTYXEtNl9xelhfcjRnX3lLNFBoZVVKOUZVei05WDh1OUVmVnhhaXBJN09pNTBZM0hJd1Q5NGhkMVVVVmJyZ2c5S05pQWZtdlhNLURpNC0zcVNLRWdPYjl2Q0VkMTFQSEthdTVRbTNVMVhPWG1BRVdpeHpoR3NhcHZOcXo0cUtXTW5qeWh2bUx1a29lTGREbzlUdGVOU3dvcnlOYnpscUprUnk1RWdhQktVSkYwZ2c?oc=5",
+        "kind": "news",
+        "date": "2025-08-15",
+        "cited": false
+      },
+      {
+        "id": "S43",
+        "title": "Official website: https://www.tataconsumer.com",
+        "url": "https://www.tataconsumer.com",
+        "kind": "company-site",
+        "date": "",
+        "cited": true
+      },
+      {
+        "id": "S44",
+        "title": "Official website: https://www.tataconsumer.com/about",
+        "url": "https://www.tataconsumer.com/about",
+        "kind": "company-site",
+        "date": "",
+        "cited": false
+      },
+      {
+        "id": "S45",
+        "title": "The great unbundling of Indian e-commerce: MSMEs and the direct-to-consumer revolution - McKinsey & Company",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZlZnMTU1V1BpbmZMdHF0TW9lcXZjWWdCMFloNFJlOW80am9sakoyVW9zTGlVYlhmU1VXZGIxbW8wUFVsNlByTnl5alRIaU1DRko0cHk0RlBqRVhqSHJsd3ItMVhvU3VQVXplYkZZZ2R4bFAtVjJtaHZFQ3NweXBUdlFhZlZDUFBlZ0Fld3REQzF2SHQ4dlI2NXVNZnFDQUJkNVRCc2J3TF9NYU9CZFJlRXhERnVyN3ZvclNEOXlvbS1RampObS16dlR6Zzg3a3JGWFMxQW5DT2pkOUNn?oc=5",
+        "kind": "news",
+        "date": "2026-02-20",
+        "cited": false
+      },
+      {
+        "id": "S46",
+        "title": "Herbal Tea Market Size, Share, Trends 2036 - Future Market Insights",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1XV1FlWU01SFpKQjRURDE0YzlZQl8zMWJLRWtwdklROFRyTmY1dDVkZ0hYUHN5S3Zvd0VRY0pnYXMwLV9HcjdOUWRUOExFdzdnazRVRHBzaWk0SEE1TllCTXAwVmxoaVZZU3dHekFmTQ?oc=5",
+        "kind": "news",
+        "date": "2026-10-13",
+        "cited": false
+      },
+      {
+        "id": "S47",
+        "title": "Packaged Food Market in India: Size, Industry Trends 2034 - IMARC Group",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9PbDAwTUY1Skk1bDY3Wkd5TXNfeHczRUFkVjlkd1htVDJaZWlXaGt3N01Ba2lEWmxCMzVvcXlyei1tWXJlNVNOcTNDdTdxbzY3LXVjaE9YTjNPVjJJMU5xcUtoOA?oc=5",
+        "kind": "news",
+        "date": "2026-10-23",
+        "cited": false
+      },
+      {
+        "id": "S48",
+        "title": "India Olive Oil Market Size, Share, Demand and Report 2034 - IMARC Group",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE84aW5VX3hPalhqbmtVWGZoWURvY0psQ1ZBRm80VzdZUkcwSGM4SW96MXNfYkpBaWdxanRtRU9memlXUjNranhoeW9vcGFVeXFvZzFOa2FBUEV2UllGTEE?oc=5",
+        "kind": "news",
+        "date": "2026-10-27",
+        "cited": false
+      },
+      {
+        "id": "S49",
+        "title": "Tata Consumer Products launches first corporate brand film, showcases transformation into diversified FMCG company - MediaNews4U",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOR3BpeFRMSVlCNV8zUTRQT25QMUtNLWhBZUR4R29nTE1mWHJaT0FtS2x1Y1ZjZG9BRlVpcTlQb3Bzb2ZacmJSQ0E2OHVLVi1zSGZIQnBVcWRrMXhWUC1QYjN4MXNRRW5MU0d6N1VMMERndDlFQnlzN1IxZjYwa1ZGeEd2b1VMRi0xLVE2WWN4eEZROVk1NDk0MXRpVHExekRvTDdTemVmSDhaUEFmc0xHOFZDWmVNVWJJYVpwcGpZaFpabzJPS0s5VEVmQ040UXhuV0o3LXR6LVg0Zw?oc=5",
+        "kind": "news",
+        "date": "2026-07-07",
+        "cited": false
+      },
+      {
+        "id": "S50",
+        "title": "Media Release - Reliance Consumer Products Partners with Nigeria’s Leading Business TGI Group Expanding Global Footprint to Nigeria: RCPL signs agreement to form majority-owned Joint Venture with TGI Group Bengaluru, 16th February 2026: Reliance - Facebook",
+        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOMlN0MmE3ampLTUtTb1J1WHJscXppelJrVmtjUUZQMnZXRGNSYjBpOWV6UXNSaDFnWnBTUUZ2R09JZW5xTi1vSGY5Y21EVi1jTnVEcFVtUkNKb3dzR20tUEVsYTVhUERKU3B6N2tBT3piLVBBR2xVQzNOUDJyRjdLd2hWb1dydFdGWmJHay1KTlAyUm9sb2VpeHlYejdpdUFCYkprX0VULWM2MzgtdUd6YlBaZm83WmlITG92eUg3NnlyX0xGVGdFSEwzekJsazBpT2hyYndySEhMZE8wTXkwWFZkckpVa0szVndN?oc=5",
+        "kind": "news",
+        "date": "2026-02-16",
+        "cited": false
+      },
+      {
+        "id": "S51",
+        "title": "Official website: https://www.tataconsumer.com/about/caution-notice-disclaimer",
+        "url": "https://www.tataconsumer.com/about/caution-notice-disclaimer",
+        "kind": "company-site",
+        "date": "",
+        "cited": false
+      },
+      {
+        "id": "S52",
+        "title": "Swagatika Mohanty Appointed Deputy General Manager – Human Resources, North Cluster at Tata Consumer Products - https://hrtoday.in/",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRHZ4V2EtOWM1SDI5N29RN3NRaXVZSUdrZUVvX0MwbjZ6clNnRENoM1NEOExuSGVIWW91ZHV0a2piaE9qYkdhWVZ6UVU4Q0toQ0oyVTFqelBZa2VfN1hZYzc5LWhOZGMtWndrbVhWLUlrd2djUWpZV3RsUTBCMEhUcUZqS2p2LW9ldHlIb0I4RGFXeER4NHNtb3lrOXNRaEFtRFNmSGZlalFYTVJyQWpUaVBHVElKcjFqYkRLaXNGaW8yNXBW?oc=5",
+        "kind": "news",
+        "date": "2026-10-19",
+        "cited": false
+      },
+      {
+        "id": "S53",
+        "title": "Krishival Foods appoints former Nestlé, Tata Consumer executive Vivek Kumar Jain as CBO - ET Retail",
+        "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPby1ONFRUdEJQWFlqdEtkSGFfUk1xUHpOVjZZdHhGRktpTHU1UUZsbUpzVTNOcmh5TGxINW1zRy0yZFhicXd6ZzZxTklmc0R4cnlNZ1JyaURxUzUwWDFQN0pOOFJ2VVcyMlMzV3VLVGxERUNBelJOWE9VZmRMb0RTbE4ySjJFc2lYZjY5eXpfX3c0VGE5WmJmVTZJNmx5RUxDWjJKazlkaTdtbk42VXgydXdPU1hKc1h5d2QyanctTUR2Vld4SHFsNjhPdEhVRXpnaG5HdTRlQ2d0eHdoWVhaQzdYLWVFbVNrSjFSZzRCVzh1NDBJU1ZtTFlyVGxkZmJZc2ZLb1l2cWjSAYwCQVVfeXFMTmZKZHF5cjNkUVhFd3lDQkFMZ0lsa3hfcnJ3bFJmdVBiS3pPa0hMd1BFaGtyTjZRdmg1UU85cERSTU5BNVlSVUJ5NUFRaG8yRUpRUFNuZTFsMnZaeXRkaXNMNG9xMVZEbF9OS0VxVWc2V09EQjZ4b29LT1QtdzRmLVF3U3ZsNm5Kb2JfdUYzM3NVTVdpZG5TcmRjNXJlamt0WVlBdjRiZnNSSGFSVmZYc2gwYjlRWUNyMGVkVlFldl94elRYNjNOdzF2dlVkbnZITC1MY3c1SENhS0tyX2tkbXBYSXFpWFVJOXFzclNhdWtjY285MWc5SklQX1NRTVBKYnUwMmJGNEtyZ1dvTA?oc=5",
+        "kind": "news",
+        "date": "2026-10-20",
+        "cited": false
+      },
+      {
+        "id": "S54",
+        "title": "Tata Consumer Products Q2 net profit rises 16% to ₹469 cr, sales up 14% - Business Standard",
+        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQalVpa25WN3kxUld2R0E1cHMtV0tmWXczSFU2MUlSSHFQQmk4QTF0NC1FcjlBYzdWQW9fRk54VzNBTjg0REJqWHVReG1LQm51SzJ0WW9OUENyelBCeDhGM3AyNWZKRDZRUFg5WU03MUlob0hLckRyU1RrNjdYSHczVlFCZGZIbUs1QnFIOTd0TlBRNS1hUE9mUVZRUENTckY1ZGltanZESjN1MW1EcnRnLUU3ZlhvQzEydE8zQTk2ZktGVW5KOURTVUExWnAyeW1zNFZaekNKMWRYZ3BraWlibjBWWdIB6AFBVV95cUxNNVQyaFpIeFp5RkJCdWdUbUUwMFNLaUhOWElGbk1XQkFMbl9FYllLUldsRk51dDVBUkhGdU9tNTZkbEpjZ3BkLWlYMUZxbE1tdUt2MHNYV181Tmp4bHVWXzhZU0FyUmtleTNXX2tKc0FEX003Q2FQbENBbkhTUWhCT2ctZ25FQ1dzQXV6UzBjYjZFakJFX3J0V0ZJQU94VnlqVmlYeUVURk55N0stM0R2dVR2QUJwQ01iM0dSeU5Vb1R2TkJlcDFITWs1V0tGTFhSX1o1dWxINkFlOXcxY0NyczRnVko5eW9N?oc=5",
+        "kind": "news",
+        "date": "2026-10-26",
+        "cited": false
+      },
+      {
+        "id": "S55",
+        "title": "Q2 results 2026 today, schedule: Paytm, Tata Con, REC among 90 firms to announce quarterly earnings | Full list - Livemint",
+        "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPRUtVc3VvTkMxM2tjdnUxS1oxaW01MlpwS3JWSFE5bFlKZmdja1hXMlh6Vm9YT3VESGZ6d3VDd3ZBNjNSaUhJbWRPYTAtaFFPMFVlU2o1WEtRaU56M2VwU19zcUhMOW1vSWhHcXFTNkNwM2lQaXhGT3pIbVJqOUxVYVAzN0N1eUtCZTFYUlZtOUtqTk02UXNka0VaTklaaTB1aERtLU9DM1E3SjBrN3RIbm5wT1Q0a0JWU3ZlQXlmeXF2LXF2MHZNYjJ3bTh3S0g0MDF6ZG15UnFxYkhFU0pKbE40Yk9sYURRdHplc0h5V0R5YS1JNUZTNjdjblNVUGVUQ2VxQy130gGLAkFVX3lxTE04eG9ab0hEcHdON3pXTDBuTTFEY3BpcmhHckg0Y1dwSVVfY08zcDc5ZG5sMGlzdlpLa2todGJQSFowVzY1WF9ja20zRGdtekRUcTY3Y2E3SmNHb2lNdG0ybzFRNXlOMWk3VkV2MlhDUEkxekJNZGlkY3FvcFl0WEFlYWplSmctelRwOUtTdnF3R09mRVFqQlJOOWxKOS1SZlB6aTJrajFrenF4ZVpDTWRrOUlGdGhidDBTVzBoN3kwWUx1elJucFM2VjVVenVPUzlRY2d3cUxlWVJocE1KX3IxQkdkRXp2TkxaMXkwSklfQ2VSNHRDMHR3X1Mzd2pZUDItLXZPYm5ZVXRDdw?oc=5",
+        "kind": "news",
+        "date": "2026-10-26",
+        "cited": false
+      },
+      {
+        "id": "S56",
+        "title": "Tata Consumer Q1 Numbers Strong: Profit Up 28%, Revenue Hits Rs 5,348 Cr - NiftyTrader",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ja2pVdDZjUURQUFdqaExSVE9pQ2RRbkNOSW5zOE1PTlBQVXVUQjBPRmtOU2t0M2VrcmpkNUs2YWRUVklvdHA0LUZIN0w3ZDI4Qm5MRkloYUpDUmtvdjZYNFFxRVY0UkNLY2JqRlE0aU9JczVxZ2VHY1RwT3pOUTQ?oc=5",
+        "kind": "news",
+        "date": "2026-07-24",
+        "cited": false
+      },
+      {
+        "id": "S57",
+        "title": "Q2 results: Paytm, REC, Tata Consumer Products among 98 firms on October 26 - Business Standard",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNWVlZU21LaWhSbjlPeG1Rek9icmlxT0NzWlFYNU1ERkRWWFFLRVREOG12aHZTRVhDYndCdnhSSGpkLTB2Yk5HR2FpcjZUVWZCaExiU1ZWOF9DXzdaNWxWbDA4SG5zalNtVXppTno2S2E4eUJUaFlSMkFURkFDLUpLeTVBLW9BMUxPZHJyRG9FU3dDbkpoVkZzRHN4eTkzZFZoaUZTWEdYX25XX2s4Z1ZxY1Y0aG5SenJ2QThSck9fajdxSGhrTHhXNjVPazdqYW1qbWU3V2Y4STZOTnplYWRCTDdfa3ZKWHNOMXfSAe8BQVVfeXFMTmdTWXBicTZoZ3ZuNTNNNVZSMHZxMk9yeUw5RXl4Wl9KQ0NDWnNaUW5Gdm9nSjhyN2RPZktLMkRvcDMybllvNTVaSDh2YlA4MmlHTldYUjFwUm9zYXk2VVBNYjlMTTZqRjhDTDZCMDBLaHpiaDJVbk1tNzZpeW1DdkJLUkt5RHNwNnpUQmdodzBqTzlOSE9LTjJzbGxDUElqWlIzZVBRaG8yanVHT0J1MjBJZHc4b01HWW5BYllTWUZpdm5UaUlob3VtV1VOVFMxVU9GenBfZVhiNFkwcjl5YllBX21wLVFVcGo3UWtaeGs?oc=5",
+        "kind": "news",
+        "date": "2026-10-26",
+        "cited": false
+      },
+      {
+        "id": "S58",
+        "title": "Tata Consumer Products shares fall over 5% despite Q3 profit rising 38% to ₹385 crore; here’s what analysts said - Upstox",
+        "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOS1pKa2RZeWJ3TmtBbHRtQzlfTGxmaF9keVNxUkUwaEhjSzlnMzZqVVFyM21Sd09ybk9ENHN2dF93aW9KcXNEOHFNVENxYmFDUTJFRnlmSmRZc1JDOG1zSEVhVVIwMGljQWdTZ0FEamJhQ3Y1bHhFU3RCU0o0a0hJcTRRSXNjR3huZHhYSTlYR05kckpkNFpSd3U3dFI1STB2cHg1N25uU0FkaUg4bXpUYzYzbXFTVWlBX3JOWHFESk5YWmthZ3l4SUJLb1ViU2MzUkx6Z2lGYUtTamNMNWVObVhPTmZWa3piRFpJNk1SbW5rU3lKcjJ3WnlaRQ?oc=5",
+        "kind": "news",
+        "date": "2026-01-27",
+        "cited": false
+      }
+    ],
+    "metrics": {
+      "sources": 58,
+      "findings_verified": 28,
+      "claims_checked": 9,
+      "claims_supported": 9,
+      "grounding_rate": 1.0,
+      "llm_calls": 15,
+      "cache_hits": 0,
+      "llm_seconds": 224.6
+    },
+    "markdown": "# Client briefing: Tata Consumer Products\n\nTo drive corporate growth and expand market reach, Tata Consumer Products raised its stake in Capital Foods to 80%, utilized its distribution network for TATA Coffee Grand, and approved a ₹160 crore capital allocation to establish an instant tea manufacturing facility. However, in October 2025, the company faced distributor friction driven by stock dumping concerns, while non-metro supply chains adjusted operational strategies amidst global trade uncertainties.\n\n## Key facts\n- Tata Consumer faced distributor friction driven by stock dumping concerns in October 2025. [S3] _(headline-only)_\n- TATA Coffee Grand expanded its market reach by utilizing Tata Consumer Products' existing distribution network. [S2] _(headline-only)_\n- Tata Consumer Products raised its stake in Capital Foods (maker of Ching's Secret) to 80% and integrated the brand to drive corporate growth. [S22, S4] _(headline-only)_\n- Tata Consumer Products approved a ₹160 crore capital allocation to establish an instant tea manufacturing facility. [S8] _(headline-only)_\n- Supply chains in non-metro regions of India are adjusting operational strategies in response to global trade uncertainties. [S32] _(headline-only)_\n- Tata Tea is selected by one in three Indian households, making it one of the largest packaged tea brands in India. [S43] _(strong)_\n\n## Pain-point hypotheses\n- **Distributor channel friction caused by stock dumping concerns**: Tata Consumer experienced distributor friction in October 2025 specifically arising from stock dumping concerns. _Fit: We can assist in redesigning demand forecasting, primary-to-secondary sales replenishment models, and distributor inventory management to eliminate stock dumping._ [S3] _(headline-only)_\n- **Operational strategy adjustments required for non-metro supply chains amidst global trade uncertainties**: Supply chains operating across non-metro regions in India are currently adjusting operational strategies to cope with global trade uncertainties. _Fit: We can help optimize non-metro supply chain resilience, inventory buffer placement, and operational strategy design to handle trade disruptions._ [S32] _(headline-only)_\n- **Distribution network scaling and route-to-market optimization for integrated brands**: Tata Consumer has integrated Ching's Secret (raising stake to 80%) for growth and utilized its existing distribution network to expand TATA Coffee Grand. _Fit: We can assist in optimizing shared distribution network utilization and route-to-market execution across newly integrated and existing brand lines._ [S2, S22, S4] _(headline-only)_\n\n## Pitch outline\n- Addressing distributor channel friction linked to stock dumping concerns\n- Adapting non-metro supply chain strategies amidst global trade uncertainties\n- Scaling distribution networks and route-to-market execution for integrated brands\n- Aligning primary stock allocations with secondary distribution capacity\n- Enhancing operational resilience across non-metro logistics channels\n\n## Proposed scope\n- Distributor Channel Alignment & RTM Optimization: Distributor friction mitigation roadmap and revised route-to-market strategy (4 wks)\n- Non-Metro Supply Chain Strategy Refinement: Operational strategy framework for non-metro supply chains amidst trade uncertainties (5 wks)\n- Integrated Brand Distribution Network Scaling: Multi-brand distribution integration and stock replenishment playbook (4 wks)\n\n## Discovery questions\n- We would be keen to understand whether recent stock dumping concerns have altered distributor engagement across key regional markets.\n- How are your non-metro supply chain operational strategies adapting to ongoing global trade uncertainties?\n- What frameworks are currently utilized for distribution network scaling and route-to-market optimization for integrated brands?\n- We would be keen to explore whether current primary dispatch schedules align effectively with secondary distributor sell-through.\n- What operational adjustments are being prioritized to build resilience in non-metro supply chain logistics?\n- How are inventory allocation policies being reviewed to minimize potential distributor channel friction?\n\n## Outreach email (approved)\n**Subject:** Supply Chain & Distribution Network Strategy | Tata Consumer Products\n\nDear Tata Consumer Products Team,\n\nFollowing recent public developments regarding distributor channel friction driven by stock dumping concerns and operational strategy adjustments required for non-metro supply chains amidst global trade uncertainties, our firm would welcome an introductory dialogue.\n\nWe specialize exclusively in supply chain and distribution management. We would be keen to understand whether your current route-to-market framework fully supports distribution network scaling for integrated brands while maintaining channel alignment.\n\nOur team can assist in evaluating non-metro supply chain resilience and refining distribution mechanisms to mitigate channel friction. \n\nAre you available for a brief meeting next week to discuss your supply chain priorities?\n\nBest regards,\n[Your Name]\n\n## Sources\n- [S2] How TATA Coffee Grand is Leveraging Distribution Strength of Tata Consumer Products to Expand Reach?? - Indian Retailer 2026-04-10 https://news.google.com/rss/articles/CBMi8gFBVV95cUxNUHh3bDRvdFU4QldRSmtHLTRVWnE4bW5XTWFBWktnNEc1T01QTFlxZWpIWlBzM2hBS0N4b1ptUEtRQUx5OW9CUVREd0F4ZUxBVU50THhXcDhxak50azlXNkN4VTNGRFB5WTViN2duVXUwSGdSSUtBMkZEa3VQWVRuQUdteDZMMzI1MEJuel9aNHB3bGdmZ18xbHBpcU5rbmFoYVZiUWZkRURYeHpKS3lVbGdKblE1U29PRUs0dmhTMVQyMElpZWdRWF9IMk1XczlIdnVDMGdoaXhnLXRTNlRabDNDZnhwakdDb3VSeWFkZHRtZw?oc=5\n- [S3] Tata Consumer faces distributor anger over 'dumped' stock - Livemint 2025-10-27 https://news.google.com/rss/articles/CBMizAFBVV95cUxNcVMzRjI4R0dOTHJrMDFRdnB4TEtMeTBNNTRRd3ZCbERVMGpraXViYTNYQjBrV1R2MnZZRmNDYjNDOGFjVkpLYTdpVFl4WUtJcTM1bWxXRnRfMlpUZHlua1JuYURIOGQ3MmJjQUJqVHFHSFkwMjV1T0tEWERGTVNsWXlOak5YcW5ZdGVXSmREV29aaTVTLVVJOHpnNHAycjBpc1hNMHU5cVVaMXdOdEVoZ3Z6aEJnVkxhTUpDTEVRakxNUnRJOF95NXA0ZS3SAdIBQVVfeXFMTW5JeTU0QVhXLVVZQlNZZGpselRGSHJLQkJsN216WUhCLUF0cTVHa3lvOG5GZW5WVlZXcTVyQlZhZ095cWM1NUdtcjZ1NUVEeDZzeUlRb1pLS1VlRE9hRkhLcW5FQi02ZVlZM0FVOXBobkl6NjlTRmE2TTVDRGdGd0ZKMnhlbjF3ZFl4OFhWOFoydkxhYXFEVXBNb3JWcEpXMEZEdmJVUGdEVXRmNVcySXZQazVZZlAyRy1RUzc0VG4yZFg1RTJVa1c2VDhsdnBtQ3Zn?oc=5\n- [S4] The Ching’s Secret recipe for Tata Consumer’s next growth chapter - Fortune India 2025-11-05 https://news.google.com/rss/articles/CBMiswFBVV95cUxPYWgzQlBQSGg0dUpLOUo0VWdwdERjeTdXT2ZmWnl5SldUM2lnSkNJRWFGWWQ4MzVrZEVvakx0UHdPWWMyZGh6N19CSFNDUTB1T0RjQTlHMzNnMFF5blIydExqOVdfWktZRlVjWHFRVDMyQTJFbEdBdjd1UWQxUFljWkt5R3VLdkVjREozT2VvTnFNYnJKRTF1ZEl3ald3YlhkTFExWFhCaHhmcFVmT0c0TDNLZ9IBwAFBVV95cUxQdVQ2d0VKV3lUdzVRRnozVnJWdTBjNEFEZTBaaFVEeGV0dUk1dDVKR1lWT24zNkk4dHItZjh1SGZ4dW9MV1NjNFFvakU0WjB2ekUzNmxoNjZOcV85SWxnVldMUkRYUFcxbFRUeTZNVlMtdWRKWE5uYTBuMHpKQW9JYlRsS215NUJNX0FGM2NpVHFhOTAtYkFsZnZJY2h4dUE0ZzVFUzM4cllPRWJGUkZaa1cySnJlQXUxelNyVnhjcVo?oc=5\n- [S8] Tata Consumer Products approves ₹160 crore investment for instant tea plant - ET Manufacturing 2026-05-09 https://news.google.com/rss/articles/CBMi6wFBVV95cUxNam0tRlJDc0pFZFpZOHBQenFnU0Zka1h2VW1qMHZJVTN5MnpJcmt2NGYxZzhIZlFpQWJXM1VwTGdTRS10aUZWSWZpV1ZxRG9wRmR4WjdWZWFBaGZEZGZabGdPWXZMWDNDeS1mOW1UOFIyTVdhcDROZUp3REtiaEtHdEQ3akpCNVBxb2s5bDJOR3RlUXg2NVljZFU3MXRLaHhoUGVrVWtUZmNlZ0NBMm84eExvbWFfbUFUdWVDY1ktcHlaMUJUYVpRSnhCLTZ0R1N6V2pvTUloSlVZR0Y4Y09Ublhpb3hpR2RmUGZz0gHvAUFVX3lxTE53OHRjLUs5YXQ3MTcyTktMTDZVckd1MHotSW1sUkI0TDFCcm94V3ZhQ3VqV3pqNWR4TDZLWWZTaTFERFFHTWNrTVpudU9ZZl9wZ1VsOUFjMExNMjljbGI1WXN3b2ExM3htaTZXZWx2NjFsNTJHWEpOVUxmX1JyVTRuWnBMS3F4RHFEY0MyYklxVDI5Ty1HQ0Z3cDhtMjhLS3RNZGdHSnByZXNDaW93dDF0SGxUYzMyZXFaMmtFS1VabDhJNWJDVUdpX2otSUhMbld3cHdlWE1QSnc1UFBfOGlEMjFtNzNieFRNNi1YMzNJ?oc=5\n- [S22] Tata Consumer Products raises stake in Ching’s Secret maker Capital Foods to 80% - CNBC TV18 2026-09-01 https://news.google.com/rss/articles/CBMiygFBVV95cUxOdTdDXzZucTBaWXY5cmFEVk5vc2IzcmU2Y0tiR0ZCTmxhdEZsbVVtb0tVcXg1TVhUbTc4SWlsa201dl81NXpWN3VoTWVLSmZLeXcwRThBLWJPcnp4MllQaEtiV2kyLUlLbWs5Wk94eHg0SmQ4Ml9YZDJDNFF0Xzkzd0szdHlFN3c4cEZ2aW9QSnhJTzdIN0hYZ3hZczcwWVFWT21WVkFfamRwM0ljcG00RzlZakVza0gyVXlLS00xd281MjRJNnMzeUNB0gHPAUFVX3lxTE5EVy1EWlZaVTI2UHNDX3hPSVQ4TDZVT21kZ205WnFaeHl3dnlaZ2hqc0xpUkVGeHAwbEhnU2F0bFFmQzVUNUp0aXZGTWtoaFNsZnhqTUVCenBoT29yZjNpSU9ZX1oza0dMZjVaOVFqVHVsN3FYNWx4RjVxWm1LQkNqTTBZcmJZeXVOY1FhYktQdUdzeUxnS2c1Q3dxaGlsZXItZlV1b0Vfd0JXUXR4MjZnYXNhZUhkdm1ObWFvdXB6MUtrWlNHSy13UVF2Sm1EWQ?oc=5\n- [S32] How India's Non-Metro Supply Chains Are Adapting To Global Trade Uncertainty - BW Businessworld 2026-07-13 https://news.google.com/rss/articles/CBMisAFBVV95cUxOVHVLX0J2X19xTk1YNVdMRUhoT1Q4YWFpbTlUWWo4VURqY2h3ZkpTYk5UcG5kSmhGZ1dEWk90bDdFeWstWVpyT0t4SzlNU194cjdmczFFb05IcTA4c242ZE5VS1JzeG9MeU91ZnlwOWExZjBvNXB0aW1QdUVBdzBhTFNJOXBrdDVDN0hGQkhPZUdSdHp5dkZfaXVlV2VtM21Ydy1FWnlzcXVyYTIwQk9QMA?oc=5\n- [S43] Official website: https://www.tataconsumer.com  https://www.tataconsumer.com",
+    "run_id": "20261108-182650-2193",
+    "outputs": [
+      "client_briefing.md",
+      "outreach_email.eml"
+    ]
+  },
+  "error": null
+}

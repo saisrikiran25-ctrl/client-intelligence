@@ -1,0 +1,16 @@
+[
+  {
+    "case": "bharat_agro_operations",
+    "grounding_rate": 1.0,
+    "recall": 0.75,
+    "hallucinations": [],
+    "pass": true
+  },
+  {
+    "case": "bharat_agro_digital",
+    "grounding_rate": 1.0,
+    "recall": 1.0,
+    "hallucinations": [],
+    "pass": true
+  }
+]

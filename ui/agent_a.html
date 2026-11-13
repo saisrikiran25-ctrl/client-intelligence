@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Client Intelligence Agent</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="/ui/style.css">
+</head><body>
+<header><h1>Client Intelligence Agent</h1><span class="sub">Researches a prospect live and drafts a cited briefing, proposal and outreach email</span>
+<nav><a href="/">Client Intelligence Agent</a></nav>
+<span id="status" class="status" style="margin-left:auto">idle</span></header>
+<main>
+<section class="col">
+  <h2>Run</h2>
+  <label>Prospect company</label><input id="company" value="Asian Paints">
+  <label>Service line</label><input id="service" value="supply chain and distribution">
+  <label>Real company? Leave empty: the agent researches it live. Or paste your own document text</label><textarea id="docs"></textarea>
+  <div class="row"><button class="ghost" id="loadSample">Load fictional sample document (turns web off)</button></div>
+  <div class="chk"><input type="checkbox" id="web" checked><label>Live research (Wikipedia, Wikidata, company website, live news)</label></div>
+  <div class="chk"><input type="checkbox" id="cache"><label>Reuse cached model answers (faster, but NOT a fresh live run)</label></div>
+  <div class="chk"><input type="checkbox" id="auto"><label>Skip human gate (email stays unapproved)</label></div>
+  <label>LLM backend</label><select id="backend"><option value="gemini">Gemini (free AI Studio key)</option><option value="claude">Claude (headless CLI)</option><option value="ollama">Ollama (local)</option><option value="replay">Replay cache</option></select>
+  <div class="row"><button id="go">Run agent</button></div>
+  <h2 style="margin-top:20px">Play back a RECORDED run (not live)</h2>
+  <select id="saved"></select>
+  <div class="row"><button class="ghost" id="replay">Play back recording</button></div>
+</section>
+<section class="col"><h2>Live agent trace</h2><div id="gate"></div><div id="trace"></div></section>
+<section class="col"><h2>Output</h2><div id="out"><span style="color:var(--mut)">Results appear here when the run completes.</span></div></section>
+</main>
+<script>const AGENT='a'</script>
+<script src="/ui/common.js"></script>
+<script src="/ui/mail.js"></script>
+<script>
+let tabA='brief';
+fetch('/api/samples').then(r=>r.json()).then(s=>{window.samples=s});
+$('loadSample').onclick=()=>{$('docs').value=(window.samples||[])[0]?.text||'';$('company').value='Bharat Agro Foods';$('web').checked=false};
+const buildBody=()=>({company:$('company').value,service_line:$('service').value,docs:$('docs').value,use_web:$('web').checked});
+
+// human gate: approve or edit the outreach email
+function renderGate(g){if(!g){$('gate').innerHTML='';return}
+ const em=g.payload.email||{};
+ $('gate').innerHTML=`<div class="gate"><b>Human approval needed</b><div style="margin:4px 0">${esc(g.label)}</div>
+ <input id="gs" value="${esc(em.subject)}"><textarea id="gb" style="height:130px;margin-top:6px">${esc(em.body)}</textarea>
+ <div class="row"><button id="ap">Approve</button><button class="ghost" id="rj">Reject</button></div></div>`;
+ $('ap').onclick=()=>post(`/api/runs/${runId}/approve`,{approved:true,email:{subject:$('gs').value,body:$('gb').value}});
+ $('rj').onclick=()=>post(`/api/runs/${runId}/approve`,{approved:false})}
+
+const lvl=x=>x.evidence_level?`<span class="chip" title="strong = Wikipedia, company site or your document; headline-only = news headlines" style="${x.evidence_level==='strong'?'background:#cfe6d8':'background:#f6ecc9'}">${esc(x.evidence_level)}</span>`:'';
+const src=ids=>(ids||[]).map(s=>`<span class="src">[${s}]</span>`).join(' ');
+const ev=x=>(x.evidence||[]).map(e=>`<div class="q">${esc(e.id)} · ${esc(e.claim)}<br>“${esc(e.quote)}” <span class="src">[${e.source}]</span></div>`).join('');
+function renderOut(){if(!result)return;const r=result,m=r.metrics,p=r.proposal||{};
+ const tabs=['brief','proposal','email','sources'].map(t=>`<button class="${t===tabA?'on':''}" onclick="tabA='${t}';renderOut()">${t}</button>`).join('');
+ let body='';
+ if(tabA==='brief')body=`<p>${esc(r.summary)}</p><h2>Key facts</h2>`+r.key_facts.map(x=>`<div class="item">${esc(x.text)} ${src(x.sources)} ${lvl(x)}<details><summary>evidence</summary>${ev(x)}</details></div>`).join('')+
+  `<h2 style="margin-top:14px">Pain-point hypotheses</h2>`+(r.pain_points.length?r.pain_points.map(x=>`<div class="item"><b>${esc(x.hypothesis)}</b> ${src(x.sources)} ${lvl(x)}<div>${esc(x.why)}</div><div style="color:var(--acc)">Fit: ${esc(x.service_fit)}</div><details><summary>evidence</summary>${ev(x)}</details></div>`).join(''):'<div class="data">None passed verification.</div>');
+ if(tabA==='proposal')body=`<h2>Pitch outline</h2><ul>${(p.pitch_outline||[]).map(b=>`<li>${esc(b)}</li>`).join('')}</ul><h2>Proposed scope</h2>`+(p.proposed_scope||[]).map(w=>`<div class="item"><b>${esc(w.workstream)}</b> · ${esc(w.weeks)} wks<div>${esc(w.deliverable)}</div></div>`).join('')+`<h2 style="margin-top:14px">Discovery questions</h2><ol>${(p.discovery_questions||[]).map(b=>`<li>${esc(b)}</li>`).join('')}</ol>`;
+ if(tabA==='email'){const e=p.email||{};body=`<span class="status">${esc(p.email_status)}</span><p><b>${esc(e.subject)}</b></p><pre style="white-space:pre-wrap;font:inherit">${esc(e.body)}</pre>`}
+ if(tabA==='sources')body=r.sources.map(s=>`<div class="item"><span class="src">[${s.id}]</span> ${esc(s.title)} <span class="chip">${s.kind}</span> ${esc(s.date||'')}${s.cited?' ✓ cited':''}<div class="data">${esc(s.url)}</div></div>`).join('');
+ $('out').innerHTML=`<div class="metrics"><div class="m"><b>${Math.round(m.grounding_rate*100)}%</b><span>claims verified</span></div><div class="m"><b>${m.findings_verified}</b><span>quote-checked findings</span></div><div class="m"><b>${m.sources}</b><span>sources</span></div></div>${outs()}${mailPanel()}<div class="tabs">${tabs}</div>${body}`}
+</script></body></html>
